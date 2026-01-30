@@ -15,11 +15,20 @@ import {
     addDoc
 } from 'firebase/firestore';
 import { db } from './firebase';
+import type { TeamBuild, UserProfile, FirestoreResult } from '../types';
 
 // ==================== TEAM BUILDS ====================
 
+interface TeamBuildData {
+    name: string;
+    description?: string;
+    radiantTeam: (number | null)[];
+    direTeam: (number | null)[];
+    isPublic?: boolean;
+}
+
 // Save a team build
-export const saveTeamBuild = async (userId, teamBuild) => {
+export const saveTeamBuild = async (userId: string, teamBuild: TeamBuildData): Promise<FirestoreResult> => {
     try {
         const buildsRef = collection(db, 'teamBuilds');
         const docRef = await addDoc(buildsRef, {
@@ -31,12 +40,12 @@ export const saveTeamBuild = async (userId, teamBuild) => {
         return { success: true, id: docRef.id };
     } catch (error) {
         console.error('Error saving team build:', error);
-        return { success: false, error: error.message };
+        return { success: false, error: (error as Error).message };
     }
 };
 
 // Get user's team builds
-export const getUserTeamBuilds = async (userId) => {
+export const getUserTeamBuilds = async (userId: string): Promise<TeamBuild[]> => {
     try {
         const buildsRef = collection(db, 'teamBuilds');
         const q = query(
@@ -49,7 +58,7 @@ export const getUserTeamBuilds = async (userId) => {
         return snapshot.docs.map(doc => ({
             id: doc.id,
             ...doc.data()
-        }));
+        })) as TeamBuild[];
     } catch (error) {
         console.error('Error getting team builds:', error);
         return [];
@@ -57,12 +66,12 @@ export const getUserTeamBuilds = async (userId) => {
 };
 
 // Get a single team build
-export const getTeamBuild = async (buildId) => {
+export const getTeamBuild = async (buildId: string): Promise<TeamBuild | null> => {
     try {
         const docRef = doc(db, 'teamBuilds', buildId);
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
-            return { id: docSnap.id, ...docSnap.data() };
+            return { id: docSnap.id, ...docSnap.data() } as TeamBuild;
         }
         return null;
     } catch (error) {
@@ -72,25 +81,25 @@ export const getTeamBuild = async (buildId) => {
 };
 
 // Delete a team build
-export const deleteTeamBuild = async (buildId) => {
+export const deleteTeamBuild = async (buildId: string): Promise<FirestoreResult> => {
     try {
         await deleteDoc(doc(db, 'teamBuilds', buildId));
         return { success: true };
     } catch (error) {
         console.error('Error deleting team build:', error);
-        return { success: false, error: error.message };
+        return { success: false, error: (error as Error).message };
     }
 };
 
 // ==================== USER PROFILE ====================
 
 // Get or create user profile
-export const getUserProfile = async (userId) => {
+export const getUserProfile = async (userId: string): Promise<UserProfile | null> => {
     try {
         const docRef = doc(db, 'users', userId);
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
-            return docSnap.data();
+            return docSnap.data() as UserProfile;
         }
         return null;
     } catch (error) {
@@ -100,7 +109,7 @@ export const getUserProfile = async (userId) => {
 };
 
 // Create or update user profile
-export const saveUserProfile = async (userId, profileData) => {
+export const saveUserProfile = async (userId: string, profileData: Partial<UserProfile>): Promise<FirestoreResult> => {
     try {
         const docRef = doc(db, 'users', userId);
         await setDoc(docRef, {
@@ -110,14 +119,14 @@ export const saveUserProfile = async (userId, profileData) => {
         return { success: true };
     } catch (error) {
         console.error('Error saving user profile:', error);
-        return { success: false, error: error.message };
+        return { success: false, error: (error as Error).message };
     }
 };
 
 // ==================== FAVORITE HEROES ====================
 
 // Add favorite hero
-export const addFavoriteHero = async (userId, heroId) => {
+export const addFavoriteHero = async (userId: string, heroId: number): Promise<FirestoreResult> => {
     try {
         const docRef = doc(db, 'users', userId, 'favorites', String(heroId));
         await setDoc(docRef, {
@@ -127,27 +136,27 @@ export const addFavoriteHero = async (userId, heroId) => {
         return { success: true };
     } catch (error) {
         console.error('Error adding favorite:', error);
-        return { success: false, error: error.message };
+        return { success: false, error: (error as Error).message };
     }
 };
 
 // Remove favorite hero
-export const removeFavoriteHero = async (userId, heroId) => {
+export const removeFavoriteHero = async (userId: string, heroId: number): Promise<FirestoreResult> => {
     try {
         await deleteDoc(doc(db, 'users', userId, 'favorites', String(heroId)));
         return { success: true };
     } catch (error) {
         console.error('Error removing favorite:', error);
-        return { success: false, error: error.message };
+        return { success: false, error: (error as Error).message };
     }
 };
 
 // Get user's favorite heroes
-export const getFavoriteHeroes = async (userId) => {
+export const getFavoriteHeroes = async (userId: string): Promise<number[]> => {
     try {
         const favoritesRef = collection(db, 'users', userId, 'favorites');
         const snapshot = await getDocs(favoritesRef);
-        return snapshot.docs.map(doc => doc.data().heroId);
+        return snapshot.docs.map(doc => doc.data().heroId as number);
     } catch (error) {
         console.error('Error getting favorites:', error);
         return [];
@@ -157,7 +166,7 @@ export const getFavoriteHeroes = async (userId) => {
 // ==================== SHARED BUILDS (PUBLIC) ====================
 
 // Get public/shared team builds
-export const getPublicBuilds = async (limitCount = 20) => {
+export const getPublicBuilds = async (limitCount = 20): Promise<TeamBuild[]> => {
     try {
         const buildsRef = collection(db, 'teamBuilds');
         const q = query(
@@ -170,7 +179,7 @@ export const getPublicBuilds = async (limitCount = 20) => {
         return snapshot.docs.map(doc => ({
             id: doc.id,
             ...doc.data()
-        }));
+        })) as TeamBuild[];
     } catch (error) {
         console.error('Error getting public builds:', error);
         return [];
@@ -178,13 +187,13 @@ export const getPublicBuilds = async (limitCount = 20) => {
 };
 
 // Toggle build public/private
-export const toggleBuildVisibility = async (buildId, isPublic) => {
+export const toggleBuildVisibility = async (buildId: string, isPublic: boolean): Promise<FirestoreResult> => {
     try {
         const docRef = doc(db, 'teamBuilds', buildId);
         await updateDoc(docRef, { isPublic, updatedAt: serverTimestamp() });
         return { success: true };
     } catch (error) {
         console.error('Error toggling visibility:', error);
-        return { success: false, error: error.message };
+        return { success: false, error: (error as Error).message };
     }
 };

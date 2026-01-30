@@ -6,48 +6,50 @@ import {
     signOut as firebaseSignOut,
     GoogleAuthProvider,
     onAuthStateChanged,
-    updateProfile
+    updateProfile,
+    User
 } from 'firebase/auth';
 import { auth } from './firebase';
 import { saveUserProfile } from './firestore';
+import type { AuthResult } from '../types';
 
 // Google Auth Provider
 const googleProvider = new GoogleAuthProvider();
 
 // Sign in with Google
-export const signInWithGoogle = async () => {
+export const signInWithGoogle = async (): Promise<AuthResult> => {
     try {
         const result = await signInWithPopup(auth, googleProvider);
         const user = result.user;
 
         // Save/update user profile in Firestore
         await saveUserProfile(user.uid, {
-            displayName: user.displayName,
-            email: user.email,
-            photoURL: user.photoURL,
+            displayName: user.displayName || '',
+            email: user.email || '',
+            photoURL: user.photoURL || undefined,
             lastLogin: new Date().toISOString()
         });
 
         return { success: true, user };
     } catch (error) {
         console.error('Error signing in with Google:', error);
-        return { success: false, error: error.message };
+        return { success: false, error: (error as Error).message };
     }
 };
 
 // Sign in with email/password
-export const signInWithEmail = async (email, password) => {
+export const signInWithEmail = async (email: string, password: string): Promise<AuthResult> => {
     try {
         const result = await signInWithEmailAndPassword(auth, email, password);
         return { success: true, user: result.user };
     } catch (error) {
         console.error('Error signing in:', error);
-        return { success: false, error: error.message };
+        return { success: false, error: (error as Error).message };
     }
 };
 
 // Sign up with email/password
-export const signUpWithEmail = async (email, password, displayName) => {
+export const signUpWithEmail = async (email: string, password: string, displayName: string): Promise<AuthResult> => {
     try {
         const result = await createUserWithEmailAndPassword(auth, email, password);
         const user = result.user;
@@ -58,34 +60,34 @@ export const signUpWithEmail = async (email, password, displayName) => {
         // Save user profile in Firestore
         await saveUserProfile(user.uid, {
             displayName,
-            email: user.email,
+            email: user.email || '',
             createdAt: new Date().toISOString()
         });
 
         return { success: true, user };
     } catch (error) {
         console.error('Error signing up:', error);
-        return { success: false, error: error.message };
+        return { success: false, error: (error as Error).message };
     }
 };
 
 // Sign out
-export const signOut = async () => {
+export const signOut = async (): Promise<{ success: boolean; error?: string }> => {
     try {
         await firebaseSignOut(auth);
         return { success: true };
     } catch (error) {
         console.error('Error signing out:', error);
-        return { success: false, error: error.message };
+        return { success: false, error: (error as Error).message };
     }
 };
 
 // Get current user
-export const getCurrentUser = () => {
+export const getCurrentUser = (): User | null => {
     return auth.currentUser;
 };
 
 // Subscribe to auth state changes
-export const onAuthChange = (callback) => {
+export const onAuthChange = (callback: (user: User | null) => void) => {
     return onAuthStateChanged(auth, callback);
 };

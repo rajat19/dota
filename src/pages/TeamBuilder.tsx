@@ -55,7 +55,7 @@ function TeamBuilder() {
             const heroes = team.filter(Boolean)
             if (heroes.length === 0) return null
 
-            const roles = {}
+            const roles: Record<string, number> = {}
             const attrs = { str: 0, agi: 0, int: 0 }
             let totalStr = 0, totalAgi = 0, totalInt = 0
             let meleeCount = 0, rangedCount = 0
@@ -70,7 +70,7 @@ function TeamBuilder() {
                 else rangedCount++
             })
 
-            const sortedRoles = Object.entries(roles).sort((a, b) => b[1] - a[1]).slice(0, 5)
+            const sortedRoles = Object.entries(roles).sort((a, b) => (b[1] as number) - (a[1] as number)).slice(0, 5) as [string, number][]
 
             // Strengths and weaknesses
             const strengths = []

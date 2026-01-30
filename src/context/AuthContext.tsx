@@ -1,11 +1,25 @@
 // Auth Context - Provides authentication state throughout the app
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { User } from 'firebase/auth';
 import { onAuthChange } from '../firebase/auth';
 import { getUserProfile } from '../firebase/firestore';
+import type { UserProfile } from '../types';
 
-const AuthContext = createContext(null);
+interface AuthContextValue {
+    user: User | null;
+    userProfile: UserProfile | null;
+    loading: boolean;
+    isAuthenticated: boolean;
+    userId: string | null;
+}
 
-export const useAuth = () => {
+interface AuthProviderProps {
+    children: ReactNode;
+}
+
+const AuthContext = createContext<AuthContextValue | null>(null);
+
+export const useAuth = (): AuthContextValue => {
     const context = useContext(AuthContext);
     if (!context) {
         throw new Error('useAuth must be used within an AuthProvider');
@@ -13,13 +27,13 @@ export const useAuth = () => {
     return context;
 };
 
-export const AuthProvider = ({ children }) => {
-    const [user, setUser] = useState(null);
-    const [userProfile, setUserProfile] = useState(null);
+export const AuthProvider = ({ children }: AuthProviderProps) => {
+    const [user, setUser] = useState<User | null>(null);
+    const [userProfile, setUserProfile] = useState<UserProfile | null>(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const unsubscribe = onAuthChange(async (firebaseUser) => {
+        const unsubscribe = onAuthChange(async (firebaseUser: User | null) => {
             setUser(firebaseUser);
 
             if (firebaseUser) {
@@ -36,7 +50,7 @@ export const AuthProvider = ({ children }) => {
         return () => unsubscribe();
     }, []);
 
-    const value = {
+    const value: AuthContextValue = {
         user,
         userProfile,
         loading,

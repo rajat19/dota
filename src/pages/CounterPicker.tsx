@@ -41,9 +41,15 @@ function CounterPicker() {
   const counterRecommendations = useMemo(() => {
     if (selectedHeroes.length === 0) return { heroes: [], items: [] }
 
+    interface CounterScore {
+      id: number;
+      score: number;
+      reasons: string[];
+    }
+
     // Collect all counter heroes
-    const heroCounterScores = {}
-    const itemCounterScores = {}
+    const heroCounterScores: Record<number, CounterScore> = {}
+    const itemCounterScores: Record<number, CounterScore> = {}
 
     selectedHeroes.forEach(selectedHero => {
       const counterInfo = countersData.heroCounters[selectedHero.id]
@@ -106,7 +112,11 @@ function CounterPicker() {
   const teamWeaknesses = useMemo(() => {
     if (selectedHeroes.length === 0) return []
 
-    const weaknessScores = {}
+    interface WeaknessScore {
+      id: number;
+      score: number;
+    }
+    const weaknessScores: Record<number, WeaknessScore> = {}
 
     selectedHeroes.forEach(hero => {
       hero.counters?.forEach((counteredHeroId, index) => {

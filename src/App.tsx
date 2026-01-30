@@ -7,6 +7,7 @@ import Heroes from './pages/Heroes'
 import Items from './pages/Items'
 import CounterPicker from './pages/CounterPicker'
 import HeroDetail from './pages/HeroDetail'
+import ItemDetail from './pages/ItemDetail'
 import TeamBuilder from './pages/TeamBuilder'
 
 function App() {
@@ -23,8 +24,9 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/heroes" element={<Heroes />} />
-                    <Route path="/heroes/:heroId" element={<HeroDetail />} />
+                    <Route path="/heroes/:heroName" element={<HeroDetail />} />
                     <Route path="/items" element={<Items />} />
+                    <Route path="/items/:itemName" element={<ItemDetail />} />
                     <Route path="/counter-picker" element={<CounterPicker />} />
                     <Route path="/team-builder" element={<TeamBuilder />} />
                 </Routes>

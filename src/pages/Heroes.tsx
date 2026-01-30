@@ -106,20 +106,20 @@ function Heroes() {
                                 exit={{ opacity: 0, scale: 0.8 }}
                                 transition={{ duration: 0.3, delay: index * 0.02 }}
                             >
-                                <Link to={`/heroes/${hero.id}`} className="hero-card">
+                                <Link to={`/heroes/${hero.internalName}`} className="hero-card">
                                     <img
                                         src={hero.image}
                                         alt={hero.name}
                                         loading="lazy"
                                         onError={(e) => {
-                                            e.target.src = `https://via.placeholder.com/200x200/1a1a2e/ffffff?text=${encodeURIComponent(hero.name)}`
+                                            (e.target as HTMLImageElement).src = `https://via.placeholder.com/200x200/1a1a2e/ffffff?text=${encodeURIComponent(hero.name)}`
                                         }}
                                     />
-                                    <span className={`attribute-badge ${hero.primaryAttr}`}>
+                                    <div className={`attribute-badge ${hero.primaryAttr}`}>
                                         {hero.primaryAttr === 'str' ? '💪' :
                                             hero.primaryAttr === 'agi' ? '🎯' :
                                                 hero.primaryAttr === 'int' ? '🧠' : '🌟'}
-                                    </span>
+                                    </div>
                                     <span className="hero-name">{hero.name}</span>
                                 </Link>
                             </motion.div>

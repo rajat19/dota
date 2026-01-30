@@ -5,11 +5,11 @@ import itemsData from '../data/items.json'
 import countersData from '../data/counters.json'
 
 function HeroDetail() {
-  const { heroId } = useParams()
+  const { heroName } = useParams()
   const navigate = useNavigate()
 
-  const hero = allHeroes.find(h => h.id === parseInt(heroId))
-  const counterInfo = countersData.heroCounters[heroId]
+  const hero = allHeroes.find(h => h.internalName === heroName)
+  const counterInfo = hero ? countersData.heroCounters[hero.id] : undefined
 
   if (!hero) {
     return (
@@ -79,7 +79,7 @@ function HeroDetail() {
               alt={hero.name}
               className="hero-main-image"
               onError={(e) => {
-                e.target.src = `https://via.placeholder.com/256x144/1a1a2e/ffffff?text=${encodeURIComponent(hero.name)}`
+                (e.target as HTMLImageElement).src = `https://via.placeholder.com/256x144/1a1a2e/ffffff?text=${encodeURIComponent(hero.name)}`
               }}
             />
             <div
@@ -194,7 +194,7 @@ function HeroDetail() {
                 {strongAgainstHeroes.map(h => (
                   <Link
                     key={h.id}
-                    to={`/heroes/${h.id}`}
+                    to={`/heroes/${h.internalName}`}
                     className="mini-hero-card"
                   >
                     <img src={h.image} alt={h.name} />
@@ -221,7 +221,7 @@ function HeroDetail() {
                 {weakAgainstHeroes.map(h => (
                   <Link
                     key={h.id}
-                    to={`/heroes/${h.id}`}
+                    to={`/heroes/${h.internalName}`}
                     className="mini-hero-card"
                   >
                     <img src={h.image} alt={h.name} />
