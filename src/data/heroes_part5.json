@@ -1,0 +1,884 @@
+{
+    "heroes": [
+        {
+            "id": 76,
+            "name": "Outworld Destroyer",
+            "internalName": "obsidian_destroyer",
+            "primaryAttr": "int",
+            "attackType": "Ranged",
+            "roles": [
+                "Carry",
+                "Nuker",
+                "Disabler"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/obsidian_destroyer.png",
+            "baseStr": 21,
+            "baseAgi": 22,
+            "baseInt": 30,
+            "strGain": 2.6,
+            "agiGain": 1.6,
+            "intGain": 4.2,
+            "baseMoveSpeed": 315,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 3,
+            "abilities": [
+                {
+                    "name": "Arcane Orb",
+                    "type": "passive",
+                    "description": "Attacks deal bonus damage based on mana."
+                },
+                {
+                    "name": "Astral Imprisonment",
+                    "type": "active",
+                    "description": "Banishes unit stealing intelligence."
+                },
+                {
+                    "name": "Essence Flux",
+                    "type": "passive",
+                    "description": "Chance to restore mana on cast."
+                },
+                {
+                    "name": "Sanity's Eclipse",
+                    "type": "ultimate",
+                    "description": "Damages based on intelligence difference."
+                }
+            ]
+        },
+        {
+            "id": 77,
+            "name": "Lycan",
+            "internalName": "lycan",
+            "primaryAttr": "str",
+            "attackType": "Melee",
+            "roles": [
+                "Carry",
+                "Pusher",
+                "Jungler",
+                "Durable",
+                "Escape"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lycan.png",
+            "baseStr": 26,
+            "baseAgi": 16,
+            "baseInt": 17,
+            "strGain": 3.4,
+            "agiGain": 1.0,
+            "intGain": 1.4,
+            "baseMoveSpeed": 305,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 2,
+            "abilities": [
+                {
+                    "name": "Summon Wolves",
+                    "type": "active",
+                    "description": "Summons wolves to fight."
+                },
+                {
+                    "name": "Howl",
+                    "type": "active",
+                    "description": "Grants attack damage to allies."
+                },
+                {
+                    "name": "Feral Impulse",
+                    "type": "passive",
+                    "description": "Grants damage and HP regen aura."
+                },
+                {
+                    "name": "Shapeshift",
+                    "type": "ultimate",
+                    "description": "Transforms with max speed and crit."
+                }
+            ]
+        },
+        {
+            "id": 78,
+            "name": "Brewmaster",
+            "internalName": "brewmaster",
+            "primaryAttr": "str",
+            "attackType": "Melee",
+            "roles": [
+                "Carry",
+                "Initiator",
+                "Durable",
+                "Disabler",
+                "Nuker"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/brewmaster.png",
+            "baseStr": 23,
+            "baseAgi": 22,
+            "baseInt": 14,
+            "strGain": 3.7,
+            "agiGain": 2.1,
+            "intGain": 1.5,
+            "baseMoveSpeed": 305,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 2,
+            "abilities": [
+                {
+                    "name": "Thunder Clap",
+                    "type": "active",
+                    "description": "Slams ground slowing and damaging."
+                },
+                {
+                    "name": "Cinder Brew",
+                    "type": "active",
+                    "description": "Drenches enemies igniting on attack."
+                },
+                {
+                    "name": "Drunken Brawler",
+                    "type": "passive",
+                    "description": "Evasion and critical strike."
+                },
+                {
+                    "name": "Primal Split",
+                    "type": "ultimate",
+                    "description": "Splits into three elemental spirits."
+                }
+            ]
+        },
+        {
+            "id": 79,
+            "name": "Shadow Demon",
+            "internalName": "shadow_demon",
+            "primaryAttr": "int",
+            "attackType": "Ranged",
+            "roles": [
+                "Support",
+                "Disabler",
+                "Nuker",
+                "Initiator"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/shadow_demon.png",
+            "baseStr": 21,
+            "baseAgi": 18,
+            "baseInt": 26,
+            "strGain": 2.4,
+            "agiGain": 2.2,
+            "intGain": 3.0,
+            "baseMoveSpeed": 290,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 2,
+            "abilities": [
+                {
+                    "name": "Disruption",
+                    "type": "active",
+                    "description": "Banishes creating illusions."
+                },
+                {
+                    "name": "Soul Catcher",
+                    "type": "active",
+                    "description": "Amplifies damage taken."
+                },
+                {
+                    "name": "Shadow Poison",
+                    "type": "active",
+                    "description": "Stacking poison damage."
+                },
+                {
+                    "name": "Demonic Purge",
+                    "type": "ultimate",
+                    "description": "Purges and slows continuously."
+                }
+            ]
+        },
+        {
+            "id": 80,
+            "name": "Lone Druid",
+            "internalName": "lone_druid",
+            "primaryAttr": "agi",
+            "attackType": "Ranged",
+            "roles": [
+                "Carry",
+                "Pusher",
+                "Jungler",
+                "Durable"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lone_druid.png",
+            "baseStr": 18,
+            "baseAgi": 20,
+            "baseInt": 13,
+            "strGain": 2.5,
+            "agiGain": 2.7,
+            "intGain": 1.4,
+            "baseMoveSpeed": 325,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 2,
+            "abilities": [
+                {
+                    "name": "Summon Spirit Bear",
+                    "type": "active",
+                    "description": "Summons bear with inventory."
+                },
+                {
+                    "name": "Spirit Link",
+                    "type": "passive",
+                    "description": "Links attack speed with bear."
+                },
+                {
+                    "name": "Savage Roar",
+                    "type": "active",
+                    "description": "Causes enemies to flee."
+                },
+                {
+                    "name": "True Form",
+                    "type": "ultimate",
+                    "description": "Transforms into melee bear form."
+                }
+            ]
+        },
+        {
+            "id": 81,
+            "name": "Chaos Knight",
+            "internalName": "chaos_knight",
+            "primaryAttr": "str",
+            "attackType": "Melee",
+            "roles": [
+                "Carry",
+                "Disabler",
+                "Durable",
+                "Pusher",
+                "Initiator"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/chaos_knight.png",
+            "baseStr": 22,
+            "baseAgi": 14,
+            "baseInt": 18,
+            "strGain": 3.4,
+            "agiGain": 1.4,
+            "intGain": 1.2,
+            "baseMoveSpeed": 325,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 3,
+            "abilities": [
+                {
+                    "name": "Chaos Bolt",
+                    "type": "active",
+                    "description": "Stun with random duration."
+                },
+                {
+                    "name": "Reality Rift",
+                    "type": "active",
+                    "description": "Pulls target and teleports."
+                },
+                {
+                    "name": "Chaos Strike",
+                    "type": "passive",
+                    "description": "Critical with lifesteal."
+                },
+                {
+                    "name": "Phantasm",
+                    "type": "ultimate",
+                    "description": "Creates powerful illusions."
+                }
+            ]
+        },
+        {
+            "id": 83,
+            "name": "Treant Protector",
+            "internalName": "treant",
+            "primaryAttr": "str",
+            "attackType": "Melee",
+            "roles": [
+                "Support",
+                "Initiator",
+                "Durable",
+                "Disabler",
+                "Escape"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/treant.png",
+            "baseStr": 25,
+            "baseAgi": 15,
+            "baseInt": 17,
+            "strGain": 3.5,
+            "agiGain": 2.0,
+            "intGain": 1.8,
+            "baseMoveSpeed": 285,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 0,
+            "abilities": [
+                {
+                    "name": "Nature's Grasp",
+                    "type": "active",
+                    "description": "Vines slow enemies."
+                },
+                {
+                    "name": "Leech Seed",
+                    "type": "active",
+                    "description": "Damages and heals."
+                },
+                {
+                    "name": "Living Armor",
+                    "type": "active",
+                    "description": "Protects buildings and allies."
+                },
+                {
+                    "name": "Overgrowth",
+                    "type": "ultimate",
+                    "description": "Roots all nearby enemies."
+                }
+            ]
+        },
+        {
+            "id": 84,
+            "name": "Ogre Magi",
+            "internalName": "ogre_magi",
+            "primaryAttr": "int",
+            "attackType": "Melee",
+            "roles": [
+                "Support",
+                "Nuker",
+                "Disabler",
+                "Durable",
+                "Initiator"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ogre_magi.png",
+            "baseStr": 23,
+            "baseAgi": 14,
+            "baseInt": 17,
+            "strGain": 4.0,
+            "agiGain": 1.5,
+            "intGain": 2.5,
+            "baseMoveSpeed": 290,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 5,
+            "abilities": [
+                {
+                    "name": "Fireblast",
+                    "type": "active",
+                    "description": "Blasts enemy with fire stun."
+                },
+                {
+                    "name": "Ignite",
+                    "type": "active",
+                    "description": "Hurls oil slowing and burning."
+                },
+                {
+                    "name": "Bloodlust",
+                    "type": "active",
+                    "description": "Grants attack and move speed."
+                },
+                {
+                    "name": "Multicast",
+                    "type": "ultimate",
+                    "description": "Chance to cast spells multiple times."
+                }
+            ]
+        },
+        {
+            "id": 85,
+            "name": "Undying",
+            "internalName": "undying",
+            "primaryAttr": "str",
+            "attackType": "Melee",
+            "roles": [
+                "Support",
+                "Durable",
+                "Disabler",
+                "Nuker"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/undying.png",
+            "baseStr": 22,
+            "baseAgi": 10,
+            "baseInt": 27,
+            "strGain": 2.8,
+            "agiGain": 1.0,
+            "intGain": 2.8,
+            "baseMoveSpeed": 305,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 2,
+            "abilities": [
+                {
+                    "name": "Decay",
+                    "type": "active",
+                    "description": "Steals strength."
+                },
+                {
+                    "name": "Soul Rip",
+                    "type": "active",
+                    "description": "Heals or damages."
+                },
+                {
+                    "name": "Tombstone",
+                    "type": "active",
+                    "description": "Summons attacking zombies."
+                },
+                {
+                    "name": "Flesh Golem",
+                    "type": "ultimate",
+                    "description": "Amplifies nearby damage."
+                }
+            ]
+        },
+        {
+            "id": 87,
+            "name": "Disruptor",
+            "internalName": "disruptor",
+            "primaryAttr": "int",
+            "attackType": "Ranged",
+            "roles": [
+                "Support",
+                "Disabler",
+                "Nuker",
+                "Initiator"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/disruptor.png",
+            "baseStr": 21,
+            "baseAgi": 15,
+            "baseInt": 20,
+            "strGain": 2.4,
+            "agiGain": 1.4,
+            "intGain": 2.9,
+            "baseMoveSpeed": 295,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 1,
+            "abilities": [
+                {
+                    "name": "Thunder Strike",
+                    "type": "active",
+                    "description": "Repeated lightning strikes."
+                },
+                {
+                    "name": "Glimpse",
+                    "type": "active",
+                    "description": "Returns enemy to past position."
+                },
+                {
+                    "name": "Kinetic Field",
+                    "type": "active",
+                    "description": "Traps enemies in ring."
+                },
+                {
+                    "name": "Static Storm",
+                    "type": "ultimate",
+                    "description": "Silences and damages area."
+                }
+            ]
+        },
+        {
+            "id": 88,
+            "name": "Nyx Assassin",
+            "internalName": "nyx_assassin",
+            "primaryAttr": "agi",
+            "attackType": "Melee",
+            "roles": [
+                "Initiator",
+                "Disabler",
+                "Nuker",
+                "Escape"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/nyx_assassin.png",
+            "baseStr": 18,
+            "baseAgi": 19,
+            "baseInt": 21,
+            "strGain": 2.3,
+            "agiGain": 2.5,
+            "intGain": 2.5,
+            "baseMoveSpeed": 305,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 3,
+            "abilities": [
+                {
+                    "name": "Impale",
+                    "type": "active",
+                    "description": "Line stun damaging enemies."
+                },
+                {
+                    "name": "Mind Flare",
+                    "type": "active",
+                    "description": "Damages based on intelligence."
+                },
+                {
+                    "name": "Spiked Carapace",
+                    "type": "active",
+                    "description": "Reflects and stuns attacker."
+                },
+                {
+                    "name": "Vendetta",
+                    "type": "ultimate",
+                    "description": "Invisible with bonus damage attack."
+                }
+            ]
+        },
+        {
+            "id": 89,
+            "name": "Naga Siren",
+            "internalName": "naga_siren",
+            "primaryAttr": "agi",
+            "attackType": "Melee",
+            "roles": [
+                "Carry",
+                "Support",
+                "Pusher",
+                "Disabler",
+                "Initiator",
+                "Escape"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/naga_siren.png",
+            "baseStr": 22,
+            "baseAgi": 21,
+            "baseInt": 21,
+            "strGain": 2.8,
+            "agiGain": 2.75,
+            "intGain": 2.0,
+            "baseMoveSpeed": 320,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 4,
+            "abilities": [
+                {
+                    "name": "Mirror Image",
+                    "type": "active",
+                    "description": "Creates illusions."
+                },
+                {
+                    "name": "Ensnare",
+                    "type": "active",
+                    "description": "Roots target."
+                },
+                {
+                    "name": "Rip Tide",
+                    "type": "passive",
+                    "description": "Splash and armor reduction."
+                },
+                {
+                    "name": "Song of the Siren",
+                    "type": "ultimate",
+                    "description": "Sleeps all enemies."
+                }
+            ]
+        },
+        {
+            "id": 90,
+            "name": "Keeper of the Light",
+            "internalName": "keeper_of_the_light",
+            "primaryAttr": "int",
+            "attackType": "Ranged",
+            "roles": [
+                "Support",
+                "Nuker",
+                "Disabler"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/keeper_of_the_light.png",
+            "baseStr": 16,
+            "baseAgi": 15,
+            "baseInt": 23,
+            "strGain": 2.3,
+            "agiGain": 1.6,
+            "intGain": 3.2,
+            "baseMoveSpeed": 335,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 1,
+            "abilities": [
+                {
+                    "name": "Illuminate",
+                    "type": "active",
+                    "description": "Channeled wave of light."
+                },
+                {
+                    "name": "Blinding Light",
+                    "type": "active",
+                    "description": "Blinds and pushes enemies."
+                },
+                {
+                    "name": "Chakra Magic",
+                    "type": "active",
+                    "description": "Restores mana."
+                },
+                {
+                    "name": "Spirit Form",
+                    "type": "ultimate",
+                    "description": "Gains new abilities."
+                }
+            ]
+        },
+        {
+            "id": 91,
+            "name": "Visage",
+            "internalName": "visage",
+            "primaryAttr": "int",
+            "attackType": "Ranged",
+            "roles": [
+                "Support",
+                "Nuker",
+                "Durable",
+                "Disabler",
+                "Pusher"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/visage.png",
+            "baseStr": 22,
+            "baseAgi": 11,
+            "baseInt": 22,
+            "strGain": 2.8,
+            "agiGain": 1.3,
+            "intGain": 2.9,
+            "baseMoveSpeed": 290,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 1,
+            "abilities": [
+                {
+                    "name": "Grave Chill",
+                    "type": "active",
+                    "description": "Steals attack and move speed."
+                },
+                {
+                    "name": "Soul Assumption",
+                    "type": "active",
+                    "description": "Damages based on nearby damage."
+                },
+                {
+                    "name": "Gravekeeper's Cloak",
+                    "type": "passive",
+                    "description": "Damage reduction layers."
+                },
+                {
+                    "name": "Summon Familiars",
+                    "type": "ultimate",
+                    "description": "Summons gargoyle familiars."
+                }
+            ]
+        },
+        {
+            "id": 92,
+            "name": "Slark",
+            "internalName": "slark",
+            "primaryAttr": "agi",
+            "attackType": "Melee",
+            "roles": [
+                "Carry",
+                "Escape",
+                "Disabler",
+                "Nuker"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/slark.png",
+            "baseStr": 21,
+            "baseAgi": 21,
+            "baseInt": 16,
+            "strGain": 2.0,
+            "agiGain": 1.7,
+            "intGain": 1.6,
+            "baseMoveSpeed": 300,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 1,
+            "abilities": [
+                {
+                    "name": "Dark Pact",
+                    "type": "active",
+                    "description": "Purges debuffs dealing self damage."
+                },
+                {
+                    "name": "Pounce",
+                    "type": "active",
+                    "description": "Leaps leashing target."
+                },
+                {
+                    "name": "Essence Shift",
+                    "type": "passive",
+                    "description": "Steals stats on attack."
+                },
+                {
+                    "name": "Shadow Dance",
+                    "type": "ultimate",
+                    "description": "Untargetable with regen."
+                }
+            ]
+        },
+        {
+            "id": 94,
+            "name": "Medusa",
+            "internalName": "medusa",
+            "primaryAttr": "agi",
+            "attackType": "Ranged",
+            "roles": [
+                "Carry",
+                "Disabler",
+                "Durable"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/medusa.png",
+            "baseStr": 15,
+            "baseAgi": 20,
+            "baseInt": 19,
+            "strGain": 2.5,
+            "agiGain": 3.6,
+            "intGain": 1.45,
+            "baseMoveSpeed": 275,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 0,
+            "abilities": [
+                {
+                    "name": "Split Shot",
+                    "type": "passive",
+                    "description": "Attacks hit multiple targets."
+                },
+                {
+                    "name": "Mystic Snake",
+                    "type": "active",
+                    "description": "Bouncing snake stealing mana."
+                },
+                {
+                    "name": "Mana Shield",
+                    "type": "passive",
+                    "description": "Uses mana to absorb damage."
+                },
+                {
+                    "name": "Stone Gaze",
+                    "type": "ultimate",
+                    "description": "Turns enemies to stone."
+                }
+            ]
+        },
+        {
+            "id": 95,
+            "name": "Troll Warlord",
+            "internalName": "troll_warlord",
+            "primaryAttr": "agi",
+            "attackType": "Ranged",
+            "roles": [
+                "Carry",
+                "Pusher",
+                "Durable",
+                "Disabler"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/troll_warlord.png",
+            "baseStr": 21,
+            "baseAgi": 21,
+            "baseInt": 13,
+            "strGain": 2.5,
+            "agiGain": 2.75,
+            "intGain": 1.0,
+            "baseMoveSpeed": 290,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 1,
+            "abilities": [
+                {
+                    "name": "Berserker's Rage",
+                    "type": "toggle",
+                    "description": "Switches between ranged and melee."
+                },
+                {
+                    "name": "Whirling Axes",
+                    "type": "active",
+                    "description": "Throws axes based on form."
+                },
+                {
+                    "name": "Fervor",
+                    "type": "passive",
+                    "description": "Gains attack speed on same target."
+                },
+                {
+                    "name": "Battle Trance",
+                    "type": "ultimate",
+                    "description": "Grants attack speed and lifesteal."
+                }
+            ]
+        },
+        {
+            "id": 96,
+            "name": "Centaur Warrunner",
+            "internalName": "centaur",
+            "primaryAttr": "str",
+            "attackType": "Melee",
+            "roles": [
+                "Durable",
+                "Initiator",
+                "Disabler",
+                "Nuker",
+                "Escape"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/centaur.png",
+            "baseStr": 27,
+            "baseAgi": 15,
+            "baseInt": 15,
+            "strGain": 4.3,
+            "agiGain": 1.0,
+            "intGain": 1.6,
+            "baseMoveSpeed": 300,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 2,
+            "abilities": [
+                {
+                    "name": "Hoof Stomp",
+                    "type": "active",
+                    "description": "Stuns enemies in area."
+                },
+                {
+                    "name": "Double Edge",
+                    "type": "active",
+                    "description": "Massive damage to self and target."
+                },
+                {
+                    "name": "Retaliate",
+                    "type": "passive",
+                    "description": "Returns damage to attackers."
+                },
+                {
+                    "name": "Stampede",
+                    "type": "ultimate",
+                    "description": "All allies gain max speed."
+                }
+            ]
+        },
+        {
+            "id": 97,
+            "name": "Magnus",
+            "internalName": "magnataur",
+            "primaryAttr": "str",
+            "attackType": "Melee",
+            "roles": [
+                "Initiator",
+                "Disabler",
+                "Nuker",
+                "Escape"
+            ],
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/magnataur.png",
+            "baseStr": 25,
+            "baseAgi": 15,
+            "baseInt": 19,
+            "strGain": 3.5,
+            "agiGain": 2.0,
+            "intGain": 2.0,
+            "baseMoveSpeed": 305,
+            "baseHealth": 200,
+            "baseMana": 75,
+            "baseArmor": 3,
+            "abilities": [
+                {
+                    "name": "Shockwave",
+                    "type": "active",
+                    "description": "Wave damages and slows."
+                },
+                {
+                    "name": "Empower",
+                    "type": "active",
+                    "description": "Grants cleave and damage."
+                },
+                {
+                    "name": "Skewer",
+                    "type": "active",
+                    "description": "Charges forward pushing enemies."
+                },
+                {
+                    "name": "Reverse Polarity",
+                    "type": "ultimate",
+                    "description": "Pulls and stuns all nearby enemies."
+                }
+            ]
+        }
+    ]
+}

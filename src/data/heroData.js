@@ -1,6 +1,10 @@
 // Combine hero data from multiple sources
 import heroesBase from './heroes.json'
 import heroesPart2 from './heroes_part2.json'
+import heroesPart3 from './heroes_part3.json'
+import heroesPart4 from './heroes_part4.json'
+import heroesPart5 from './heroes_part5.json'
+import heroesPart6 from './heroes_part6.json'
 
 // More heroes - popular picks
 const additionalHeroes = [
@@ -48,9 +52,27 @@ const additionalHeroes = [
     { id: 38, name: "Kunkka", internalName: "kunkka", primaryAttr: "str", attackType: "Melee", roles: ["Carry", "Support", "Disabler", "Initiator", "Durable", "Nuker"], image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/kunkka.png", baseStr: 24, baseAgi: 14, baseInt: 18, strGain: 3.8, agiGain: 1.3, intGain: 1.5, baseMoveSpeed: 300, baseHealth: 200, baseMana: 75, baseArmor: 3, abilities: [{ name: "Torrent", type: "active", description: "Summons water dealing 75/150/225/300 damage and stunning." }, { name: "Tidebringer", type: "active", description: "Cleave attack in 650/800/950/1100 radius." }, { name: "X Marks the Spot", type: "active", description: "Marks enemy returning them after 4s." }, { name: "Ghostship", type: "ultimate", description: "Summons ship dealing 400/500/600 damage and stunning." }], counters: [5, 30], counteredBy: [54, 102, 93] }
 ]
 
+// Combine all heroes from all sources
+const allHeroesRaw = [
+    ...heroesBase.heroes,
+    ...heroesPart2.heroes,
+    ...heroesPart3.heroes,
+    ...heroesPart4.heroes,
+    ...heroesPart5.heroes,
+    ...heroesPart6.heroes,
+    ...additionalHeroes
+]
 
-// Combine all heroes
-export const allHeroes = [...heroesBase.heroes, ...heroesPart2.heroes, ...additionalHeroes]
+// Deduplicate heroes by ID (keep first occurrence)
+const heroMap = new Map()
+allHeroesRaw.forEach(hero => {
+    if (!heroMap.has(hero.id)) {
+        heroMap.set(hero.id, hero)
+    }
+})
+
+export const allHeroes = Array.from(heroMap.values()).sort((a, b) => a.id - b.id)
+
 
 // Export hero lookup by ID
 export const getHeroById = (id) => allHeroes.find(h => h.id === id)
