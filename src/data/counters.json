@@ -1,0 +1,712 @@
+{
+    "heroCounters": {
+        "1": {
+            "heroId": 1,
+            "strongAgainst": [
+                10,
+                22,
+                74,
+                17,
+                52
+            ],
+            "weakAgainst": [
+                2,
+                104,
+                18,
+                81,
+                14
+            ],
+            "counterItems": [
+                7,
+                16,
+                14,
+                24,
+                31
+            ],
+            "reason": {
+                "strongAgainst": "Anti-Mage excels against mana-dependent heroes, burning their mana pool quickly.",
+                "weakAgainst": "Struggles against heroes that can lock him down before he escapes or burst him.",
+                "itemCounters": "Black King Bar blocks his mana burn, Orchid prevents Blink escape."
+            }
+        },
+        "2": {
+            "heroId": 2,
+            "strongAgainst": [
+                1,
+                44,
+                82,
+                12,
+                109
+            ],
+            "weakAgainst": [
+                47,
+                35,
+                6,
+                70,
+                104
+            ],
+            "counterItems": [
+                12,
+                13,
+                33,
+                20,
+                37
+            ],
+            "reason": {
+                "strongAgainst": "Axe dominates melee carries and illusion heroes with Counter Helix and Berserker's Call.",
+                "weakAgainst": "Ranged carries can kite him, Ursa and LC can out-duel him.",
+                "itemCounters": "Force Staff to escape call, Ghost Scepter to avoid physical damage."
+            }
+        },
+        "3": {
+            "heroId": 3,
+            "strongAgainst": [
+                1,
+                44,
+                93,
+                8,
+                106
+            ],
+            "weakAgainst": [
+                86,
+                38,
+                26,
+                27,
+                7
+            ],
+            "counterItems": [
+                7,
+                17,
+                15,
+                36
+            ],
+            "reason": {
+                "strongAgainst": "Bane's disables shut down mobile carries and escape heroes.",
+                "weakAgainst": "Can be interrupted during Fiend's Grip, weak to AoE stuns.",
+                "itemCounters": "BKB prevents Nightmare and Grip, Linken's blocks single target."
+            }
+        },
+        "4": {
+            "heroId": 4,
+            "strongAgainst": [
+                93,
+                10,
+                63,
+                106,
+                12
+            ],
+            "weakAgainst": [
+                54,
+                91,
+                102,
+                57,
+                111
+            ],
+            "counterItems": [
+                37,
+                12,
+                13,
+                40
+            ],
+            "reason": {
+                "strongAgainst": "Thirst reveals low HP fleeing heroes, Rupture punishes movement.",
+                "weakAgainst": "Heroes with dispels can remove Rupture, tanky or healing heroes survive.",
+                "itemCounters": "TP scroll to escape Rupture, Force Staff/Eul's for repositioning."
+            }
+        },
+        "5": {
+            "heroId": 5,
+            "strongAgainst": [
+                8,
+                18,
+                70,
+                99,
+                54
+            ],
+            "weakAgainst": [
+                71,
+                88,
+                14,
+                32,
+                93
+            ],
+            "counterItems": [
+                39,
+                7,
+                34
+            ],
+            "reason": {
+                "strongAgainst": "Slows and roots kite melee heroes effectively.",
+                "weakAgainst": "Extremely squishy, gap closers and burst damage kill her instantly.",
+                "itemCounters": "Pipe of Insight reduces her magical damage significantly."
+            }
+        },
+        "6": {
+            "heroId": 6,
+            "strongAgainst": [
+                5,
+                31,
+                30,
+                90,
+                101
+            ],
+            "weakAgainst": [
+                71,
+                67,
+                41,
+                81,
+                120
+            ],
+            "counterItems": [
+                37,
+                24,
+                27,
+                20
+            ],
+            "reason": {
+                "strongAgainst": "High physical DPS with slow destroys squishy supports.",
+                "weakAgainst": "Gap closers and high mobility heroes can reach her easily.",
+                "itemCounters": "Blink Dagger to close distance, Silver Edge breaks Marksmanship."
+            }
+        },
+        "7": {
+            "heroId": 7,
+            "strongAgainst": [
+                82,
+                61,
+                12,
+                89,
+                109
+            ],
+            "weakAgainst": [
+                75,
+                86,
+                26,
+                102,
+                113
+            ],
+            "counterItems": [
+                7,
+                15,
+                17
+            ],
+            "reason": {
+                "strongAgainst": "Echo Slam devastates illusion and summon-based heroes.",
+                "weakAgainst": "Silencer prevents combos, Rubick can steal Echo Slam.",
+                "itemCounters": "BKB prevents stuns, Linken's blocks Fissure."
+            }
+        },
+        "8": {
+            "heroId": 8,
+            "strongAgainst": [
+                5,
+                30,
+                37,
+                85,
+                50
+            ],
+            "weakAgainst": [
+                2,
+                41,
+                67,
+                18,
+                81
+            ],
+            "counterItems": [
+                33,
+                32,
+                8,
+                35
+            ],
+            "reason": {
+                "strongAgainst": "Blade Fury immunity lets him kill supports easily.",
+                "weakAgainst": "Can be locked down or out-carried by harder carries.",
+                "itemCounters": "Ghost Scepter makes Omnislash useless, Heaven's Halberd disarms."
+            }
+        },
+        "14": {
+            "heroId": 14,
+            "strongAgainst": [
+                5,
+                9,
+                31,
+                30,
+                101
+            ],
+            "weakAgainst": [
+                54,
+                91,
+                93,
+                63,
+                106
+            ],
+            "counterItems": [
+                12,
+                37,
+                15,
+                17
+            ],
+            "reason": {
+                "strongAgainst": "Hook combo destroys squishy immobile supports.",
+                "weakAgainst": "Mobile heroes can dodge hooks, BKB piercing abilities counter him.",
+                "itemCounters": "Force Staff pushes allies out of Dismember, Linken's blocks Hook."
+            }
+        },
+        "22": {
+            "heroId": 22,
+            "strongAgainst": [
+                5,
+                31,
+                9,
+                30,
+                85
+            ],
+            "weakAgainst": [
+                1,
+                59,
+                102,
+                54,
+                67
+            ],
+            "counterItems": [
+                39,
+                7,
+                34,
+                19
+            ],
+            "reason": {
+                "strongAgainst": "Global nuke and vision reveals supports and low HP heroes.",
+                "weakAgainst": "High magic resistance heroes and Anti-Mage burn his mana.",
+                "itemCounters": "Pipe of Insight and BKB reduce his damage significantly."
+            }
+        },
+        "26": {
+            "heroId": 26,
+            "strongAgainst": [
+                10,
+                44,
+                1,
+                93,
+                106
+            ],
+            "weakAgainst": [
+                102,
+                54,
+                67,
+                59,
+                91
+            ],
+            "counterItems": [
+                7,
+                15,
+                17,
+                36
+            ],
+            "reason": {
+                "strongAgainst": "Multiple disables lock down mobile cores effectively.",
+                "weakAgainst": "High HP tanky heroes survive his burst, BKB users ignore him.",
+                "itemCounters": "BKB blocks all his abilities, Linken's prevents Hex."
+            }
+        },
+        "35": {
+            "heroId": 35,
+            "strongAgainst": [
+                5,
+                31,
+                30,
+                85,
+                90
+            ],
+            "weakAgainst": [
+                71,
+                67,
+                120,
+                81,
+                106
+            ],
+            "counterItems": [
+                37,
+                24,
+                27,
+                20
+            ],
+            "reason": {
+                "strongAgainst": "Long range attacks destroy low mobility supports.",
+                "weakAgainst": "Gap closers instantly kill him due to low HP pool.",
+                "itemCounters": "Blink to close distance, Abyssal to lock him down."
+            }
+        },
+        "41": {
+            "heroId": 41,
+            "strongAgainst": [
+                6,
+                35,
+                94,
+                48,
+                44
+            ],
+            "weakAgainst": [
+                70,
+                104,
+                75,
+                86,
+                102
+            ],
+            "counterItems": [
+                13,
+                33,
+                18,
+                17
+            ],
+            "reason": {
+                "strongAgainst": "Chronosphere traps immobile carries perfectly.",
+                "weakAgainst": "Can be burst inside Chrono, Silencer prevents it entirely.",
+                "itemCounters": "Eul's to survive Chrono timing, Assault Cuirass for armor."
+            }
+        },
+        "44": {
+            "heroId": 44,
+            "strongAgainst": [
+                5,
+                31,
+                30,
+                85,
+                50
+            ],
+            "weakAgainst": [
+                2,
+                41,
+                104,
+                75,
+                70
+            ],
+            "counterItems": [
+                9,
+                25,
+                27,
+                8,
+                18
+            ],
+            "reason": {
+                "strongAgainst": "Massive crits one-shot squishy heroes.",
+                "weakAgainst": "Heroes with lockdown or Break disable her evasion.",
+                "itemCounters": "MKB ignores Blur evasion, Silver Edge applies Break."
+            }
+        },
+        "67": {
+            "heroId": 67,
+            "strongAgainst": [
+                5,
+                31,
+                35,
+                6,
+                48
+            ],
+            "weakAgainst": [
+                1,
+                2,
+                68,
+                75,
+                104
+            ],
+            "counterItems": [
+                27,
+                11,
+                10
+            ],
+            "reason": {
+                "strongAgainst": "Haunt global presence destroys squishy backliners.",
+                "weakAgainst": "Mana burn, early aggression, and Silence are problematic.",
+                "itemCounters": "Silver Edge Break removes Dispersion, Spirit Vessel prevents healing."
+            }
+        },
+        "70": {
+            "heroId": 70,
+            "strongAgainst": [
+                5,
+                41,
+                44,
+                35,
+                6
+            ],
+            "weakAgainst": [
+                47,
+                41,
+                6,
+                67,
+                81
+            ],
+            "counterItems": [
+                12,
+                32,
+                33,
+                13
+            ],
+            "reason": {
+                "strongAgainst": "Fury Swipes shreds single targets in seconds.",
+                "weakAgainst": "Kiting and disables prevent him from attacking.",
+                "itemCounters": "Force Staff kites him, Heaven's Halberd disarms him."
+            }
+        },
+        "74": {
+            "heroId": 74,
+            "strongAgainst": [
+                5,
+                31,
+                35,
+                85,
+                30
+            ],
+            "weakAgainst": [
+                1,
+                88,
+                71,
+                93,
+                14
+            ],
+            "counterItems": [
+                37,
+                16,
+                27,
+                39
+            ],
+            "reason": {
+                "strongAgainst": "Combo damage devastates grouped or slow heroes.",
+                "weakAgainst": "Gap closers and silence prevent spell combos.",
+                "itemCounters": "Blink to dodge abilities, Orchid to silence."
+            }
+        },
+        "86": {
+            "heroId": 86,
+            "strongAgainst": [
+                74,
+                33,
+                7,
+                37,
+                29
+            ],
+            "weakAgainst": [
+                1,
+                70,
+                44,
+                35,
+                6
+            ],
+            "counterItems": [
+                16,
+                24,
+                27
+            ],
+            "reason": {
+                "strongAgainst": "Spell Steal turns enemy ultimates against them.",
+                "weakAgainst": "Right-click carries don't rely on stolen spells.",
+                "itemCounters": "Orchid silence prevents Spell Steal."
+            }
+        },
+        "93": {
+            "heroId": 93,
+            "strongAgainst": [
+                5,
+                31,
+                30,
+                26,
+                27
+            ],
+            "weakAgainst": [
+                2,
+                4,
+                41,
+                104,
+                75
+            ],
+            "counterItems": [
+                5,
+                6,
+                38,
+                31,
+                27
+            ],
+            "reason": {
+                "strongAgainst": "Picks off lone supports and escapes ganks easily.",
+                "weakAgainst": "AoE disables, Bloodseeker Thirst, and lockdown counter him.",
+                "itemCounters": "Detection reveals Shadow Dance, Gleipnir roots him."
+            }
+        },
+        "104": {
+            "heroId": 104,
+            "strongAgainst": [
+                1,
+                10,
+                44,
+                93,
+                41
+            ],
+            "weakAgainst": [
+                112,
+                50,
+                86,
+                111,
+                102
+            ],
+            "counterItems": [
+                33,
+                13,
+                15,
+                36
+            ],
+            "reason": {
+                "strongAgainst": "Duel forces 1v1 fights where she excels.",
+                "weakAgainst": "Heroes who can save Duel targets or out-heal Duel damage.",
+                "itemCounters": "Ghost Scepter prevents Duel damage, Eul's delays it."
+            }
+        },
+        "106": {
+            "heroId": 106,
+            "strongAgainst": [
+                5,
+                31,
+                30,
+                82,
+                61
+            ],
+            "weakAgainst": [
+                2,
+                75,
+                104,
+                41,
+                81
+            ],
+            "counterItems": [
+                16,
+                31,
+                5,
+                6
+            ],
+            "reason": {
+                "strongAgainst": "Sleight hits multiple heroes, escapes with remnants.",
+                "weakAgainst": "Silence prevents escape, root keeps him in place.",
+                "itemCounters": "Orchid silence before remnant, Gleipnir roots."
+            }
+        },
+        "120": {
+            "heroId": 120,
+            "strongAgainst": [
+                6,
+                35,
+                67,
+                48,
+                94
+            ],
+            "weakAgainst": [
+                102,
+                75,
+                41,
+                70,
+                104
+            ],
+            "counterItems": [
+                7,
+                24,
+                31
+            ],
+            "reason": {
+                "strongAgainst": "Rolling Thunder disrupts immobile backliners.",
+                "weakAgainst": "Silence stops Rolling Thunder, roots and stuns interrupt.",
+                "itemCounters": "BKB during roll, Abyssal to stun him out."
+            }
+        }
+    },
+    "heroTypeCounters": {
+        "carry": {
+            "counterItems": [
+                32,
+                33,
+                8,
+                35
+            ],
+            "counterHeroTypes": [
+                "disabler",
+                "burst"
+            ]
+        },
+        "support": {
+            "counterItems": [
+                5,
+                6,
+                38,
+                37
+            ],
+            "counterHeroTypes": [
+                "ganker",
+                "burst"
+            ]
+        },
+        "nuker": {
+            "counterItems": [
+                7,
+                39,
+                34,
+                19
+            ],
+            "counterHeroTypes": [
+                "tank",
+                "mobile"
+            ]
+        },
+        "disabler": {
+            "counterItems": [
+                7,
+                17,
+                15,
+                36
+            ],
+            "counterHeroTypes": [
+                "tanky",
+                "dispel"
+            ]
+        },
+        "escape": {
+            "counterItems": [
+                5,
+                6,
+                38,
+                14,
+                16,
+                31
+            ],
+            "counterHeroTypes": [
+                "disabler",
+                "tracker"
+            ]
+        },
+        "initiator": {
+            "counterItems": [
+                30,
+                15,
+                36
+            ],
+            "counterHeroTypes": [
+                "counter-initiator"
+            ]
+        },
+        "durable": {
+            "counterItems": [
+                11,
+                25,
+                10
+            ],
+            "counterHeroTypes": [
+                "carry",
+                "sustained-damage"
+            ]
+        },
+        "pusher": {
+            "counterItems": [
+                26
+            ],
+            "counterHeroTypes": [
+                "wave-clear"
+            ]
+        }
+    }
+}

@@ -1,0 +1,949 @@
+{
+    "categories": {
+        "consumables": {
+            "name": "Consumables",
+            "icon": "🧪"
+        },
+        "attributes": {
+            "name": "Attributes",
+            "icon": "⚡"
+        },
+        "equipment": {
+            "name": "Equipment",
+            "icon": "⚔️"
+        },
+        "miscellaneous": {
+            "name": "Miscellaneous",
+            "icon": "📦"
+        },
+        "secret": {
+            "name": "Secret Shop",
+            "icon": "🏪"
+        },
+        "accessories": {
+            "name": "Accessories",
+            "icon": "💍"
+        },
+        "support": {
+            "name": "Support",
+            "icon": "❤️"
+        },
+        "magical": {
+            "name": "Magical",
+            "icon": "✨"
+        },
+        "armor": {
+            "name": "Armor",
+            "icon": "🛡️"
+        },
+        "weapons": {
+            "name": "Weapons",
+            "icon": "🗡️"
+        },
+        "artifacts": {
+            "name": "Artifacts",
+            "icon": "💎"
+        }
+    },
+    "items": [
+        {
+            "id": 1,
+            "name": "Observer Ward",
+            "category": "consumables",
+            "cost": 0,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ward_observer.png",
+            "description": "Plants an Observer Ward, an invisible watcher that gives vision.",
+            "attributes": [
+                "Provides 1600 day and night vision"
+            ],
+            "countersHeroTypes": [
+                "invisible",
+                "ganker"
+            ],
+            "countersHeroes": [
+                32,
+                62,
+                14,
+                88
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Clarity",
+            "category": "consumables",
+            "cost": 50,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/clarity.png",
+            "description": "Regenerates mana over time. Dispelled if the user takes damage.",
+            "attributes": [
+                "+6 Mana Regeneration",
+                "Duration: 25s"
+            ],
+            "countersHeroTypes": [],
+            "countersHeroes": []
+        },
+        {
+            "id": 3,
+            "name": "Tango",
+            "category": "consumables",
+            "cost": 90,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tango.png",
+            "description": "Consumes a tree to restore HP over time.",
+            "attributes": [
+                "+7 HP Regeneration",
+                "Duration: 16s"
+            ],
+            "countersHeroTypes": [],
+            "countersHeroes": []
+        },
+        {
+            "id": 4,
+            "name": "Healing Salve",
+            "category": "consumables",
+            "cost": 110,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/flask.png",
+            "description": "Rapidly regenerates health. Dispelled if the user takes damage.",
+            "attributes": [
+                "+30 HP Regeneration",
+                "Duration: 13s"
+            ],
+            "countersHeroTypes": [],
+            "countersHeroes": []
+        },
+        {
+            "id": 5,
+            "name": "Dust of Appearance",
+            "category": "consumables",
+            "cost": 80,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/dust.png",
+            "description": "Reveals invisible heroes in a radius around the caster.",
+            "attributes": [
+                "Reveals invisible units",
+                "Duration: 12s",
+                "Radius: 1050"
+            ],
+            "countersHeroTypes": [
+                "invisible"
+            ],
+            "countersHeroes": [
+                32,
+                62,
+                63,
+                14,
+                56,
+                9
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Sentry Ward",
+            "category": "consumables",
+            "cost": 50,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ward_sentry.png",
+            "description": "Plants a Sentry Ward that grants True Sight.",
+            "attributes": [
+                "True Sight Range: 900",
+                "Duration: 420s"
+            ],
+            "countersHeroTypes": [
+                "invisible"
+            ],
+            "countersHeroes": [
+                32,
+                62,
+                63,
+                14,
+                56,
+                9
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Black King Bar",
+            "category": "armor",
+            "cost": 4050,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
+            "description": "Grants immunity to most magical spells and effects.",
+            "attributes": [
+                "+10 Strength",
+                "+24 Damage",
+                "Active: Avatar - Magic Immunity"
+            ],
+            "countersHeroTypes": [
+                "disabler",
+                "nuker",
+                "support"
+            ],
+            "countersHeroes": [
+                5,
+                26,
+                22,
+                52,
+                86,
+                75,
+                7,
+                87,
+                3
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Blade Mail",
+            "category": "armor",
+            "cost": 2100,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blade_mail.png",
+            "description": "Returns damage taken to the attacker.",
+            "attributes": [
+                "+28 Damage",
+                "+6 Armor",
+                "Active: Damage Return"
+            ],
+            "countersHeroTypes": [
+                "burst",
+                "nuker"
+            ],
+            "countersHeroes": [
+                44,
+                70,
+                22,
+                26,
+                25,
+                74
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Monkey King Bar",
+            "category": "weapons",
+            "cost": 4975,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/monkey_king_bar.png",
+            "description": "Grants True Strike, preventing attacks from missing.",
+            "attributes": [
+                "+40 Damage",
+                "+45 Attack Speed",
+                "Passive: Pierce - True Strike"
+            ],
+            "countersHeroTypes": [
+                "evasion"
+            ],
+            "countersHeroes": [
+                44,
+                95,
+                63,
+                61
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Diffusal Blade",
+            "category": "artifacts",
+            "cost": 2500,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/diffusal_blade.png",
+            "description": "Each attack burns mana from the target.",
+            "attributes": [
+                "+15 Agility",
+                "+10 Intelligence",
+                "Passive: Mana Break"
+            ],
+            "countersHeroTypes": [
+                "mana-dependent"
+            ],
+            "countersHeroes": [
+                94,
+                10,
+                17,
+                63,
+                74
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Spirit Vessel",
+            "category": "support",
+            "cost": 2940,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/spirit_vessel.png",
+            "description": "Reduces healing and deals damage over time.",
+            "attributes": [
+                "+2 All Attributes",
+                "+250 Health",
+                "Active: Soul Release - Reduces healing by 45%"
+            ],
+            "countersHeroTypes": [
+                "healer",
+                "regen"
+            ],
+            "countersHeroes": [
+                54,
+                73,
+                85,
+                102,
+                59,
+                10
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Force Staff",
+            "category": "magical",
+            "cost": 2200,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/force_staff.png",
+            "description": "Pushes any target unit 600 units in the direction it is facing.",
+            "attributes": [
+                "+10 Intelligence",
+                "+175 Health",
+                "Active: Force - Push"
+            ],
+            "countersHeroTypes": [
+                "melee",
+                "chaser"
+            ],
+            "countersHeroes": [
+                70,
+                32,
+                93,
+                4,
+                104
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Eul's Scepter of Divinity",
+            "category": "magical",
+            "cost": 2725,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/cyclone.png",
+            "description": "Sweeps a target unit into a cyclone, making them invulnerable.",
+            "attributes": [
+                "+10 Intelligence",
+                "+2.5 Mana Regen",
+                "+20 Movement Speed",
+                "Active: Cyclone"
+            ],
+            "countersHeroTypes": [
+                "chaser",
+                "disabler"
+            ],
+            "countersHeroes": [
+                70,
+                4,
+                104,
+                71
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Scythe of Vyse",
+            "category": "magical",
+            "cost": 5650,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sheepstick.png",
+            "description": "Turns the target enemy unit into a harmless critter.",
+            "attributes": [
+                "+35 Intelligence",
+                "+10 Strength",
+                "+10 Agility",
+                "Active: Hex"
+            ],
+            "countersHeroTypes": [
+                "carry",
+                "escape"
+            ],
+            "countersHeroes": [
+                1,
+                106,
+                93,
+                10,
+                41,
+                17
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Linken's Sphere",
+            "category": "armor",
+            "cost": 4600,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sphere.png",
+            "description": "Blocks most targeted spells once every 12 seconds.",
+            "attributes": [
+                "+16 All Attributes",
+                "+7 HP Regen",
+                "+5 Mana Regen",
+                "Passive: Spellblock"
+            ],
+            "countersHeroTypes": [
+                "single-target"
+            ],
+            "countersHeroes": [
+                26,
+                3,
+                14,
+                104,
+                69
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Orchid Malevolence",
+            "category": "magical",
+            "cost": 3475,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/orchid.png",
+            "description": "Silences the target and amplifies damage taken.",
+            "attributes": [
+                "+40 Attack Speed",
+                "+30 Damage",
+                "+3 Mana Regen",
+                "Active: Soul Burn - Silence"
+            ],
+            "countersHeroTypes": [
+                "escape",
+                "caster"
+            ],
+            "countersHeroes": [
+                17,
+                13,
+                39,
+                106,
+                1
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Manta Style",
+            "category": "armor",
+            "cost": 4600,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/manta.png",
+            "description": "Creates two illusions and dispels debuffs on activation.",
+            "attributes": [
+                "+26 Agility",
+                "+12 Attack Speed",
+                "+8% Movement Speed",
+                "Active: Mirror Image"
+            ],
+            "countersHeroTypes": [
+                "silence",
+                "root"
+            ],
+            "countersHeroes": [
+                75,
+                16,
+                4,
+                32
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Assault Cuirass",
+            "category": "armor",
+            "cost": 5125,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/assault.png",
+            "description": "Grants armor aura to allies and reduces enemy armor.",
+            "attributes": [
+                "+10 Armor",
+                "+30 Attack Speed",
+                "Aura: +5 Armor allies, -5 Armor enemies"
+            ],
+            "countersHeroTypes": [
+                "physical"
+            ],
+            "countersHeroes": [
+                18,
+                44,
+                8,
+                70,
+                95
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Heart of Tarrasque",
+            "category": "armor",
+            "cost": 5000,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/heart.png",
+            "description": "Grants massive health and regeneration out of combat.",
+            "attributes": [
+                "+40 Strength",
+                "+250 Health",
+                "Passive: Health Regeneration"
+            ],
+            "countersHeroTypes": [
+                "burst"
+            ],
+            "countersHeroes": [
+                22,
+                26,
+                25,
+                74
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Butterfly",
+            "category": "weapons",
+            "cost": 4975,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/butterfly.png",
+            "description": "Grants incredible agility and evasion.",
+            "attributes": [
+                "+35 Agility",
+                "+35% Evasion",
+                "+25 Damage",
+                "+30 Attack Speed"
+            ],
+            "countersHeroTypes": [
+                "physical"
+            ],
+            "countersHeroes": [
+                18,
+                44,
+                8,
+                70,
+                35,
+                6
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Eye of Skadi",
+            "category": "artifacts",
+            "cost": 5300,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/skadi.png",
+            "description": "Slows targets and reduces their healing and lifesteal.",
+            "attributes": [
+                "+22 All Attributes",
+                "+220 Health",
+                "+220 Mana",
+                "Passive: Cold Attack"
+            ],
+            "countersHeroTypes": [
+                "mobile",
+                "regen"
+            ],
+            "countersHeroes": [
+                93,
+                54,
+                106,
+                1,
+                10
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Daedalus",
+            "category": "weapons",
+            "cost": 5150,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/greater_crit.png",
+            "description": "Grants a chance to deal critical damage.",
+            "attributes": [
+                "+88 Damage",
+                "Passive: Critical Strike - 30% chance for 225% damage"
+            ],
+            "countersHeroTypes": [
+                "tank"
+            ],
+            "countersHeroes": [
+                99,
+                96,
+                29,
+                102
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Satanic",
+            "category": "artifacts",
+            "cost": 5050,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/satanic.png",
+            "description": "Grants lifesteal and a powerful active heal.",
+            "attributes": [
+                "+25 Strength",
+                "+55 Damage",
+                "Passive: Lifesteal",
+                "Active: Unholy Rage"
+            ],
+            "countersHeroTypes": [
+                "burst"
+            ],
+            "countersHeroes": [
+                22,
+                26,
+                25,
+                44
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Abyssal Blade",
+            "category": "weapons",
+            "cost": 6250,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/abyssal_blade.png",
+            "description": "Stuns a target and bashes enemies with attacks.",
+            "attributes": [
+                "+25 Damage",
+                "+250 Health",
+                "Active: Overwhelm - Stun",
+                "Passive: Bash"
+            ],
+            "countersHeroTypes": [
+                "mobile",
+                "escape"
+            ],
+            "countersHeroes": [
+                1,
+                106,
+                93,
+                10,
+                17
+            ]
+        },
+        {
+            "id": 25,
+            "name": "Desolator",
+            "category": "weapons",
+            "cost": 3500,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/desolator.png",
+            "description": "Reduces armor of attacked enemies.",
+            "attributes": [
+                "+50 Damage",
+                "Passive: Corruption - Reduces armor by 6"
+            ],
+            "countersHeroTypes": [
+                "high-armor"
+            ],
+            "countersHeroes": [
+                49,
+                29,
+                99,
+                96
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Radiance",
+            "category": "weapons",
+            "cost": 5050,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/radiance.png",
+            "description": "Burns nearby enemies and causes miss chance.",
+            "attributes": [
+                "+60 Damage",
+                "Passive: Burn - 60 DPS",
+                "17% Miss Chance"
+            ],
+            "countersHeroTypes": [
+                "blink",
+                "illusion"
+            ],
+            "countersHeroes": [
+                12,
+                89,
+                109,
+                81
+            ]
+        },
+        {
+            "id": 27,
+            "name": "Silver Edge",
+            "category": "weapons",
+            "cost": 5450,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/silver_edge.png",
+            "description": "Grants invisibility and breaks passive abilities.",
+            "attributes": [
+                "+52 Damage",
+                "+35 Attack Speed",
+                "Active: Shadow Walk - Invisibility + Break"
+            ],
+            "countersHeroTypes": [
+                "passive-reliant"
+            ],
+            "countersHeroes": [
+                44,
+                99,
+                67,
+                102,
+                42
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Nullifier",
+            "category": "weapons",
+            "cost": 4725,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/nullifier.png",
+            "description": "Dispels the target and continuously mutes them.",
+            "attributes": [
+                "+80 Damage",
+                "+8 Armor",
+                "Active: Nullify - Dispel and Mute"
+            ],
+            "countersHeroTypes": [
+                "item-reliant"
+            ],
+            "countersHeroes": [
+                17,
+                106,
+                93,
+                1,
+                10
+            ]
+        },
+        {
+            "id": 29,
+            "name": "Aghanim's Scepter",
+            "category": "magical",
+            "cost": 4200,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png",
+            "description": "Upgrades the ultimate ability of most heroes.",
+            "attributes": [
+                "+10 All Attributes",
+                "+175 Health",
+                "+175 Mana",
+                "Ultimate Upgrade"
+            ],
+            "countersHeroTypes": [],
+            "countersHeroes": []
+        },
+        {
+            "id": 30,
+            "name": "Aeon Disk",
+            "category": "armor",
+            "cost": 3000,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/aeon_disk.png",
+            "description": "When taking damage that would reduce health below threshold, gain strong dispel.",
+            "attributes": [
+                "+300 Health",
+                "+300 Mana",
+                "Passive: Combo Breaker"
+            ],
+            "countersHeroTypes": [
+                "burst",
+                "combo"
+            ],
+            "countersHeroes": [
+                74,
+                22,
+                26,
+                104,
+                2
+            ]
+        },
+        {
+            "id": 31,
+            "name": "Gleipnir",
+            "category": "magical",
+            "cost": 5650,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gungir.png",
+            "description": "Roots enemies in a target area and chains lightning.",
+            "attributes": [
+                "+30 Damage",
+                "+30 Attack Speed",
+                "+24 Intelligence",
+                "Active: Eternal Chains - Root"
+            ],
+            "countersHeroTypes": [
+                "mobile",
+                "escape"
+            ],
+            "countersHeroes": [
+                1,
+                106,
+                93,
+                10,
+                17,
+                41
+            ]
+        },
+        {
+            "id": 32,
+            "name": "Heaven's Halberd",
+            "category": "artifacts",
+            "cost": 3550,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/heavens_halberd.png",
+            "description": "Disarms a target, preventing them from attacking.",
+            "attributes": [
+                "+20 Strength",
+                "+25% Evasion",
+                "+16% Status Resistance",
+                "Active: Disarm"
+            ],
+            "countersHeroTypes": [
+                "right-clicker"
+            ],
+            "countersHeroes": [
+                44,
+                8,
+                70,
+                18,
+                95,
+                6,
+                35
+            ]
+        },
+        {
+            "id": 33,
+            "name": "Ghost Scepter",
+            "category": "miscellaneous",
+            "cost": 1500,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ghost.png",
+            "description": "Enter ethereal form, becoming immune to physical damage but taking more magical.",
+            "attributes": [
+                "+5 All Attributes",
+                "Active: Ghost Form"
+            ],
+            "countersHeroTypes": [
+                "physical"
+            ],
+            "countersHeroes": [
+                44,
+                8,
+                70,
+                18,
+                95,
+                6,
+                35,
+                1
+            ]
+        },
+        {
+            "id": 34,
+            "name": "Glimmer Cape",
+            "category": "support",
+            "cost": 1950,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/glimmer_cape.png",
+            "description": "Grants invisibility and magic resistance to a target.",
+            "attributes": [
+                "+20% Magic Resistance",
+                "Active: Glimmer - Invisibility + 50% Magic Resistance"
+            ],
+            "countersHeroTypes": [
+                "magical",
+                "ganker"
+            ],
+            "countersHeroes": [
+                22,
+                26,
+                25,
+                74,
+                52
+            ]
+        },
+        {
+            "id": 35,
+            "name": "Shiva's Guard",
+            "category": "armor",
+            "cost": 4850,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/shivas_guard.png",
+            "description": "Emits a freezing aura that reduces attack speed and slows on activation.",
+            "attributes": [
+                "+30 Intelligence",
+                "+15 Armor",
+                "Aura: -45 Attack Speed",
+                "Active: Arctic Blast"
+            ],
+            "countersHeroTypes": [
+                "fast-attacker",
+                "regen"
+            ],
+            "countersHeroes": [
+                70,
+                95,
+                8,
+                44,
+                54
+            ]
+        },
+        {
+            "id": 36,
+            "name": "Lotus Orb",
+            "category": "armor",
+            "cost": 3850,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/lotus_orb.png",
+            "description": "Dispels debuffs and reflects targeted spells back.",
+            "attributes": [
+                "+10 Armor",
+                "+6.5 HP Regen",
+                "+4 Mana Regen",
+                "Active: Echo Shell"
+            ],
+            "countersHeroTypes": [
+                "single-target"
+            ],
+            "countersHeroes": [
+                26,
+                14,
+                3,
+                104,
+                69
+            ]
+        },
+        {
+            "id": 37,
+            "name": "Blink Dagger",
+            "category": "miscellaneous",
+            "cost": 2250,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blink.png",
+            "description": "Teleport to a target point up to 1200 units away.",
+            "attributes": [
+                "Active: Blink - Teleport"
+            ],
+            "countersHeroTypes": [],
+            "countersHeroes": []
+        },
+        {
+            "id": 38,
+            "name": "Gem of True Sight",
+            "category": "miscellaneous",
+            "cost": 900,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gem.png",
+            "description": "Gives True Sight, revealing invisible units and wards.",
+            "attributes": [
+                "Passive: True Sight - 1100 radius"
+            ],
+            "countersHeroTypes": [
+                "invisible"
+            ],
+            "countersHeroes": [
+                32,
+                62,
+                63,
+                14,
+                56,
+                9
+            ]
+        },
+        {
+            "id": 39,
+            "name": "Pipe of Insight",
+            "category": "support",
+            "cost": 3475,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/pipe.png",
+            "description": "Gives a magic barrier to nearby allied units.",
+            "attributes": [
+                "+8 HP Regen",
+                "+30% Magic Resistance",
+                "Active: Barrier - Magic Shield"
+            ],
+            "countersHeroTypes": [
+                "magical",
+                "aoe"
+            ],
+            "countersHeroes": [
+                22,
+                74,
+                52,
+                43,
+                106
+            ]
+        },
+        {
+            "id": 40,
+            "name": "Guardian Greaves",
+            "category": "support",
+            "cost": 5350,
+            "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/guardian_greaves.png",
+            "description": "Heals and restores mana to nearby allies, dispels debuffs.",
+            "attributes": [
+                "+55 Movement Speed",
+                "Active: Mend - Heal and Dispel"
+            ],
+            "countersHeroTypes": [
+                "sustain-fight"
+            ],
+            "countersHeroes": []
+        }
+    ]
+}
