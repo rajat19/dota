@@ -1,712 +1,3066 @@
 {
-    "heroCounters": {
-        "1": {
-            "heroId": 1,
-            "strongAgainst": [
-                10,
-                22,
-                74,
-                17,
-                52
-            ],
-            "weakAgainst": [
-                2,
-                104,
-                18,
-                81,
-                14
-            ],
-            "counterItems": [
-                7,
-                16,
-                14,
-                24,
-                31
-            ],
-            "reason": {
-                "strongAgainst": "Anti-Mage excels against mana-dependent heroes, burning their mana pool quickly.",
-                "weakAgainst": "Struggles against heroes that can lock him down before he escapes or burst him.",
-                "itemCounters": "Black King Bar blocks his mana burn, Orchid prevents Blink escape."
-            }
-        },
-        "2": {
-            "heroId": 2,
-            "strongAgainst": [
-                1,
-                44,
-                82,
-                12,
-                109
-            ],
-            "weakAgainst": [
-                47,
-                35,
-                6,
-                70,
-                104
-            ],
-            "counterItems": [
-                12,
-                13,
-                33,
-                20,
-                37
-            ],
-            "reason": {
-                "strongAgainst": "Axe dominates melee carries and illusion heroes with Counter Helix and Berserker's Call.",
-                "weakAgainst": "Ranged carries can kite him, Ursa and LC can out-duel him.",
-                "itemCounters": "Force Staff to escape call, Ghost Scepter to avoid physical damage."
-            }
-        },
-        "3": {
-            "heroId": 3,
-            "strongAgainst": [
-                1,
-                44,
-                93,
-                8,
-                106
-            ],
-            "weakAgainst": [
-                86,
-                38,
-                26,
-                27,
-                7
-            ],
-            "counterItems": [
-                7,
-                17,
-                15,
-                36
-            ],
-            "reason": {
-                "strongAgainst": "Bane's disables shut down mobile carries and escape heroes.",
-                "weakAgainst": "Can be interrupted during Fiend's Grip, weak to AoE stuns.",
-                "itemCounters": "BKB prevents Nightmare and Grip, Linken's blocks single target."
-            }
-        },
-        "4": {
-            "heroId": 4,
-            "strongAgainst": [
-                93,
-                10,
-                63,
-                106,
-                12
-            ],
-            "weakAgainst": [
-                54,
-                91,
-                102,
-                57,
-                111
-            ],
-            "counterItems": [
-                37,
-                12,
-                13,
-                40
-            ],
-            "reason": {
-                "strongAgainst": "Thirst reveals low HP fleeing heroes, Rupture punishes movement.",
-                "weakAgainst": "Heroes with dispels can remove Rupture, tanky or healing heroes survive.",
-                "itemCounters": "TP scroll to escape Rupture, Force Staff/Eul's for repositioning."
-            }
-        },
-        "5": {
-            "heroId": 5,
-            "strongAgainst": [
-                8,
-                18,
-                70,
-                99,
-                54
-            ],
-            "weakAgainst": [
-                71,
-                88,
-                14,
-                32,
-                93
-            ],
-            "counterItems": [
-                39,
-                7,
-                34
-            ],
-            "reason": {
-                "strongAgainst": "Slows and roots kite melee heroes effectively.",
-                "weakAgainst": "Extremely squishy, gap closers and burst damage kill her instantly.",
-                "itemCounters": "Pipe of Insight reduces her magical damage significantly."
-            }
-        },
-        "6": {
-            "heroId": 6,
-            "strongAgainst": [
-                5,
-                31,
-                30,
-                90,
-                101
-            ],
-            "weakAgainst": [
-                71,
-                67,
-                41,
-                81,
-                120
-            ],
-            "counterItems": [
-                37,
-                24,
-                27,
-                20
-            ],
-            "reason": {
-                "strongAgainst": "High physical DPS with slow destroys squishy supports.",
-                "weakAgainst": "Gap closers and high mobility heroes can reach her easily.",
-                "itemCounters": "Blink Dagger to close distance, Silver Edge breaks Marksmanship."
-            }
-        },
-        "7": {
-            "heroId": 7,
-            "strongAgainst": [
-                82,
-                61,
-                12,
-                89,
-                109
-            ],
-            "weakAgainst": [
-                75,
-                86,
-                26,
-                102,
-                113
-            ],
-            "counterItems": [
-                7,
-                15,
-                17
-            ],
-            "reason": {
-                "strongAgainst": "Echo Slam devastates illusion and summon-based heroes.",
-                "weakAgainst": "Silencer prevents combos, Rubick can steal Echo Slam.",
-                "itemCounters": "BKB prevents stuns, Linken's blocks Fissure."
-            }
-        },
-        "8": {
-            "heroId": 8,
-            "strongAgainst": [
-                5,
-                30,
-                37,
-                85,
-                50
-            ],
-            "weakAgainst": [
-                2,
-                41,
-                67,
-                18,
-                81
-            ],
-            "counterItems": [
-                33,
-                32,
-                8,
-                35
-            ],
-            "reason": {
-                "strongAgainst": "Blade Fury immunity lets him kill supports easily.",
-                "weakAgainst": "Can be locked down or out-carried by harder carries.",
-                "itemCounters": "Ghost Scepter makes Omnislash useless, Heaven's Halberd disarms."
-            }
-        },
-        "14": {
-            "heroId": 14,
-            "strongAgainst": [
-                5,
-                9,
-                31,
-                30,
-                101
-            ],
-            "weakAgainst": [
-                54,
-                91,
-                93,
-                63,
-                106
-            ],
-            "counterItems": [
-                12,
-                37,
-                15,
-                17
-            ],
-            "reason": {
-                "strongAgainst": "Hook combo destroys squishy immobile supports.",
-                "weakAgainst": "Mobile heroes can dodge hooks, BKB piercing abilities counter him.",
-                "itemCounters": "Force Staff pushes allies out of Dismember, Linken's blocks Hook."
-            }
-        },
-        "22": {
-            "heroId": 22,
-            "strongAgainst": [
-                5,
-                31,
-                9,
-                30,
-                85
-            ],
-            "weakAgainst": [
-                1,
-                59,
-                102,
-                54,
-                67
-            ],
-            "counterItems": [
-                39,
-                7,
-                34,
-                19
-            ],
-            "reason": {
-                "strongAgainst": "Global nuke and vision reveals supports and low HP heroes.",
-                "weakAgainst": "High magic resistance heroes and Anti-Mage burn his mana.",
-                "itemCounters": "Pipe of Insight and BKB reduce his damage significantly."
-            }
-        },
-        "26": {
-            "heroId": 26,
-            "strongAgainst": [
-                10,
-                44,
-                1,
-                93,
-                106
-            ],
-            "weakAgainst": [
-                102,
-                54,
-                67,
-                59,
-                91
-            ],
-            "counterItems": [
-                7,
-                15,
-                17,
-                36
-            ],
-            "reason": {
-                "strongAgainst": "Multiple disables lock down mobile cores effectively.",
-                "weakAgainst": "High HP tanky heroes survive his burst, BKB users ignore him.",
-                "itemCounters": "BKB blocks all his abilities, Linken's prevents Hex."
-            }
-        },
-        "35": {
-            "heroId": 35,
-            "strongAgainst": [
-                5,
-                31,
-                30,
-                85,
-                90
-            ],
-            "weakAgainst": [
-                71,
-                67,
-                120,
-                81,
-                106
-            ],
-            "counterItems": [
-                37,
-                24,
-                27,
-                20
-            ],
-            "reason": {
-                "strongAgainst": "Long range attacks destroy low mobility supports.",
-                "weakAgainst": "Gap closers instantly kill him due to low HP pool.",
-                "itemCounters": "Blink to close distance, Abyssal to lock him down."
-            }
-        },
-        "41": {
-            "heroId": 41,
-            "strongAgainst": [
-                6,
-                35,
-                94,
-                48,
-                44
-            ],
-            "weakAgainst": [
-                70,
-                104,
-                75,
-                86,
-                102
-            ],
-            "counterItems": [
-                13,
-                33,
-                18,
-                17
-            ],
-            "reason": {
-                "strongAgainst": "Chronosphere traps immobile carries perfectly.",
-                "weakAgainst": "Can be burst inside Chrono, Silencer prevents it entirely.",
-                "itemCounters": "Eul's to survive Chrono timing, Assault Cuirass for armor."
-            }
-        },
-        "44": {
-            "heroId": 44,
-            "strongAgainst": [
-                5,
-                31,
-                30,
-                85,
-                50
-            ],
-            "weakAgainst": [
-                2,
-                41,
-                104,
-                75,
-                70
-            ],
-            "counterItems": [
-                9,
-                25,
-                27,
-                8,
-                18
-            ],
-            "reason": {
-                "strongAgainst": "Massive crits one-shot squishy heroes.",
-                "weakAgainst": "Heroes with lockdown or Break disable her evasion.",
-                "itemCounters": "MKB ignores Blur evasion, Silver Edge applies Break."
-            }
-        },
-        "67": {
-            "heroId": 67,
-            "strongAgainst": [
-                5,
-                31,
-                35,
-                6,
-                48
-            ],
-            "weakAgainst": [
-                1,
-                2,
-                68,
-                75,
-                104
-            ],
-            "counterItems": [
-                27,
-                11,
-                10
-            ],
-            "reason": {
-                "strongAgainst": "Haunt global presence destroys squishy backliners.",
-                "weakAgainst": "Mana burn, early aggression, and Silence are problematic.",
-                "itemCounters": "Silver Edge Break removes Dispersion, Spirit Vessel prevents healing."
-            }
-        },
-        "70": {
-            "heroId": 70,
-            "strongAgainst": [
-                5,
-                41,
-                44,
-                35,
-                6
-            ],
-            "weakAgainst": [
-                47,
-                41,
-                6,
-                67,
-                81
-            ],
-            "counterItems": [
-                12,
-                32,
-                33,
-                13
-            ],
-            "reason": {
-                "strongAgainst": "Fury Swipes shreds single targets in seconds.",
-                "weakAgainst": "Kiting and disables prevent him from attacking.",
-                "itemCounters": "Force Staff kites him, Heaven's Halberd disarms him."
-            }
-        },
-        "74": {
-            "heroId": 74,
-            "strongAgainst": [
-                5,
-                31,
-                35,
-                85,
-                30
-            ],
-            "weakAgainst": [
-                1,
-                88,
-                71,
-                93,
-                14
-            ],
-            "counterItems": [
-                37,
-                16,
-                27,
-                39
-            ],
-            "reason": {
-                "strongAgainst": "Combo damage devastates grouped or slow heroes.",
-                "weakAgainst": "Gap closers and silence prevent spell combos.",
-                "itemCounters": "Blink to dodge abilities, Orchid to silence."
-            }
-        },
-        "86": {
-            "heroId": 86,
-            "strongAgainst": [
-                74,
-                33,
-                7,
-                37,
-                29
-            ],
-            "weakAgainst": [
-                1,
-                70,
-                44,
-                35,
-                6
-            ],
-            "counterItems": [
-                16,
-                24,
-                27
-            ],
-            "reason": {
-                "strongAgainst": "Spell Steal turns enemy ultimates against them.",
-                "weakAgainst": "Right-click carries don't rely on stolen spells.",
-                "itemCounters": "Orchid silence prevents Spell Steal."
-            }
-        },
-        "93": {
-            "heroId": 93,
-            "strongAgainst": [
-                5,
-                31,
-                30,
-                26,
-                27
-            ],
-            "weakAgainst": [
-                2,
-                4,
-                41,
-                104,
-                75
-            ],
-            "counterItems": [
-                5,
-                6,
-                38,
-                31,
-                27
-            ],
-            "reason": {
-                "strongAgainst": "Picks off lone supports and escapes ganks easily.",
-                "weakAgainst": "AoE disables, Bloodseeker Thirst, and lockdown counter him.",
-                "itemCounters": "Detection reveals Shadow Dance, Gleipnir roots him."
-            }
-        },
-        "104": {
-            "heroId": 104,
-            "strongAgainst": [
-                1,
-                10,
-                44,
-                93,
-                41
-            ],
-            "weakAgainst": [
-                112,
-                50,
-                86,
-                111,
-                102
-            ],
-            "counterItems": [
-                33,
-                13,
-                15,
-                36
-            ],
-            "reason": {
-                "strongAgainst": "Duel forces 1v1 fights where she excels.",
-                "weakAgainst": "Heroes who can save Duel targets or out-heal Duel damage.",
-                "itemCounters": "Ghost Scepter prevents Duel damage, Eul's delays it."
-            }
-        },
-        "106": {
-            "heroId": 106,
-            "strongAgainst": [
-                5,
-                31,
-                30,
-                82,
-                61
-            ],
-            "weakAgainst": [
-                2,
-                75,
-                104,
-                41,
-                81
-            ],
-            "counterItems": [
-                16,
-                31,
-                5,
-                6
-            ],
-            "reason": {
-                "strongAgainst": "Sleight hits multiple heroes, escapes with remnants.",
-                "weakAgainst": "Silence prevents escape, root keeps him in place.",
-                "itemCounters": "Orchid silence before remnant, Gleipnir roots."
-            }
-        },
-        "120": {
-            "heroId": 120,
-            "strongAgainst": [
-                6,
-                35,
-                67,
-                48,
-                94
-            ],
-            "weakAgainst": [
-                102,
-                75,
-                41,
-                70,
-                104
-            ],
-            "counterItems": [
-                7,
-                24,
-                31
-            ],
-            "reason": {
-                "strongAgainst": "Rolling Thunder disrupts immobile backliners.",
-                "weakAgainst": "Silence stops Rolling Thunder, roots and stuns interrupt.",
-                "itemCounters": "BKB during roll, Abyssal to stun him out."
-            }
-        }
+  "heroCounters": {
+    "abaddon": {
+      "strongAgainst": [
+        "silencer",
+        "queen_of_pain",
+        "earth_spirit",
+        "pugna",
+        "chen",
+        "void_spirit"
+      ],
+      "weakAgainst": [
+        "dragon_knight",
+        "timbersaw",
+        "nyx_assassin",
+        "lion",
+        "io",
+        "night_stalker"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
     },
-    "heroTypeCounters": {
-        "carry": {
-            "counterItems": [
-                32,
-                33,
-                8,
-                35
-            ],
-            "counterHeroTypes": [
-                "disabler",
-                "burst"
-            ]
-        },
-        "support": {
-            "counterItems": [
-                5,
-                6,
-                38,
-                37
-            ],
-            "counterHeroTypes": [
-                "ganker",
-                "burst"
-            ]
-        },
-        "nuker": {
-            "counterItems": [
-                7,
-                39,
-                34,
-                19
-            ],
-            "counterHeroTypes": [
-                "tank",
-                "mobile"
-            ]
-        },
-        "disabler": {
-            "counterItems": [
-                7,
-                17,
-                15,
-                36
-            ],
-            "counterHeroTypes": [
-                "tanky",
-                "dispel"
-            ]
-        },
-        "escape": {
-            "counterItems": [
-                5,
-                6,
-                38,
-                14,
-                16,
-                31
-            ],
-            "counterHeroTypes": [
-                "disabler",
-                "tracker"
-            ]
-        },
-        "initiator": {
-            "counterItems": [
-                30,
-                15,
-                36
-            ],
-            "counterHeroTypes": [
-                "counter-initiator"
-            ]
-        },
-        "durable": {
-            "counterItems": [
-                11,
-                25,
-                10
-            ],
-            "counterHeroTypes": [
-                "carry",
-                "sustained-damage"
-            ]
-        },
-        "pusher": {
-            "counterItems": [
-                26
-            ],
-            "counterHeroTypes": [
-                "wave-clear"
-            ]
-        }
+    "alchemist": {
+      "strongAgainst": [
+        "nature_s_prophet",
+        "brewmaster",
+        "pugna",
+        "chen",
+        "tidehunter",
+        "broodmother"
+      ],
+      "weakAgainst": [
+        "outworld_destroyer",
+        "huskar",
+        "primal_beast",
+        "tinker",
+        "anti_mage",
+        "leshrac"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "ancient_apparition": {
+      "strongAgainst": [
+        "huskar",
+        "leshrac",
+        "underlord",
+        "sven",
+        "spirit_breaker",
+        "io"
+      ],
+      "weakAgainst": [
+        "earth_spirit",
+        "queen_of_pain",
+        "lycan",
+        "anti_mage",
+        "broodmother",
+        "naga_siren"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "anti_mage": {
+      "strongAgainst": [
+        "medusa",
+        "bristleback",
+        "tinker",
+        "ancient_apparition",
+        "necrophos",
+        "alchemist"
+      ],
+      "weakAgainst": [
+        "meepo",
+        "axe",
+        "riki",
+        "bloodseeker",
+        "hoodwink",
+        "monkey_king"
+      ],
+      "counterItems": [
+        "black_king_bar",
+        "orchid_malevolence",
+        "scythe_of_vyse",
+        "abyssal_blade",
+        "gleipnir"
+      ],
+      "reason": {
+        "strongAgainst": "Anti-Mage excels against mana-dependent heroes, burning their mana pool quickly.",
+        "weakAgainst": "Struggles against heroes that can lock him down before he escapes or burst him.",
+        "itemCounters": "Black King Bar blocks his mana burn, Orchid prevents Blink escape."
+      }
+    },
+    "axe": {
+      "strongAgainst": [
+        "phantom_lancer",
+        "lycan",
+        "anti_mage",
+        "nature_s_prophet",
+        "naga_siren",
+        "faceless_void"
+      ],
+      "weakAgainst": [
+        "pugna",
+        "monkey_king",
+        "viper",
+        "venomancer",
+        "drow_ranger",
+        "ursa"
+      ],
+      "counterItems": [
+        "force_staff",
+        "euls_scepter_of_divinity",
+        "ghost_scepter",
+        "butterfly",
+        "blink_dagger"
+      ],
+      "reason": {
+        "strongAgainst": "Axe dominates melee carries and illusion heroes with Counter Helix and Berserker's Call.",
+        "weakAgainst": "Ranged carries can kite him, Ursa and LC can out-duel him.",
+        "itemCounters": "Force Staff to escape call, Ghost Scepter to avoid physical damage."
+      }
+    },
+    "bane": {
+      "strongAgainst": [
+        "lifestealer",
+        "viper",
+        "puck",
+        "dazzle",
+        "windranger",
+        "io"
+      ],
+      "weakAgainst": [
+        "centaur_warrunner",
+        "skywrath_mage",
+        "storm_spirit",
+        "dark_seer",
+        "templar_assassin",
+        "enigma"
+      ],
+      "counterItems": [
+        "black_king_bar",
+        "manta_style",
+        "linkens_sphere",
+        "lotus_orb"
+      ],
+      "reason": {
+        "strongAgainst": "Bane's disables shut down mobile carries and escape heroes.",
+        "weakAgainst": "Can be interrupted during Fiend's Grip, weak to AoE stuns.",
+        "itemCounters": "BKB prevents Nightmare and Grip, Linken's blocks single target."
+      }
+    },
+    "batrider": {
+      "strongAgainst": [
+        "templar_assassin",
+        "bounty_hunter",
+        "winter_wyvern",
+        "chen",
+        "kunkka",
+        "bloodseeker"
+      ],
+      "weakAgainst": [
+        "queen_of_pain",
+        "void_spirit",
+        "puck",
+        "slark",
+        "legion_commander",
+        "nyx_assassin"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "beastmaster": {
+      "strongAgainst": [
+        "night_stalker",
+        "skywrath_mage",
+        "huskar",
+        "ancient_apparition",
+        "windranger",
+        "lion"
+      ],
+      "weakAgainst": [
+        "bristleback",
+        "shadow_demon",
+        "enchantress",
+        "keeper_of_the_light",
+        "brewmaster",
+        "underlord"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "bloodseeker": {
+      "strongAgainst": [
+        "huskar",
+        "techies",
+        "omniknight",
+        "lycan",
+        "anti_mage",
+        "phoenix"
+      ],
+      "weakAgainst": [
+        "necrophos",
+        "lifestealer",
+        "storm_spirit",
+        "lich",
+        "enchantress",
+        "batrider"
+      ],
+      "counterItems": [
+        "blink_dagger",
+        "force_staff",
+        "euls_scepter_of_divinity",
+        "guardian_greaves"
+      ],
+      "reason": {
+        "strongAgainst": "Thirst reveals low HP fleeing heroes, Rupture punishes movement.",
+        "weakAgainst": "Heroes with dispels can remove Rupture, tanky or healing heroes survive.",
+        "itemCounters": "TP scroll to escape Rupture, Force Staff/Eul's for repositioning."
+      }
+    },
+    "bounty_hunter": {
+      "strongAgainst": [
+        "riki",
+        "bristleback",
+        "clinkz",
+        "weaver",
+        "undying",
+        "night_stalker"
+      ],
+      "weakAgainst": [
+        "batrider",
+        "naga_siren",
+        "omniknight",
+        "dark_willow",
+        "huskar",
+        "arc_warden"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "brewmaster": {
+      "strongAgainst": [
+        "lycan",
+        "beastmaster",
+        "leshrac",
+        "broodmother",
+        "lone_druid",
+        "lina"
+      ],
+      "weakAgainst": [
+        "morphling",
+        "storm_spirit",
+        "lion",
+        "bristleback",
+        "alchemist",
+        "slark"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "bristleback": {
+      "strongAgainst": [
+        "lycan",
+        "meepo",
+        "enigma",
+        "beastmaster",
+        "brewmaster",
+        "phantom_assassin"
+      ],
+      "weakAgainst": [
+        "anti_mage",
+        "bounty_hunter",
+        "doom",
+        "spirit_breaker",
+        "drow_ranger",
+        "gyrocopter"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "broodmother": {
+      "strongAgainst": [
+        "nature_s_prophet",
+        "arc_warden",
+        "gyrocopter",
+        "sniper",
+        "zeus",
+        "ancient_apparition"
+      ],
+      "weakAgainst": [
+        "grimstroke",
+        "naga_siren",
+        "shadow_demon",
+        "medusa",
+        "razor",
+        "dragon_knight"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "centaur_warrunner": {
+      "strongAgainst": [
+        "spirit_breaker",
+        "pugna",
+        "meepo",
+        "sand_king",
+        "bane",
+        "phantom_lancer"
+      ],
+      "weakAgainst": [
+        "wraith_king",
+        "dazzle",
+        "bristleback",
+        "elder_titan",
+        "monkey_king",
+        "dragon_knight"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "chaos_knight": {
+      "strongAgainst": [
+        "nature_s_prophet",
+        "lycan",
+        "night_stalker",
+        "dazzle",
+        "lone_druid",
+        "viper"
+      ],
+      "weakAgainst": [
+        "lich",
+        "leshrac",
+        "bristleback",
+        "troll_warlord",
+        "earthshaker",
+        "winter_wyvern"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "chen": {
+      "strongAgainst": [
+        "tinker",
+        "skywrath_mage",
+        "tusk",
+        "io",
+        "oracle",
+        "mars"
+      ],
+      "weakAgainst": [
+        "shadow_demon",
+        "dark_seer",
+        "kunkka",
+        "storm_spirit",
+        "spectre",
+        "alchemist"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "clinkz": {
+      "strongAgainst": [
+        "storm_spirit",
+        "luna",
+        "terrorblade",
+        "beastmaster",
+        "pangolier",
+        "timbersaw"
+      ],
+      "weakAgainst": [
+        "bounty_hunter",
+        "dazzle",
+        "tinker",
+        "broodmother",
+        "clockwerk",
+        "winter_wyvern"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "clockwerk": {
+      "strongAgainst": [
+        "pugna",
+        "bloodseeker",
+        "clinkz",
+        "windranger",
+        "arc_warden",
+        "earthshaker"
+      ],
+      "weakAgainst": [
+        "nature_s_prophet",
+        "visage",
+        "queen_of_pain",
+        "razor",
+        "lone_druid",
+        "storm_spirit"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "crystal_maiden": {
+      "strongAgainst": [
+        "timbersaw",
+        "underlord",
+        "phantom_lancer",
+        "dark_willow",
+        "batrider",
+        "templar_assassin"
+      ],
+      "weakAgainst": [
+        "pudge",
+        "lina",
+        "ancient_apparition",
+        "dark_seer",
+        "tidehunter",
+        "troll_warlord"
+      ],
+      "counterItems": [
+        "pipe_of_insight",
+        "black_king_bar",
+        "glimmer_cape"
+      ],
+      "reason": {
+        "strongAgainst": "Slows and roots kite melee heroes effectively.",
+        "weakAgainst": "Extremely squishy, gap closers and burst damage kill her instantly.",
+        "itemCounters": "Pipe of Insight reduces her magical damage significantly."
+      }
+    },
+    "dark_seer": {
+      "strongAgainst": [
+        "phantom_lancer",
+        "chen",
+        "night_stalker",
+        "lycan",
+        "meepo",
+        "lone_druid"
+      ],
+      "weakAgainst": [
+        "witch_doctor",
+        "ursa",
+        "snapfire",
+        "invoker",
+        "mars",
+        "morphling"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "dazzle": {
+      "strongAgainst": [
+        "centaur_warrunner",
+        "templar_assassin",
+        "clinkz",
+        "necrophos",
+        "naga_siren",
+        "vengeful_spirit"
+      ],
+      "weakAgainst": [
+        "spectre",
+        "bane",
+        "alchemist",
+        "io",
+        "luna",
+        "chaos_knight"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "death_prophet": {
+      "strongAgainst": [
+        "troll_warlord",
+        "spectre",
+        "tidehunter",
+        "huskar",
+        "underlord",
+        "omniknight"
+      ],
+      "weakAgainst": [
+        "io",
+        "sven",
+        "wraith_king",
+        "riki",
+        "visage",
+        "shadow_demon"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "disruptor": {
+      "strongAgainst": [
+        "slark",
+        "meepo",
+        "medusa",
+        "sand_king",
+        "lifestealer",
+        "weaver"
+      ],
+      "weakAgainst": [
+        "naga_siren",
+        "huskar",
+        "dragon_knight",
+        "terrorblade",
+        "treant_protector",
+        "broodmother"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "doom": {
+      "strongAgainst": [
+        "underlord",
+        "bristleback",
+        "naga_siren",
+        "beastmaster",
+        "nature_s_prophet",
+        "ember_spirit"
+      ],
+      "weakAgainst": [
+        "dark_willow",
+        "enigma",
+        "arc_warden",
+        "terrorblade",
+        "witch_doctor",
+        "axe"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "dragon_knight": {
+      "strongAgainst": [
+        "riki",
+        "broodmother",
+        "naga_siren",
+        "abaddon",
+        "gyrocopter",
+        "meepo"
+      ],
+      "weakAgainst": [
+        "alchemist",
+        "earth_spirit",
+        "clinkz",
+        "bristleback",
+        "pudge",
+        "doom"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "drow_ranger": {
+      "strongAgainst": [
+        "necrophos",
+        "bristleback",
+        "leshrac",
+        "axe",
+        "techies",
+        "brewmaster"
+      ],
+      "weakAgainst": [
+        "night_stalker",
+        "broodmother",
+        "arc_warden",
+        "marci",
+        "monkey_king",
+        "tusk"
+      ],
+      "counterItems": [
+        "blink_dagger",
+        "abyssal_blade",
+        "silver_edge",
+        "butterfly"
+      ],
+      "reason": {
+        "strongAgainst": "High physical DPS with slow destroys squishy supports.",
+        "weakAgainst": "Gap closers and high mobility heroes can reach her easily.",
+        "itemCounters": "Blink Dagger to close distance, Silver Edge breaks Marksmanship."
+      }
+    },
+    "earthshaker": {
+      "strongAgainst": [
+        "shadow_demon",
+        "meepo",
+        "pugna",
+        "medusa",
+        "chaos_knight",
+        "riki"
+      ],
+      "weakAgainst": [
+        "viper",
+        "tidehunter",
+        "spectre",
+        "razor",
+        "elder_titan",
+        "clockwerk"
+      ],
+      "counterItems": [
+        "black_king_bar",
+        "linkens_sphere",
+        "manta_style"
+      ],
+      "reason": {
+        "strongAgainst": "Echo Slam devastates illusion and summon-based heroes.",
+        "weakAgainst": "Silencer prevents combos, Rubick can steal Echo Slam.",
+        "itemCounters": "BKB prevents stuns, Linken's blocks Fissure."
+      }
+    },
+    "earth_spirit": {
+      "strongAgainst": [
+        "lycan",
+        "ancient_apparition",
+        "naga_siren",
+        "dragon_knight",
+        "beastmaster",
+        "terrorblade"
+      ],
+      "weakAgainst": [
+        "abaddon",
+        "sven",
+        "slardar",
+        "winter_wyvern",
+        "alchemist",
+        "wraith_king"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "elder_titan": {
+      "strongAgainst": [
+        "meepo",
+        "broodmother",
+        "morphling",
+        "lycan",
+        "jakiro",
+        "centaur_warrunner"
+      ],
+      "weakAgainst": [
+        "phantom_assassin",
+        "skywrath_mage",
+        "lina",
+        "bristleback",
+        "razor",
+        "slark"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "ember_spirit": {
+      "strongAgainst": [
+        "phantom_lancer",
+        "brewmaster",
+        "storm_spirit",
+        "void_spirit",
+        "visage",
+        "riki"
+      ],
+      "weakAgainst": [
+        "huskar",
+        "meepo",
+        "necrophos",
+        "underlord",
+        "doom",
+        "omniknight"
+      ],
+      "counterItems": [
+        "orchid_malevolence",
+        "gleipnir",
+        "dust_of_appearance",
+        "sentry_ward"
+      ],
+      "reason": {
+        "strongAgainst": "Sleight hits multiple heroes, escapes with remnants.",
+        "weakAgainst": "Silence prevents escape, root keeps him in place.",
+        "itemCounters": "Orchid silence before remnant, Gleipnir roots."
+      }
+    },
+    "enchantress": {
+      "strongAgainst": [
+        "beastmaster",
+        "terrorblade",
+        "bloodseeker",
+        "meepo",
+        "timbersaw",
+        "treant_protector"
+      ],
+      "weakAgainst": [
+        "phantom_lancer",
+        "earth_spirit",
+        "pangolier",
+        "kunkka",
+        "dark_seer",
+        "void_spirit"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "enigma": {
+      "strongAgainst": [
+        "lifestealer",
+        "outworld_destroyer",
+        "slardar",
+        "doom",
+        "phoenix",
+        "bane"
+      ],
+      "weakAgainst": [
+        "bristleback",
+        "underlord",
+        "naga_siren",
+        "medusa",
+        "alchemist",
+        "sand_king"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "faceless_void": {
+      "strongAgainst": [
+        "spectre",
+        "shadow_demon",
+        "nature_s_prophet",
+        "io",
+        "treant_protector",
+        "chen"
+      ],
+      "weakAgainst": [
+        "death_prophet",
+        "bane",
+        "axe",
+        "phoenix",
+        "tinker",
+        "slardar"
+      ],
+      "counterItems": [
+        "euls_scepter_of_divinity",
+        "ghost_scepter",
+        "assault_cuirass",
+        "manta_style"
+      ],
+      "reason": {
+        "strongAgainst": "Chronosphere traps immobile carries perfectly.",
+        "weakAgainst": "Can be burst inside Chrono, Silencer prevents it entirely.",
+        "itemCounters": "Eul's to survive Chrono timing, Assault Cuirass for armor."
+      }
+    },
+    "gyrocopter": {
+      "strongAgainst": [
+        "troll_warlord",
+        "templar_assassin",
+        "beastmaster",
+        "bristleback",
+        "clinkz",
+        "phoenix"
+      ],
+      "weakAgainst": [
+        "medusa",
+        "broodmother",
+        "dragon_knight",
+        "phantom_lancer",
+        "lycan",
+        "batrider"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "huskar": {
+      "strongAgainst": [
+        "ember_spirit",
+        "venomancer",
+        "alchemist",
+        "lone_druid",
+        "winter_wyvern",
+        "queen_of_pain"
+      ],
+      "weakAgainst": [
+        "ancient_apparition",
+        "viper",
+        "bloodseeker",
+        "necrophos",
+        "arc_warden",
+        "lina"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "invoker": {
+      "strongAgainst": [
+        "wraith_king",
+        "medusa",
+        "dark_seer",
+        "huskar",
+        "tinker",
+        "earth_spirit"
+      ],
+      "weakAgainst": [
+        "phantom_lancer",
+        "phoenix",
+        "riki",
+        "templar_assassin",
+        "tusk",
+        "beastmaster"
+      ],
+      "counterItems": [
+        "blink_dagger",
+        "orchid_malevolence",
+        "silver_edge",
+        "pipe_of_insight"
+      ],
+      "reason": {
+        "strongAgainst": "Combo damage devastates grouped or slow heroes.",
+        "weakAgainst": "Gap closers and silence prevent spell combos.",
+        "itemCounters": "Blink to dodge abilities, Orchid to silence."
+      }
+    },
+    "io": {
+      "strongAgainst": [
+        "death_prophet",
+        "omniknight",
+        "sand_king",
+        "necrophos",
+        "dazzle",
+        "abaddon"
+      ],
+      "weakAgainst": [
+        "spectre",
+        "shadow_demon",
+        "underlord",
+        "dragon_knight",
+        "chen",
+        "razor"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "jakiro": {
+      "strongAgainst": [
+        "shadow_demon",
+        "troll_warlord",
+        "phantom_lancer",
+        "meepo",
+        "bloodseeker",
+        "arc_warden"
+      ],
+      "weakAgainst": [
+        "elder_titan",
+        "skywrath_mage",
+        "batrider",
+        "storm_spirit",
+        "huskar",
+        "grimstroke"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "juggernaut": {
+      "strongAgainst": [
+        "underlord",
+        "naga_siren",
+        "sand_king",
+        "keeper_of_the_light",
+        "nyx_assassin",
+        "monkey_king"
+      ],
+      "weakAgainst": [
+        "spirit_breaker",
+        "morphling",
+        "riki",
+        "axe",
+        "razor",
+        "disruptor"
+      ],
+      "counterItems": [
+        "ghost_scepter",
+        "heavens_halberd",
+        "blade_mail",
+        "shivas_guard"
+      ],
+      "reason": {
+        "strongAgainst": "Blade Fury immunity lets him kill supports easily.",
+        "weakAgainst": "Can be locked down or out-carried by harder carries.",
+        "itemCounters": "Ghost Scepter makes Omnislash useless, Heaven's Halberd disarms."
+      }
+    },
+    "keeper_of_the_light": {
+      "strongAgainst": [
+        "beastmaster",
+        "naga_siren",
+        "nature_s_prophet",
+        "lycan",
+        "viper",
+        "ogre_magi"
+      ],
+      "weakAgainst": [
+        "arc_warden",
+        "dragon_knight",
+        "phantom_assassin",
+        "razor",
+        "timbersaw",
+        "doom"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "kunkka": {
+      "strongAgainst": [
+        "chen",
+        "broodmother",
+        "lycan",
+        "meepo",
+        "night_stalker",
+        "enchantress"
+      ],
+      "weakAgainst": [
+        "batrider",
+        "warlock",
+        "shadow_demon",
+        "razor",
+        "sand_king",
+        "lifestealer"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "legion_commander": {
+      "strongAgainst": [
+        "naga_siren",
+        "batrider",
+        "silencer",
+        "broodmother",
+        "phantom_lancer",
+        "bounty_hunter"
+      ],
+      "weakAgainst": [
+        "lone_druid",
+        "omniknight",
+        "winter_wyvern",
+        "meepo",
+        "monkey_king",
+        "oracle"
+      ],
+      "counterItems": [
+        "ghost_scepter",
+        "euls_scepter_of_divinity",
+        "linkens_sphere",
+        "lotus_orb"
+      ],
+      "reason": {
+        "strongAgainst": "Duel forces 1v1 fights where she excels.",
+        "weakAgainst": "Heroes who can save Duel targets or out-heal Duel damage.",
+        "itemCounters": "Ghost Scepter prevents Duel damage, Eul's delays it."
+      }
+    },
+    "leshrac": {
+      "strongAgainst": [
+        "meepo",
+        "riki",
+        "chaos_knight",
+        "timbersaw",
+        "naga_siren",
+        "phantom_lancer"
+      ],
+      "weakAgainst": [
+        "brewmaster",
+        "ancient_apparition",
+        "shadow_demon",
+        "drow_ranger",
+        "razor",
+        "chen"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "lich": {
+      "strongAgainst": [
+        "chaos_knight",
+        "phantom_lancer",
+        "bloodseeker",
+        "omniknight",
+        "kunkka",
+        "treant_protector"
+      ],
+      "weakAgainst": [
+        "dark_willow",
+        "io",
+        "bristleback",
+        "lycan",
+        "tidehunter",
+        "ancient_apparition"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "lifestealer": {
+      "strongAgainst": [
+        "bloodseeker",
+        "tiny",
+        "kunkka",
+        "sand_king",
+        "lone_druid",
+        "phoenix"
+      ],
+      "weakAgainst": [
+        "necrophos",
+        "enigma",
+        "troll_warlord",
+        "terrorblade",
+        "bane",
+        "spirit_breaker"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "lina": {
+      "strongAgainst": [
+        "meepo",
+        "elder_titan",
+        "huskar",
+        "broodmother",
+        "necrophos",
+        "leshrac"
+      ],
+      "weakAgainst": [
+        "brewmaster",
+        "dragon_knight",
+        "void_spirit",
+        "clockwerk",
+        "clinkz",
+        "tusk"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "lion": {
+      "strongAgainst": [
+        "brewmaster",
+        "abaddon",
+        "io",
+        "razor",
+        "dark_willow",
+        "faceless_void"
+      ],
+      "weakAgainst": [
+        "dark_seer",
+        "tidehunter",
+        "arc_warden",
+        "beastmaster",
+        "kunkka",
+        "wraith_king"
+      ],
+      "counterItems": [
+        "black_king_bar",
+        "linkens_sphere",
+        "manta_style",
+        "lotus_orb"
+      ],
+      "reason": {
+        "strongAgainst": "Multiple disables lock down mobile cores effectively.",
+        "weakAgainst": "High HP tanky heroes survive his burst, BKB users ignore him.",
+        "itemCounters": "BKB blocks all his abilities, Linken's prevents Hex."
+      }
+    },
+    "lone_druid": {
+      "strongAgainst": [
+        "legion_commander",
+        "oracle",
+        "puck",
+        "nature_s_prophet",
+        "void_spirit",
+        "clockwerk"
+      ],
+      "weakAgainst": [
+        "troll_warlord",
+        "dark_seer",
+        "dark_willow",
+        "treant_protector",
+        "winter_wyvern",
+        "underlord"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "luna": {
+      "strongAgainst": [
+        "pugna",
+        "naga_siren",
+        "dazzle",
+        "storm_spirit",
+        "wraith_king",
+        "io"
+      ],
+      "weakAgainst": [
+        "clinkz",
+        "shadow_demon",
+        "bane",
+        "dark_seer",
+        "bloodseeker",
+        "ancient_apparition"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "lycan": {
+      "strongAgainst": [
+        "sniper",
+        "ancient_apparition",
+        "gyrocopter",
+        "riki",
+        "queen_of_pain",
+        "lich"
+      ],
+      "weakAgainst": [
+        "bristleback",
+        "medusa",
+        "treant_protector",
+        "brewmaster",
+        "razor",
+        "axe"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "magnus": {
+      "strongAgainst": [
+        "troll_warlord",
+        "sniper",
+        "chaos_knight",
+        "snapfire",
+        "vengeful_spirit",
+        "oracle"
+      ],
+      "weakAgainst": [
+        "faceless_void",
+        "beastmaster",
+        "techies",
+        "morphling",
+        "jakiro",
+        "alchemist"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "medusa": {
+      "strongAgainst": [
+        "lycan",
+        "meepo",
+        "broodmother",
+        "naga_siren",
+        "mars",
+        "phoenix"
+      ],
+      "weakAgainst": [
+        "sniper",
+        "anti_mage",
+        "pudge",
+        "invoker",
+        "earthshaker",
+        "disruptor"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "meepo": {
+      "strongAgainst": [
+        "anti_mage",
+        "arc_warden",
+        "broodmother",
+        "zeus",
+        "ember_spirit",
+        "nature_s_prophet"
+      ],
+      "weakAgainst": [
+        "bristleback",
+        "leshrac",
+        "medusa",
+        "wraith_king",
+        "witch_doctor",
+        "elder_titan"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "mirana": {
+      "strongAgainst": [
+        "razor",
+        "io",
+        "phoenix",
+        "bloodseeker",
+        "lifestealer",
+        "pugna"
+      ],
+      "weakAgainst": [
+        "underlord",
+        "centaur_warrunner",
+        "night_stalker",
+        "meepo",
+        "phantom_lancer",
+        "naga_siren"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "morphling": {
+      "strongAgainst": [
+        "brewmaster",
+        "treant_protector",
+        "dark_seer",
+        "juggernaut",
+        "ember_spirit",
+        "razor"
+      ],
+      "weakAgainst": [
+        "elder_titan",
+        "techies",
+        "bane",
+        "chaos_knight",
+        "abaddon",
+        "axe"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "naga_siren": {
+      "strongAgainst": [
+        "broodmother",
+        "night_stalker",
+        "phantom_lancer",
+        "templar_assassin",
+        "viper",
+        "slardar"
+      ],
+      "weakAgainst": [
+        "necrophos",
+        "spectre",
+        "medusa",
+        "tidehunter",
+        "timbersaw",
+        "terrorblade"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "nature_s_prophet": {
+      "strongAgainst": [
+        "viper",
+        "clockwerk",
+        "windranger",
+        "lifestealer",
+        "centaur_warrunner",
+        "silencer"
+      ],
+      "weakAgainst": [
+        "alchemist",
+        "chaos_knight",
+        "broodmother",
+        "spectre",
+        "terrorblade",
+        "wraith_king"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "necrophos": {
+      "strongAgainst": [
+        "naga_siren",
+        "lifestealer",
+        "huskar",
+        "bloodseeker",
+        "meepo",
+        "broodmother"
+      ],
+      "weakAgainst": [
+        "drow_ranger",
+        "io",
+        "pugna",
+        "night_stalker",
+        "anti_mage",
+        "visage"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "night_stalker": {
+      "strongAgainst": [
+        "chen",
+        "drow_ranger",
+        "necrophos",
+        "abaddon",
+        "mirana",
+        "undying"
+      ],
+      "weakAgainst": [
+        "dark_seer",
+        "naga_siren",
+        "chaos_knight",
+        "troll_warlord",
+        "beastmaster",
+        "terrorblade"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "nyx_assassin": {
+      "strongAgainst": [
+        "abaddon",
+        "batrider",
+        "medusa",
+        "skywrath_mage",
+        "viper",
+        "spirit_breaker"
+      ],
+      "weakAgainst": [
+        "venomancer",
+        "shadow_demon",
+        "doom",
+        "dazzle",
+        "chen",
+        "juggernaut"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "ogre_magi": {
+      "strongAgainst": [
+        "night_stalker",
+        "shadow_demon",
+        "bloodseeker",
+        "bristleback",
+        "ursa",
+        "storm_spirit"
+      ],
+      "weakAgainst": [
+        "oracle",
+        "tinker",
+        "techies",
+        "naga_siren",
+        "abaddon",
+        "winter_wyvern"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "omniknight": {
+      "strongAgainst": [
+        "bounty_hunter",
+        "silencer",
+        "legion_commander",
+        "spectre",
+        "ember_spirit",
+        "phoenix"
+      ],
+      "weakAgainst": [
+        "shadow_demon",
+        "io",
+        "grimstroke",
+        "razor",
+        "necrophos",
+        "bloodseeker"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "outworld_destroyer": {
+      "strongAgainst": [
+        "alchemist",
+        "ancient_apparition",
+        "centaur_warrunner",
+        "timbersaw",
+        "meepo",
+        "underlord"
+      ],
+      "weakAgainst": [
+        "terrorblade",
+        "phantom_lancer",
+        "visage",
+        "rubick",
+        "enigma",
+        "venomancer"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "phantom_assassin": {
+      "strongAgainst": [
+        "elder_titan",
+        "brewmaster",
+        "shadow_demon",
+        "nature_s_prophet",
+        "lone_druid",
+        "keeper_of_the_light"
+      ],
+      "weakAgainst": [
+        "bristleback",
+        "dark_seer",
+        "storm_spirit",
+        "dragon_knight",
+        "timbersaw",
+        "bane"
+      ],
+      "counterItems": [
+        "monkey_king_bar",
+        "desolator",
+        "silver_edge",
+        "blade_mail",
+        "assault_cuirass"
+      ],
+      "reason": {
+        "strongAgainst": "Massive crits one-shot squishy heroes.",
+        "weakAgainst": "Heroes with lockdown or Break disable her evasion.",
+        "itemCounters": "MKB ignores Blur evasion, Silver Edge applies Break."
+      }
+    },
+    "phantom_lancer": {
+      "strongAgainst": [
+        "viper",
+        "visage",
+        "arc_warden",
+        "outworld_destroyer",
+        "gyrocopter",
+        "winter_wyvern"
+      ],
+      "weakAgainst": [
+        "axe",
+        "timbersaw",
+        "dark_seer",
+        "puck",
+        "sand_king",
+        "naga_siren"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "phoenix": {
+      "strongAgainst": [
+        "wraith_king",
+        "templar_assassin",
+        "spectre",
+        "terrorblade",
+        "spirit_breaker",
+        "lycan"
+      ],
+      "weakAgainst": [
+        "medusa",
+        "void_spirit",
+        "oracle",
+        "dragon_knight",
+        "bloodseeker",
+        "timbersaw"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "puck": {
+      "strongAgainst": [
+        "phantom_lancer",
+        "tinker",
+        "chen",
+        "batrider",
+        "pangolier",
+        "witch_doctor"
+      ],
+      "weakAgainst": [
+        "riki",
+        "bane",
+        "lone_druid",
+        "sven",
+        "warlock",
+        "wraith_king"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "pudge": {
+      "strongAgainst": [
+        "medusa",
+        "brewmaster",
+        "spectre",
+        "crystal_maiden",
+        "dark_seer",
+        "viper"
+      ],
+      "weakAgainst": [
+        "ursa",
+        "io",
+        "anti_mage",
+        "elder_titan",
+        "lone_druid",
+        "slardar"
+      ],
+      "counterItems": [
+        "force_staff",
+        "blink_dagger",
+        "linkens_sphere",
+        "manta_style"
+      ],
+      "reason": {
+        "strongAgainst": "Hook combo destroys squishy immobile supports.",
+        "weakAgainst": "Mobile heroes can dodge hooks, BKB piercing abilities counter him.",
+        "itemCounters": "Force Staff pushes allies out of Dismember, Linken's blocks Hook."
+      }
+    },
+    "pugna": {
+      "strongAgainst": [
+        "tinker",
+        "axe",
+        "necrophos",
+        "naga_siren",
+        "undying",
+        "vengeful_spirit"
+      ],
+      "weakAgainst": [
+        "alchemist",
+        "bristleback",
+        "storm_spirit",
+        "dark_seer",
+        "shadow_demon",
+        "centaur_warrunner"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "queen_of_pain": {
+      "strongAgainst": [
+        "batrider",
+        "underlord",
+        "razor",
+        "brewmaster",
+        "ancient_apparition",
+        "clockwerk"
+      ],
+      "weakAgainst": [
+        "abaddon",
+        "dragon_knight",
+        "huskar",
+        "lycan",
+        "meepo",
+        "spirit_breaker"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "razor": {
+      "strongAgainst": [
+        "troll_warlord",
+        "broodmother",
+        "lycan",
+        "chen",
+        "meepo",
+        "omniknight"
+      ],
+      "weakAgainst": [
+        "queen_of_pain",
+        "storm_spirit",
+        "dawnbreaker",
+        "mirana",
+        "lion",
+        "snapfire"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "riki": {
+      "strongAgainst": [
+        "techies",
+        "puck",
+        "anti_mage",
+        "tinker",
+        "huskar",
+        "io"
+      ],
+      "weakAgainst": [
+        "dragon_knight",
+        "bounty_hunter",
+        "leshrac",
+        "troll_warlord",
+        "medusa",
+        "sven"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "rubick": {
+      "strongAgainst": [
+        "underlord",
+        "terrorblade",
+        "outworld_destroyer",
+        "medusa",
+        "earthshaker",
+        "riki"
+      ],
+      "weakAgainst": [
+        "meepo",
+        "shadow_demon",
+        "hoodwink",
+        "keeper_of_the_light",
+        "enchantress",
+        "clinkz"
+      ],
+      "counterItems": [
+        "orchid_malevolence",
+        "abyssal_blade",
+        "silver_edge"
+      ],
+      "reason": {
+        "strongAgainst": "Spell Steal turns enemy ultimates against them.",
+        "weakAgainst": "Right-click carries don't rely on stolen spells.",
+        "itemCounters": "Orchid silence prevents Spell Steal."
+      }
+    },
+    "sand_king": {
+      "strongAgainst": [
+        "phantom_lancer",
+        "terrorblade",
+        "brewmaster",
+        "spectre",
+        "broodmother",
+        "shadow_demon"
+      ],
+      "weakAgainst": [
+        "io",
+        "razor",
+        "tidehunter",
+        "arc_warden",
+        "centaur_warrunner",
+        "snapfire"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "shadow_demon": {
+      "strongAgainst": [
+        "broodmother",
+        "beastmaster",
+        "chen",
+        "omniknight",
+        "ursa",
+        "skywrath_mage"
+      ],
+      "weakAgainst": [
+        "earthshaker",
+        "faceless_void",
+        "phantom_assassin",
+        "jakiro",
+        "sand_king",
+        "grimstroke"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "shadow_fiend": {
+      "strongAgainst": [
+        "riki",
+        "meepo",
+        "dark_willow",
+        "ember_spirit",
+        "puck",
+        "bristleback"
+      ],
+      "weakAgainst": [
+        "phantom_lancer",
+        "dark_seer",
+        "razor",
+        "arc_warden",
+        "pugna",
+        "outworld_destroyer"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "shadow_shaman": {
+      "strongAgainst": [
+        "oracle",
+        "nature_s_prophet",
+        "ursa",
+        "lifestealer",
+        "death_prophet",
+        "legion_commander"
+      ],
+      "weakAgainst": [
+        "kunkka",
+        "ancient_apparition",
+        "visage",
+        "beastmaster",
+        "dark_seer",
+        "tidehunter"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "silencer": {
+      "strongAgainst": [
+        "alchemist",
+        "ember_spirit",
+        "necrophos",
+        "leshrac",
+        "pugna",
+        "phantom_assassin"
+      ],
+      "weakAgainst": [
+        "abaddon",
+        "naga_siren",
+        "omniknight",
+        "legion_commander",
+        "nature_s_prophet",
+        "oracle"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "skywrath_mage": {
+      "strongAgainst": [
+        "elder_titan",
+        "brewmaster",
+        "jakiro",
+        "bane",
+        "storm_spirit",
+        "troll_warlord"
+      ],
+      "weakAgainst": [
+        "shadow_demon",
+        "chen",
+        "beastmaster",
+        "naga_siren",
+        "underlord",
+        "nyx_assassin"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "slardar": {
+      "strongAgainst": [
+        "lifestealer",
+        "wraith_king",
+        "earth_spirit",
+        "lone_druid",
+        "spectre",
+        "anti_mage"
+      ],
+      "weakAgainst": [
+        "naga_siren",
+        "templar_assassin",
+        "enigma",
+        "troll_warlord",
+        "dark_willow",
+        "visage"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "slark": {
+      "strongAgainst": [
+        "brewmaster",
+        "batrider",
+        "tidehunter",
+        "elder_titan",
+        "underlord",
+        "bristleback"
+      ],
+      "weakAgainst": [
+        "disruptor",
+        "techies",
+        "necrophos",
+        "grimstroke",
+        "io",
+        "riki"
+      ],
+      "counterItems": [
+        "dust_of_appearance",
+        "sentry_ward",
+        "gem_of_true_sight",
+        "gleipnir",
+        "silver_edge"
+      ],
+      "reason": {
+        "strongAgainst": "Picks off lone supports and escapes ganks easily.",
+        "weakAgainst": "AoE disables, Bloodseeker Thirst, and lockdown counter him.",
+        "itemCounters": "Detection reveals Shadow Dance, Gleipnir roots him."
+      }
+    },
+    "sniper": {
+      "strongAgainst": [
+        "medusa",
+        "underlord",
+        "sven",
+        "puck",
+        "lich",
+        "riki"
+      ],
+      "weakAgainst": [
+        "lycan",
+        "tinker",
+        "broodmother",
+        "marci",
+        "brewmaster",
+        "storm_spirit"
+      ],
+      "counterItems": [
+        "blink_dagger",
+        "abyssal_blade",
+        "silver_edge",
+        "butterfly"
+      ],
+      "reason": {
+        "strongAgainst": "Long range attacks destroy low mobility supports.",
+        "weakAgainst": "Gap closers instantly kill him due to low HP pool.",
+        "itemCounters": "Blink to close distance, Abyssal to lock him down."
+      }
+    },
+    "spectre": {
+      "strongAgainst": [
+        "io",
+        "tidehunter",
+        "naga_siren",
+        "dazzle",
+        "techies",
+        "nature_s_prophet"
+      ],
+      "weakAgainst": [
+        "faceless_void",
+        "wraith_king",
+        "phoenix",
+        "death_prophet",
+        "alchemist",
+        "sven"
+      ],
+      "counterItems": [
+        "silver_edge",
+        "spirit_vessel",
+        "diffusal_blade"
+      ],
+      "reason": {
+        "strongAgainst": "Haunt global presence destroys squishy backliners.",
+        "weakAgainst": "Mana burn, early aggression, and Silence are problematic.",
+        "itemCounters": "Silver Edge Break removes Dispersion, Spirit Vessel prevents healing."
+      }
+    },
+    "spirit_breaker": {
+      "strongAgainst": [
+        "lifestealer",
+        "broodmother",
+        "beastmaster",
+        "bristleback",
+        "juggernaut",
+        "lycan"
+      ],
+      "weakAgainst": [
+        "centaur_warrunner",
+        "tidehunter",
+        "ancient_apparition",
+        "phoenix",
+        "sven",
+        "techies"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "storm_spirit": {
+      "strongAgainst": [
+        "sven",
+        "brewmaster",
+        "chen",
+        "pugna",
+        "bloodseeker",
+        "lycan"
+      ],
+      "weakAgainst": [
+        "clinkz",
+        "ember_spirit",
+        "luna",
+        "earth_spirit",
+        "enigma",
+        "alchemist"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "sven": {
+      "strongAgainst": [
+        "lycan",
+        "meepo",
+        "naga_siren",
+        "techies",
+        "tidehunter",
+        "death_prophet"
+      ],
+      "weakAgainst": [
+        "storm_spirit",
+        "viper",
+        "templar_assassin",
+        "ancient_apparition",
+        "sniper",
+        "tinker"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "techies": {
+      "strongAgainst": [
+        "troll_warlord",
+        "weaver",
+        "treant_protector",
+        "morphling",
+        "spirit_breaker",
+        "phantom_lancer"
+      ],
+      "weakAgainst": [
+        "spectre",
+        "bloodseeker",
+        "riki",
+        "sven",
+        "wraith_king",
+        "bristleback"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "templar_assassin": {
+      "strongAgainst": [
+        "sven",
+        "tinker",
+        "lone_druid",
+        "slardar",
+        "broodmother",
+        "timbersaw"
+      ],
+      "weakAgainst": [
+        "treant_protector",
+        "batrider",
+        "phoenix",
+        "arc_warden",
+        "naga_siren",
+        "viper"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "terrorblade": {
+      "strongAgainst": [
+        "outworld_destroyer",
+        "lifestealer",
+        "naga_siren",
+        "nature_s_prophet",
+        "templar_assassin",
+        "tusk"
+      ],
+      "weakAgainst": [
+        "dark_seer",
+        "enchantress",
+        "shadow_demon",
+        "sand_king",
+        "rubick",
+        "primal_beast"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "tidehunter": {
+      "strongAgainst": [
+        "naga_siren",
+        "visage",
+        "spirit_breaker",
+        "sand_king",
+        "lone_druid",
+        "earthshaker"
+      ],
+      "weakAgainst": [
+        "spectre",
+        "grimstroke",
+        "alchemist",
+        "sven",
+        "death_prophet",
+        "oracle"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "timbersaw": {
+      "strongAgainst": [
+        "phantom_lancer",
+        "naga_siren",
+        "abaddon",
+        "lone_druid",
+        "phoenix",
+        "huskar"
+      ],
+      "weakAgainst": [
+        "crystal_maiden",
+        "leshrac",
+        "enchantress",
+        "spectre",
+        "templar_assassin",
+        "outworld_destroyer"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "tinker": {
+      "strongAgainst": [
+        "winter_wyvern",
+        "sniper",
+        "alchemist",
+        "sven",
+        "clinkz",
+        "ogre_magi"
+      ],
+      "weakAgainst": [
+        "pugna",
+        "chen",
+        "warlock",
+        "puck",
+        "templar_assassin",
+        "anti_mage"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "tiny": {
+      "strongAgainst": [
+        "puck",
+        "elder_titan",
+        "slark",
+        "nyx_assassin",
+        "bane",
+        "skywrath_mage"
+      ],
+      "weakAgainst": [
+        "lifestealer",
+        "bristleback",
+        "wraith_king",
+        "venomancer",
+        "abaddon",
+        "meepo"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "treant_protector": {
+      "strongAgainst": [
+        "templar_assassin",
+        "lycan",
+        "winter_wyvern",
+        "lone_druid",
+        "sven",
+        "slardar"
+      ],
+      "weakAgainst": [
+        "techies",
+        "dark_seer",
+        "morphling",
+        "enchantress",
+        "faceless_void",
+        "shadow_demon"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "troll_warlord": {
+      "strongAgainst": [
+        "lifestealer",
+        "lone_druid",
+        "ursa",
+        "riki",
+        "night_stalker",
+        "meepo"
+      ],
+      "weakAgainst": [
+        "razor",
+        "techies",
+        "gyrocopter",
+        "alchemist",
+        "death_prophet",
+        "jakiro"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "tusk": {
+      "strongAgainst": [
+        "brewmaster",
+        "invoker",
+        "drow_ranger",
+        "abaddon",
+        "lina",
+        "tidehunter"
+      ],
+      "weakAgainst": [
+        "terrorblade",
+        "chen",
+        "elder_titan",
+        "templar_assassin",
+        "bristleback",
+        "dark_willow"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "undying": {
+      "strongAgainst": [
+        "wraith_king",
+        "beastmaster",
+        "huskar",
+        "centaur_warrunner",
+        "shadow_demon",
+        "arc_warden"
+      ],
+      "weakAgainst": [
+        "medusa",
+        "pugna",
+        "night_stalker",
+        "bounty_hunter",
+        "meepo",
+        "io"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "ursa": {
+      "strongAgainst": [
+        "dark_seer",
+        "anti_mage",
+        "medusa",
+        "axe",
+        "pudge",
+        "abaddon"
+      ],
+      "weakAgainst": [
+        "shadow_demon",
+        "venomancer",
+        "troll_warlord",
+        "broodmother",
+        "mars",
+        "riki"
+      ],
+      "counterItems": [
+        "force_staff",
+        "heavens_halberd",
+        "ghost_scepter",
+        "euls_scepter_of_divinity"
+      ],
+      "reason": {
+        "strongAgainst": "Fury Swipes shreds single targets in seconds.",
+        "weakAgainst": "Kiting and disables prevent him from attacking.",
+        "itemCounters": "Force Staff kites him, Heaven's Halberd disarms him."
+      }
+    },
+    "vengeful_spirit": {
+      "strongAgainst": [
+        "broodmother",
+        "winter_wyvern",
+        "oracle",
+        "wraith_king",
+        "enigma",
+        "weaver"
+      ],
+      "weakAgainst": [
+        "medusa",
+        "bristleback",
+        "dark_seer",
+        "pugna",
+        "dazzle",
+        "monkey_king"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "venomancer": {
+      "strongAgainst": [
+        "ursa",
+        "axe",
+        "outworld_destroyer",
+        "anti_mage",
+        "necrophos",
+        "lifestealer"
+      ],
+      "weakAgainst": [
+        "huskar",
+        "storm_spirit",
+        "terrorblade",
+        "arc_warden",
+        "phantom_lancer",
+        "sand_king"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "viper": {
+      "strongAgainst": [
+        "huskar",
+        "sven",
+        "templar_assassin",
+        "earthshaker",
+        "dark_willow",
+        "axe"
+      ],
+      "weakAgainst": [
+        "phantom_lancer",
+        "nature_s_prophet",
+        "naga_siren",
+        "bane",
+        "keeper_of_the_light",
+        "spirit_breaker"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "visage": {
+      "strongAgainst": [
+        "outworld_destroyer",
+        "templar_assassin",
+        "tinker",
+        "clockwerk",
+        "necrophos",
+        "zeus"
+      ],
+      "weakAgainst": [
+        "phantom_lancer",
+        "underlord",
+        "tidehunter",
+        "oracle",
+        "winter_wyvern",
+        "medusa"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "warlock": {
+      "strongAgainst": [
+        "tinker",
+        "phantom_lancer",
+        "nature_s_prophet",
+        "hoodwink",
+        "kunkka",
+        "beastmaster"
+      ],
+      "weakAgainst": [
+        "shadow_demon",
+        "storm_spirit",
+        "huskar",
+        "sven",
+        "razor",
+        "dark_seer"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "weaver": {
+      "strongAgainst": [
+        "omniknight",
+        "broodmother",
+        "brewmaster",
+        "tinker",
+        "winter_wyvern",
+        "lycan"
+      ],
+      "weakAgainst": [
+        "techies",
+        "underlord",
+        "puck",
+        "bounty_hunter",
+        "keeper_of_the_light",
+        "bloodseeker"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "windranger": {
+      "strongAgainst": [
+        "brewmaster",
+        "huskar",
+        "monkey_king",
+        "winter_wyvern",
+        "phoenix",
+        "lone_druid"
+      ],
+      "weakAgainst": [
+        "nature_s_prophet",
+        "bane",
+        "beastmaster",
+        "broodmother",
+        "clockwerk",
+        "terrorblade"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "witch_doctor": {
+      "strongAgainst": [
+        "meepo",
+        "dark_seer",
+        "doom",
+        "sven",
+        "huskar",
+        "alchemist"
+      ],
+      "weakAgainst": [
+        "puck",
+        "beastmaster",
+        "bane",
+        "lycan",
+        "nature_s_prophet",
+        "phantom_lancer"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "wraith_king": {
+      "strongAgainst": [
+        "meepo",
+        "spectre",
+        "nature_s_prophet",
+        "centaur_warrunner",
+        "death_prophet",
+        "broodmother"
+      ],
+      "weakAgainst": [
+        "phoenix",
+        "undying",
+        "slardar",
+        "invoker",
+        "grimstroke",
+        "sand_king"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "zeus": {
+      "strongAgainst": [
+        "tidehunter",
+        "terrorblade",
+        "phantom_lancer",
+        "kunkka",
+        "elder_titan",
+        "leshrac"
+      ],
+      "weakAgainst": [
+        "broodmother",
+        "meepo",
+        "visage",
+        "timbersaw",
+        "medusa",
+        "lifestealer"
+      ],
+      "counterItems": [
+        "pipe_of_insight",
+        "black_king_bar",
+        "glimmer_cape",
+        "heart_of_tarrasque"
+      ],
+      "reason": {
+        "strongAgainst": "Global nuke and vision reveals supports and low HP heroes.",
+        "weakAgainst": "High magic resistance heroes and Anti-Mage burn his mana.",
+        "itemCounters": "Pipe of Insight and BKB reduce his damage significantly."
+      }
+    },
+    "oracle": {
+      "strongAgainst": [
+        "arc_warden",
+        "visage",
+        "ogre_magi",
+        "phoenix",
+        "tinker",
+        "tidehunter"
+      ],
+      "weakAgainst": [
+        "bristleback",
+        "lone_druid",
+        "shadow_demon",
+        "dawnbreaker",
+        "naga_siren",
+        "chen"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "winter_wyvern": {
+      "strongAgainst": [
+        "visage",
+        "lone_druid",
+        "dark_willow",
+        "meepo",
+        "riki",
+        "troll_warlord"
+      ],
+      "weakAgainst": [
+        "treant_protector",
+        "batrider",
+        "tinker",
+        "phantom_lancer",
+        "huskar",
+        "windranger"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "arc_warden": {
+      "strongAgainst": [
+        "keeper_of_the_light",
+        "templar_assassin",
+        "huskar",
+        "sand_king",
+        "venomancer",
+        "riki"
+      ],
+      "weakAgainst": [
+        "broodmother",
+        "oracle",
+        "phantom_lancer",
+        "meepo",
+        "naga_siren",
+        "spectre"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "underlord": {
+      "strongAgainst": [
+        "visage",
+        "beastmaster",
+        "phantom_lancer",
+        "broodmother",
+        "enigma",
+        "meepo"
+      ],
+      "weakAgainst": [
+        "doom",
+        "queen_of_pain",
+        "rubick",
+        "sniper",
+        "ancient_apparition",
+        "bristleback"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "monkey_king": {
+      "strongAgainst": [
+        "meepo",
+        "lycan",
+        "axe",
+        "centaur_warrunner",
+        "io",
+        "anti_mage"
+      ],
+      "weakAgainst": [
+        "medusa",
+        "queen_of_pain",
+        "sand_king",
+        "windranger",
+        "chen",
+        "timbersaw"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "pangolier": {
+      "strongAgainst": [
+        "visage",
+        "meepo",
+        "phantom_lancer",
+        "enchantress",
+        "brewmaster",
+        "terrorblade"
+      ],
+      "weakAgainst": [
+        "grimstroke",
+        "puck",
+        "huskar",
+        "bloodseeker",
+        "elder_titan",
+        "clinkz"
+      ],
+      "counterItems": [
+        "black_king_bar",
+        "abyssal_blade",
+        "gleipnir"
+      ],
+      "reason": {
+        "strongAgainst": "Rolling Thunder disrupts immobile backliners.",
+        "weakAgainst": "Silence stops Rolling Thunder, roots and stuns interrupt.",
+        "itemCounters": "BKB during roll, Abyssal to stun him out."
+      }
+    },
+    "dark_willow": {
+      "strongAgainst": [
+        "lone_druid",
+        "lich",
+        "visage",
+        "bounty_hunter",
+        "doom",
+        "chen"
+      ],
+      "weakAgainst": [
+        "winter_wyvern",
+        "viper",
+        "shadow_demon",
+        "sand_king",
+        "naga_siren",
+        "tidehunter"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "grimstroke": {
+      "strongAgainst": [
+        "broodmother",
+        "tidehunter",
+        "pangolier",
+        "omniknight",
+        "wraith_king",
+        "phantom_lancer"
+      ],
+      "weakAgainst": [
+        "sand_king",
+        "troll_warlord",
+        "warlock",
+        "techies",
+        "doom",
+        "mars"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "mars": {
+      "strongAgainst": [
+        "shadow_demon",
+        "dark_seer",
+        "ursa",
+        "night_stalker",
+        "slark",
+        "grimstroke"
+      ],
+      "weakAgainst": [
+        "medusa",
+        "chen",
+        "abaddon",
+        "razor",
+        "winter_wyvern",
+        "lifestealer"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "void_spirit": {
+      "strongAgainst": [
+        "batrider",
+        "phoenix",
+        "enchantress",
+        "centaur_warrunner",
+        "sniper",
+        "lina"
+      ],
+      "weakAgainst": [
+        "naga_siren",
+        "sand_king",
+        "lone_druid",
+        "abaddon",
+        "meepo",
+        "ember_spirit"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "snapfire": {
+      "strongAgainst": [
+        "meepo",
+        "dark_seer",
+        "sand_king",
+        "underlord",
+        "razor",
+        "treant_protector"
+      ],
+      "weakAgainst": [
+        "lifestealer",
+        "storm_spirit",
+        "magnus",
+        "troll_warlord",
+        "bristleback",
+        "enchantress"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "hoodwink": {
+      "strongAgainst": [
+        "anti_mage",
+        "brewmaster",
+        "rubick",
+        "broodmother",
+        "winter_wyvern",
+        "troll_warlord"
+      ],
+      "weakAgainst": [
+        "warlock",
+        "oracle",
+        "dark_seer",
+        "centaur_warrunner",
+        "razor",
+        "phantom_lancer"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "dawnbreaker": {
+      "strongAgainst": [
+        "meepo",
+        "oracle",
+        "razor",
+        "beastmaster",
+        "dark_seer",
+        "phantom_assassin"
+      ],
+      "weakAgainst": [
+        "batrider",
+        "chen",
+        "bloodseeker",
+        "luna",
+        "jakiro",
+        "disruptor"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "marci": {
+      "strongAgainst": [
+        "sniper",
+        "drow_ranger",
+        "viper",
+        "phoenix",
+        "vengeful_spirit",
+        "abaddon"
+      ],
+      "weakAgainst": [
+        "medusa",
+        "elder_titan",
+        "kunkka",
+        "windranger",
+        "dark_willow",
+        "templar_assassin"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
+    },
+    "primal_beast": {
+      "strongAgainst": [
+        "alchemist",
+        "terrorblade",
+        "razor",
+        "bristleback",
+        "sniper",
+        "drow_ranger"
+      ],
+      "weakAgainst": [
+        "lifestealer",
+        "medusa",
+        "templar_assassin",
+        "huskar",
+        "clockwerk",
+        "meepo"
+      ],
+      "counterItems": [],
+      "reason": {
+        "strongAgainst": "",
+        "weakAgainst": "",
+        "itemCounters": ""
+      }
     }
+  },
+  "heroTypeCounters": {}
 }

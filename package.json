@@ -8,10 +8,12 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "server": "node server/index.js"
+    "server": "node server/index.js",
+    "fetch-heroes": "npx -y tsx scripts/fetchHeroes.ts",
+    "fetch-counters": "npx -y tsx scripts/fetchCounters.ts",
+    "fetch-all": "npx -y tsx scripts/fetchCounters.ts && npx -y tsx scripts/fetchHeroes.ts"
   },
   "dependencies": {
-    "firebase": "^12.8.0",
     "framer-motion": "^10.16.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

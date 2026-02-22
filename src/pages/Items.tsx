@@ -85,7 +85,7 @@ function Items() {
               const itemSlug = item.name.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9-]/g, '')
               return (
                 <motion.div
-                  key={item.id}
+                  key={item.key}
                   layout
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -116,7 +116,7 @@ function Items() {
                   </Link>
 
                   {/* Tooltip on hover - remains but link handles click */}
-                  {hoveredItem?.id === item.id && (
+                  {hoveredItem?.key === item.key && (
                     <motion.div
                       className="item-tooltip"
                       initial={{ opacity: 0, y: 10 }}

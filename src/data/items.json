@@ -47,7 +47,7 @@
     },
     "items": [
         {
-            "id": 1,
+            "key": "observer_ward",
             "name": "Observer Ward",
             "category": "consumables",
             "cost": 0,
@@ -61,14 +61,14 @@
                 "ganker"
             ],
             "countersHeroes": [
-                32,
-                62,
-                14,
-                88
+                "riki",
+                "bounty_hunter",
+                "pudge",
+                "nyx_assassin"
             ]
         },
         {
-            "id": 2,
+            "key": "clarity",
             "name": "Clarity",
             "category": "consumables",
             "cost": 50,
@@ -82,7 +82,7 @@
             "countersHeroes": []
         },
         {
-            "id": 3,
+            "key": "tango",
             "name": "Tango",
             "category": "consumables",
             "cost": 90,
@@ -96,7 +96,7 @@
             "countersHeroes": []
         },
         {
-            "id": 4,
+            "key": "healing_salve",
             "name": "Healing Salve",
             "category": "consumables",
             "cost": 110,
@@ -110,7 +110,7 @@
             "countersHeroes": []
         },
         {
-            "id": 5,
+            "key": "dust_of_appearance",
             "name": "Dust of Appearance",
             "category": "consumables",
             "cost": 80,
@@ -125,16 +125,16 @@
                 "invisible"
             ],
             "countersHeroes": [
-                32,
-                62,
-                63,
-                14,
-                56,
-                9
+                "riki",
+                "bounty_hunter",
+                "weaver",
+                "pudge",
+                "clinkz",
+                "mirana"
             ]
         },
         {
-            "id": 6,
+            "key": "sentry_ward",
             "name": "Sentry Ward",
             "category": "consumables",
             "cost": 50,
@@ -148,16 +148,16 @@
                 "invisible"
             ],
             "countersHeroes": [
-                32,
-                62,
-                63,
-                14,
-                56,
-                9
+                "riki",
+                "bounty_hunter",
+                "weaver",
+                "pudge",
+                "clinkz",
+                "mirana"
             ]
         },
         {
-            "id": 7,
+            "key": "black_king_bar",
             "name": "Black King Bar",
             "category": "armor",
             "cost": 4050,
@@ -174,19 +174,19 @@
                 "support"
             ],
             "countersHeroes": [
-                5,
-                26,
-                22,
-                52,
-                86,
-                75,
-                7,
-                87,
-                3
+                "crystal_maiden",
+                "lion",
+                "zeus",
+                "leshrac",
+                "rubick",
+                "silencer",
+                "earthshaker",
+                "disruptor",
+                "bane"
             ]
         },
         {
-            "id": 8,
+            "key": "blade_mail",
             "name": "Blade Mail",
             "category": "armor",
             "cost": 2100,
@@ -202,16 +202,16 @@
                 "nuker"
             ],
             "countersHeroes": [
-                44,
-                70,
-                22,
-                26,
-                25,
-                74
+                "phantom_assassin",
+                "ursa",
+                "zeus",
+                "lion",
+                "lina",
+                "invoker"
             ]
         },
         {
-            "id": 9,
+            "key": "monkey_king_bar",
             "name": "Monkey King Bar",
             "category": "weapons",
             "cost": 4975,
@@ -226,14 +226,14 @@
                 "evasion"
             ],
             "countersHeroes": [
-                44,
-                95,
-                63,
-                61
+                "phantom_assassin",
+                "troll_warlord",
+                "weaver",
+                "broodmother"
             ]
         },
         {
-            "id": 10,
+            "key": "diffusal_blade",
             "name": "Diffusal Blade",
             "category": "artifacts",
             "cost": 2500,
@@ -248,15 +248,15 @@
                 "mana-dependent"
             ],
             "countersHeroes": [
-                94,
-                10,
-                17,
-                63,
-                74
+                "medusa",
+                "morphling",
+                "storm_spirit",
+                "weaver",
+                "invoker"
             ]
         },
         {
-            "id": 11,
+            "key": "spirit_vessel",
             "name": "Spirit Vessel",
             "category": "support",
             "cost": 2940,
@@ -272,16 +272,16 @@
                 "regen"
             ],
             "countersHeroes": [
-                54,
-                73,
-                85,
-                102,
-                59,
-                10
+                "lifestealer",
+                "alchemist",
+                "undying",
+                "abaddon",
+                "huskar",
+                "morphling"
             ]
         },
         {
-            "id": 12,
+            "key": "force_staff",
             "name": "Force Staff",
             "category": "magical",
             "cost": 2200,
@@ -297,15 +297,15 @@
                 "chaser"
             ],
             "countersHeroes": [
-                70,
-                32,
-                93,
-                4,
-                104
+                "ursa",
+                "riki",
+                "slark",
+                "bloodseeker",
+                "legion_commander"
             ]
         },
         {
-            "id": 13,
+            "key": "euls_scepter_of_divinity",
             "name": "Eul's Scepter of Divinity",
             "category": "magical",
             "cost": 2725,
@@ -322,14 +322,14 @@
                 "disabler"
             ],
             "countersHeroes": [
-                70,
-                4,
-                104,
-                71
+                "ursa",
+                "bloodseeker",
+                "legion_commander",
+                "spirit_breaker"
             ]
         },
         {
-            "id": 14,
+            "key": "scythe_of_vyse",
             "name": "Scythe of Vyse",
             "category": "magical",
             "cost": 5650,
@@ -346,16 +346,16 @@
                 "escape"
             ],
             "countersHeroes": [
-                1,
-                106,
-                93,
-                10,
-                41,
-                17
+                "anti_mage",
+                "ember_spirit",
+                "slark",
+                "morphling",
+                "faceless_void",
+                "storm_spirit"
             ]
         },
         {
-            "id": 15,
+            "key": "linkens_sphere",
             "name": "Linken's Sphere",
             "category": "armor",
             "cost": 4600,
@@ -371,15 +371,15 @@
                 "single-target"
             ],
             "countersHeroes": [
-                26,
-                3,
-                14,
-                104,
-                69
+                "lion",
+                "bane",
+                "pudge",
+                "legion_commander",
+                "doom"
             ]
         },
         {
-            "id": 16,
+            "key": "orchid_malevolence",
             "name": "Orchid Malevolence",
             "category": "magical",
             "cost": 3475,
@@ -396,15 +396,15 @@
                 "caster"
             ],
             "countersHeroes": [
-                17,
-                13,
-                39,
-                106,
-                1
+                "storm_spirit",
+                "puck",
+                "queen_of_pain",
+                "ember_spirit",
+                "anti_mage"
             ]
         },
         {
-            "id": 17,
+            "key": "manta_style",
             "name": "Manta Style",
             "category": "armor",
             "cost": 4600,
@@ -421,14 +421,14 @@
                 "root"
             ],
             "countersHeroes": [
-                75,
-                16,
-                4,
-                32
+                "silencer",
+                "sand_king",
+                "bloodseeker",
+                "riki"
             ]
         },
         {
-            "id": 18,
+            "key": "assault_cuirass",
             "name": "Assault Cuirass",
             "category": "armor",
             "cost": 5125,
@@ -443,15 +443,15 @@
                 "physical"
             ],
             "countersHeroes": [
-                18,
-                44,
-                8,
-                70,
-                95
+                "sven",
+                "phantom_assassin",
+                "juggernaut",
+                "ursa",
+                "troll_warlord"
             ]
         },
         {
-            "id": 19,
+            "key": "heart_of_tarrasque",
             "name": "Heart of Tarrasque",
             "category": "armor",
             "cost": 5000,
@@ -466,14 +466,14 @@
                 "burst"
             ],
             "countersHeroes": [
-                22,
-                26,
-                25,
-                74
+                "zeus",
+                "lion",
+                "lina",
+                "invoker"
             ]
         },
         {
-            "id": 20,
+            "key": "butterfly",
             "name": "Butterfly",
             "category": "weapons",
             "cost": 4975,
@@ -489,16 +489,16 @@
                 "physical"
             ],
             "countersHeroes": [
-                18,
-                44,
-                8,
-                70,
-                35,
-                6
+                "sven",
+                "phantom_assassin",
+                "juggernaut",
+                "ursa",
+                "sniper",
+                "drow_ranger"
             ]
         },
         {
-            "id": 21,
+            "key": "eye_of_skadi",
             "name": "Eye of Skadi",
             "category": "artifacts",
             "cost": 5300,
@@ -515,15 +515,15 @@
                 "regen"
             ],
             "countersHeroes": [
-                93,
-                54,
-                106,
-                1,
-                10
+                "slark",
+                "lifestealer",
+                "ember_spirit",
+                "anti_mage",
+                "morphling"
             ]
         },
         {
-            "id": 22,
+            "key": "daedalus",
             "name": "Daedalus",
             "category": "weapons",
             "cost": 5150,
@@ -537,14 +537,14 @@
                 "tank"
             ],
             "countersHeroes": [
-                99,
-                96,
-                29,
-                102
+                "bristleback",
+                "centaur_warrunner",
+                "tidehunter",
+                "abaddon"
             ]
         },
         {
-            "id": 23,
+            "key": "satanic",
             "name": "Satanic",
             "category": "artifacts",
             "cost": 5050,
@@ -560,14 +560,14 @@
                 "burst"
             ],
             "countersHeroes": [
-                22,
-                26,
-                25,
-                44
+                "zeus",
+                "lion",
+                "lina",
+                "phantom_assassin"
             ]
         },
         {
-            "id": 24,
+            "key": "abyssal_blade",
             "name": "Abyssal Blade",
             "category": "weapons",
             "cost": 6250,
@@ -584,15 +584,15 @@
                 "escape"
             ],
             "countersHeroes": [
-                1,
-                106,
-                93,
-                10,
-                17
+                "anti_mage",
+                "ember_spirit",
+                "slark",
+                "morphling",
+                "storm_spirit"
             ]
         },
         {
-            "id": 25,
+            "key": "desolator",
             "name": "Desolator",
             "category": "weapons",
             "cost": 3500,
@@ -606,14 +606,14 @@
                 "high-armor"
             ],
             "countersHeroes": [
-                49,
-                29,
-                99,
-                96
+                "dragon_knight",
+                "tidehunter",
+                "bristleback",
+                "centaur_warrunner"
             ]
         },
         {
-            "id": 26,
+            "key": "radiance",
             "name": "Radiance",
             "category": "weapons",
             "cost": 5050,
@@ -629,14 +629,14 @@
                 "illusion"
             ],
             "countersHeroes": [
-                12,
-                89,
-                109,
-                81
+                "phantom_lancer",
+                "naga_siren",
+                "terrorblade",
+                "chaos_knight"
             ]
         },
         {
-            "id": 27,
+            "key": "silver_edge",
             "name": "Silver Edge",
             "category": "weapons",
             "cost": 5450,
@@ -651,15 +651,15 @@
                 "passive-reliant"
             ],
             "countersHeroes": [
-                44,
-                99,
-                67,
-                102,
-                42
+                "phantom_assassin",
+                "bristleback",
+                "spectre",
+                "abaddon",
+                "wraith_king"
             ]
         },
         {
-            "id": 28,
+            "key": "nullifier",
             "name": "Nullifier",
             "category": "weapons",
             "cost": 4725,
@@ -674,15 +674,15 @@
                 "item-reliant"
             ],
             "countersHeroes": [
-                17,
-                106,
-                93,
-                1,
-                10
+                "storm_spirit",
+                "ember_spirit",
+                "slark",
+                "anti_mage",
+                "morphling"
             ]
         },
         {
-            "id": 29,
+            "key": "aghanims_scepter",
             "name": "Aghanim's Scepter",
             "category": "magical",
             "cost": 4200,
@@ -698,7 +698,7 @@
             "countersHeroes": []
         },
         {
-            "id": 30,
+            "key": "aeon_disk",
             "name": "Aeon Disk",
             "category": "armor",
             "cost": 3000,
@@ -714,15 +714,15 @@
                 "combo"
             ],
             "countersHeroes": [
-                74,
-                22,
-                26,
-                104,
-                2
+                "invoker",
+                "zeus",
+                "lion",
+                "legion_commander",
+                "axe"
             ]
         },
         {
-            "id": 31,
+            "key": "gleipnir",
             "name": "Gleipnir",
             "category": "magical",
             "cost": 5650,
@@ -739,16 +739,16 @@
                 "escape"
             ],
             "countersHeroes": [
-                1,
-                106,
-                93,
-                10,
-                17,
-                41
+                "anti_mage",
+                "ember_spirit",
+                "slark",
+                "morphling",
+                "storm_spirit",
+                "faceless_void"
             ]
         },
         {
-            "id": 32,
+            "key": "heavens_halberd",
             "name": "Heaven's Halberd",
             "category": "artifacts",
             "cost": 3550,
@@ -764,17 +764,17 @@
                 "right-clicker"
             ],
             "countersHeroes": [
-                44,
-                8,
-                70,
-                18,
-                95,
-                6,
-                35
+                "phantom_assassin",
+                "juggernaut",
+                "ursa",
+                "sven",
+                "troll_warlord",
+                "drow_ranger",
+                "sniper"
             ]
         },
         {
-            "id": 33,
+            "key": "ghost_scepter",
             "name": "Ghost Scepter",
             "category": "miscellaneous",
             "cost": 1500,
@@ -788,18 +788,18 @@
                 "physical"
             ],
             "countersHeroes": [
-                44,
-                8,
-                70,
-                18,
-                95,
-                6,
-                35,
-                1
+                "phantom_assassin",
+                "juggernaut",
+                "ursa",
+                "sven",
+                "troll_warlord",
+                "drow_ranger",
+                "sniper",
+                "anti_mage"
             ]
         },
         {
-            "id": 34,
+            "key": "glimmer_cape",
             "name": "Glimmer Cape",
             "category": "support",
             "cost": 1950,
@@ -814,15 +814,15 @@
                 "ganker"
             ],
             "countersHeroes": [
-                22,
-                26,
-                25,
-                74,
-                52
+                "zeus",
+                "lion",
+                "lina",
+                "invoker",
+                "leshrac"
             ]
         },
         {
-            "id": 35,
+            "key": "shivas_guard",
             "name": "Shiva's Guard",
             "category": "armor",
             "cost": 4850,
@@ -839,15 +839,15 @@
                 "regen"
             ],
             "countersHeroes": [
-                70,
-                95,
-                8,
-                44,
-                54
+                "ursa",
+                "troll_warlord",
+                "juggernaut",
+                "phantom_assassin",
+                "lifestealer"
             ]
         },
         {
-            "id": 36,
+            "key": "lotus_orb",
             "name": "Lotus Orb",
             "category": "armor",
             "cost": 3850,
@@ -863,15 +863,15 @@
                 "single-target"
             ],
             "countersHeroes": [
-                26,
-                14,
-                3,
-                104,
-                69
+                "lion",
+                "pudge",
+                "bane",
+                "legion_commander",
+                "doom"
             ]
         },
         {
-            "id": 37,
+            "key": "blink_dagger",
             "name": "Blink Dagger",
             "category": "miscellaneous",
             "cost": 2250,
@@ -884,7 +884,7 @@
             "countersHeroes": []
         },
         {
-            "id": 38,
+            "key": "gem_of_true_sight",
             "name": "Gem of True Sight",
             "category": "miscellaneous",
             "cost": 900,
@@ -897,16 +897,16 @@
                 "invisible"
             ],
             "countersHeroes": [
-                32,
-                62,
-                63,
-                14,
-                56,
-                9
+                "riki",
+                "bounty_hunter",
+                "weaver",
+                "pudge",
+                "clinkz",
+                "mirana"
             ]
         },
         {
-            "id": 39,
+            "key": "pipe_of_insight",
             "name": "Pipe of Insight",
             "category": "support",
             "cost": 3475,
@@ -922,15 +922,15 @@
                 "aoe"
             ],
             "countersHeroes": [
-                22,
-                74,
-                52,
-                43,
-                106
+                "zeus",
+                "invoker",
+                "leshrac",
+                "death_prophet",
+                "ember_spirit"
             ]
         },
         {
-            "id": 40,
+            "key": "guardian_greaves",
             "name": "Guardian Greaves",
             "category": "support",
             "cost": 5350,

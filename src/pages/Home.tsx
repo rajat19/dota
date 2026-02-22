@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import heroesData from '../data/heroes.json'
+import { allHeroes } from '../data/heroData'
 
 function Home() {
-  const featuredHeroes = heroesData.heroes.slice(0, 8)
+  const featuredHeroes = [...allHeroes]
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .slice(0, 8)
 
   return (
     <div className="home-page">
@@ -117,7 +119,7 @@ function Home() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.9 + index * 0.1 }}
               >
-                <Link to={`/heroes/${hero.internalName}`} className="hero-card">
+                <Link to={`/heroes/${hero.key}`} className="hero-card">
                   <img
                     src={hero.image}
                     alt={hero.name}

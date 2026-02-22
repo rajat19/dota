@@ -4,124 +4,124 @@ import itemsData from '../data/items.json'
 import { allHeroes } from '../data/heroData'
 
 function ItemDetail() {
-    const { itemName } = useParams()
-    const navigate = useNavigate()
+  const { itemName } = useParams()
+  const navigate = useNavigate()
 
-    // Find item by slug (generated from name)
-    const item = itemsData.items.find(i =>
-        i.name.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9-]/g, '') === itemName
-    )
+  // Find item by slug (generated from name)
+  const item = itemsData.items.find(i =>
+    i.name.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9-]/g, '') === itemName
+  )
 
-    if (!item) {
-        return (
-            <div className="container">
-                <div className="not-found">
-                    <h2>Item not found</h2>
-                    <Link to="/items" className="btn btn-primary">Back to Items</Link>
-                </div>
-            </div>
-        )
-    }
-
-    // Find heroes this item is good against
-    const strongAgainstHeroes = item.countersHeroes
-        ?.map(id => allHeroes.find(h => h.id === id))
-        .filter(Boolean) || []
-
+  if (!item) {
     return (
-        <div className="item-detail-page">
-            <div className="container">
-                <motion.button
-                    className="back-btn"
-                    onClick={() => navigate(-1)}
-                    whileHover={{ x: -5 }}
-                >
-                    ← Back
-                </motion.button>
+      <div className="container">
+        <div className="not-found">
+          <h2>Item not found</h2>
+          <Link to="/items" className="btn btn-primary">Back to Items</Link>
+        </div>
+      </div>
+    )
+  }
 
-                <div className="item-detail-layout">
-                    {/* Header Section */}
-                    <motion.div
-                        className="item-header-card"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                    >
-                        <div className="item-main-info">
-                            <div className="item-image-container">
-                                <img src={item.image} alt={item.name} />
-                                <div className="item-cost-badge">
-                                    <span>💰</span> {item.cost}
-                                </div>
-                            </div>
-                            <div className="item-title-info">
-                                <span className="item-category-tag">{item.category}</span>
-                                <h1>{item.name}</h1>
-                                <p className="item-description">{item.description}</p>
-                            </div>
-                        </div>
+  // Find heroes this item is good against
+  const strongAgainstHeroes = item.countersHeroes
+    ?.map((key: string) => allHeroes.find(h => h.key === key))
+    .filter(Boolean) || []
 
-                        <div className="item-stats-section">
-                            <h3>Attributes & Bonuses</h3>
-                            <div className="stats-grid">
-                                {item.attributes.map((attr, idx) => (
-                                    <div key={idx} className="stat-row">
-                                        <span className="stat-bullet">⚡</span>
-                                        <span className="stat-text">{attr}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </motion.div>
+  return (
+    <div className="item-detail-page">
+      <div className="container">
+        <motion.button
+          className="back-btn"
+          onClick={() => navigate(-1)}
+          whileHover={{ x: -5 }}
+        >
+          ← Back
+        </motion.button>
 
-                    {/* Counter Info */}
-                    <div className="item-counter-grid">
-                        <motion.section
-                            className="counter-section"
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.2 }}
-                        >
-                            <h2>Effective Against Hero Types</h2>
-                            <div className="type-tags">
-                                {item.countersHeroTypes.length > 0 ? (
-                                    item.countersHeroTypes.map((type, idx) => (
-                                        <span key={idx} className="type-tag">{type}</span>
-                                    ))
-                                ) : (
-                                    <p className="empty-text">Generic utility item</p>
-                                )}
-                            </div>
-                        </motion.section>
-
-                        <motion.section
-                            className="counter-section"
-                            initial={{ opacity: 0, x: 20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.3 }}
-                        >
-                            <h2>Best Used Against</h2>
-                            <div className="hero-links-grid">
-                                {strongAgainstHeroes.length > 0 ? (
-                                    strongAgainstHeroes.map(hero => (
-                                        <Link
-                                            key={hero?.id}
-                                            to={`/heroes/${hero?.internalName}`}
-                                            className="mini-hero-link"
-                                        >
-                                            <img src={hero?.image} alt={hero?.name} />
-                                            <span>{hero?.name}</span>
-                                        </Link>
-                                    ))
-                                ) : (
-                                    <p className="empty-text">No specific hero counters listed</p>
-                                )}
-                            </div>
-                        </motion.section>
-                    </div>
+        <div className="item-detail-layout">
+          {/* Header Section */}
+          <motion.div
+            className="item-header-card"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <div className="item-main-info">
+              <div className="item-image-container">
+                <img src={item.image} alt={item.name} />
+                <div className="item-cost-badge">
+                  <span>💰</span> {item.cost}
                 </div>
+              </div>
+              <div className="item-title-info">
+                <span className="item-category-tag">{item.category}</span>
+                <h1>{item.name}</h1>
+                <p className="item-description">{item.description}</p>
+              </div>
             </div>
 
-            <style>{`
+            <div className="item-stats-section">
+              <h3>Attributes & Bonuses</h3>
+              <div className="stats-grid">
+                {item.attributes.map((attr, idx) => (
+                  <div key={idx} className="stat-row">
+                    <span className="stat-bullet">⚡</span>
+                    <span className="stat-text">{attr}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Counter Info */}
+          <div className="item-counter-grid">
+            <motion.section
+              className="counter-section"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              <h2>Effective Against Hero Types</h2>
+              <div className="type-tags">
+                {item.countersHeroTypes.length > 0 ? (
+                  item.countersHeroTypes.map((type, idx) => (
+                    <span key={idx} className="type-tag">{type}</span>
+                  ))
+                ) : (
+                  <p className="empty-text">Generic utility item</p>
+                )}
+              </div>
+            </motion.section>
+
+            <motion.section
+              className="counter-section"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.3 }}
+            >
+              <h2>Best Used Against</h2>
+              <div className="hero-links-grid">
+                {strongAgainstHeroes.length > 0 ? (
+                  strongAgainstHeroes.map(hero => (
+                    <Link
+                      key={hero?.key}
+                      to={`/heroes/${hero?.key}`}
+                      className="mini-hero-link"
+                    >
+                      <img src={hero?.image} alt={hero?.name} />
+                      <span>{hero?.name}</span>
+                    </Link>
+                  ))
+                ) : (
+                  <p className="empty-text">No specific hero counters listed</p>
+                )}
+              </div>
+            </motion.section>
+          </div>
+        </div>
+      </div>
+
+      <style>{`
         .item-detail-page {
           padding-bottom: 60px;
         }
@@ -337,8 +337,8 @@ function ItemDetail() {
           }
         }
       `}</style>
-        </div>
-    )
+    </div>
+  )
 }
 
 export default ItemDetail

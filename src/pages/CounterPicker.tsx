@@ -2,7 +2,6 @@ import { useState, useMemo, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { allHeroes } from '../data/heroData'
 import itemsData from '../data/items.json'
-import countersData from '../data/counters.json'
 
 function CounterPicker() {
   const [selectedHeroes, setSelectedHeroes] = useState([])
@@ -14,7 +13,7 @@ function CounterPicker() {
   const filteredHeroes = useMemo(() => {
     return allHeroes.filter(hero => {
       const matchesSearch = hero.name.toLowerCase().includes(searchQuery.toLowerCase())
-      const notSelected = !selectedHeroes.find(h => h.id === hero.id)
+      const notSelected = !selectedHeroes.find(h => h.key === hero.key)
       return matchesSearch && notSelected
     })
   }, [searchQuery, selectedHeroes])
@@ -28,7 +27,7 @@ function CounterPicker() {
 
   // Remove a hero from selection
   const removeHero = useCallback((heroId) => {
-    setSelectedHeroes(prev => prev.filter(h => h.id !== heroId))
+    setSelectedHeroes(prev => prev.filter(h => h.key !== heroId))
   }, [])
 
   // Clear all selections
@@ -42,45 +41,37 @@ function CounterPicker() {
     if (selectedHeroes.length === 0) return { heroes: [], items: [] }
 
     interface CounterScore {
-      id: number;
+      key: string;
       score: number;
       reasons: string[];
     }
 
-    // Collect all counter heroes
-    const heroCounterScores: Record<number, CounterScore> = {}
-    const itemCounterScores: Record<number, CounterScore> = {}
+    // Collect all counter heroes — always keyed by slug
+    const heroCounterScores: Record<string, CounterScore> = {}
+    const itemCounterScores: Record<string, { key: string; score: number; reasons: string[] }> = {}
 
     selectedHeroes.forEach(selectedHero => {
-      const counterInfo = countersData.heroCounters[selectedHero.id]
-
-      if (counterInfo) {
-        // Add hero counters
-        counterInfo.weakAgainst?.forEach((counterHeroId, index) => {
-          if (!heroCounterScores[counterHeroId]) {
-            heroCounterScores[counterHeroId] = { id: counterHeroId, score: 0, reasons: [] }
+      // Hero counters from enriched data (counteredBy = heroes weak against this pick)
+      if (selectedHero.counteredBy) {
+        selectedHero.counteredBy.forEach((counterHeroKey: string, index: number) => {
+          if (!heroCounterScores[counterHeroKey]) {
+            heroCounterScores[counterHeroKey] = { key: counterHeroKey, score: 0, reasons: [] }
           }
-          heroCounterScores[counterHeroId].score += (5 - index) * 2 // Weight by position
-          heroCounterScores[counterHeroId].reasons.push(`Counters ${selectedHero.name}`)
-        })
-
-        // Add item counters
-        counterInfo.counterItems?.forEach((itemId, index) => {
-          if (!itemCounterScores[itemId]) {
-            itemCounterScores[itemId] = { id: itemId, score: 0, reasons: [] }
-          }
-          itemCounterScores[itemId].score += (5 - index) * 2
-          itemCounterScores[itemId].reasons.push(`Effective vs ${selectedHero.name}`)
+          heroCounterScores[counterHeroKey].score += (5 - index) * 2
+          heroCounterScores[counterHeroKey].reasons.push(`Counters ${selectedHero.name}`)
         })
       }
 
-      // Also check hero's counteredBy list
-      selectedHero.counteredBy?.forEach((counterHeroId, index) => {
-        if (!heroCounterScores[counterHeroId]) {
-          heroCounterScores[counterHeroId] = { id: counterHeroId, score: 0, reasons: [] }
-        }
-        heroCounterScores[counterHeroId].score += (5 - index)
-      })
+      // Item counters from enriched data
+      if (selectedHero.counterItems) {
+        selectedHero.counterItems.forEach((itemKey: string, index: number) => {
+          if (!itemCounterScores[itemKey]) {
+            itemCounterScores[itemKey] = { key: itemKey, score: 0, reasons: [] }
+          }
+          itemCounterScores[itemKey].score += (5 - index) * 2
+          itemCounterScores[itemKey].reasons.push(`Effective vs ${selectedHero.name}`)
+        })
+      }
     })
 
     // Sort and get top counters
@@ -88,7 +79,7 @@ function CounterPicker() {
       .sort((a, b) => b.score - a.score)
       .slice(0, 10)
       .map(counter => {
-        const hero = allHeroes.find(h => h.id === counter.id)
+        const hero = allHeroes.find(h => h.key === counter.key)
         return hero ? { ...hero, counterScore: counter.score, reasons: counter.reasons } : null
       })
       .filter(Boolean)
@@ -97,7 +88,7 @@ function CounterPicker() {
       .sort((a, b) => b.score - a.score)
       .slice(0, 8)
       .map(counter => {
-        const item = itemsData.items.find(i => i.id === counter.id)
+        const item = itemsData.items.find(i => i.key === counter.key)
         return item ? { ...item, counterScore: counter.score, reasons: counter.reasons } : null
       })
       .filter(Boolean)
@@ -113,24 +104,24 @@ function CounterPicker() {
     if (selectedHeroes.length === 0) return []
 
     interface WeaknessScore {
-      id: number;
+      id: number | string;
       score: number;
     }
-    const weaknessScores: Record<number, WeaknessScore> = {}
+    const weaknessScores: Record<number | string, WeaknessScore> = {}
 
     selectedHeroes.forEach(hero => {
-      hero.counters?.forEach((counteredHeroId, index) => {
-        if (!weaknessScores[counteredHeroId]) {
-          weaknessScores[counteredHeroId] = { id: counteredHeroId, score: 0 }
+      hero.counters?.forEach((counteredHeroKey: string, index: number) => {
+        if (!weaknessScores[counteredHeroKey]) {
+          weaknessScores[counteredHeroKey] = { id: counteredHeroKey, score: 0 }
         }
-        weaknessScores[counteredHeroId].score += (5 - index)
+        weaknessScores[counteredHeroKey].score += (5 - index)
       })
     })
 
     return Object.values(weaknessScores)
       .sort((a, b) => b.score - a.score)
       .slice(0, 5)
-      .map(w => allHeroes.find(h => h.id === w.id))
+      .map(w => allHeroes.find(h => h.key === w.id))
       .filter(Boolean)
   }, [selectedHeroes])
 
@@ -181,7 +172,7 @@ function CounterPicker() {
                         <span className="hero-slot-name">{hero.name}</span>
                         <button
                           className="remove-hero-btn"
-                          onClick={() => removeHero(hero.id)}
+                          onClick={() => removeHero(hero.key)}
                         >
                           ✕
                         </button>
@@ -211,7 +202,7 @@ function CounterPicker() {
                 <AnimatePresence>
                   {filteredHeroes.slice(0, 20).map((hero) => (
                     <motion.button
-                      key={hero.id}
+                      key={hero.key}
                       className="available-hero"
                       onClick={() => addHero(hero)}
                       disabled={selectedHeroes.length >= maxHeroes}
@@ -266,7 +257,7 @@ function CounterPicker() {
                     <AnimatePresence>
                       {counterRecommendations.heroes.map((hero, index) => (
                         <motion.div
-                          key={hero.id}
+                          key={hero.key}
                           className="counter-hero-card"
                           initial={{ opacity: 0, x: 20 }}
                           animate={{ opacity: 1, x: 0 }}
@@ -300,7 +291,7 @@ function CounterPicker() {
                     <AnimatePresence>
                       {counterRecommendations.items.map((item, index) => (
                         <motion.div
-                          key={item.id}
+                          key={item.key}
                           className="counter-item-card"
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
@@ -331,7 +322,7 @@ function CounterPicker() {
                     </h3>
                     <div className="weakness-list">
                       {teamWeaknesses.map((hero) => (
-                        <div key={hero.id} className="weakness-hero">
+                        <div key={hero.key} className="weakness-hero">
                           <img src={hero.image} alt={hero.name} />
                           <span>{hero.name}</span>
                         </div>

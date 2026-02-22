@@ -2,14 +2,12 @@ import { useParams, Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { allHeroes } from '../data/heroData'
 import itemsData from '../data/items.json'
-import countersData from '../data/counters.json'
 
 function HeroDetail() {
   const { heroName } = useParams()
   const navigate = useNavigate()
 
-  const hero = allHeroes.find(h => h.internalName === heroName)
-  const counterInfo = hero ? countersData.heroCounters[hero.id] : undefined
+  const hero = allHeroes.find(h => h.key === heroName)
 
   if (!hero) {
     return (
@@ -22,17 +20,17 @@ function HeroDetail() {
     )
   }
 
-  // Get counter heroes data
-  const strongAgainstHeroes = counterInfo?.strongAgainst
-    ?.map(id => allHeroes.find(h => h.id === id))
+  // Get counter heroes data (now stored directly on the hero)
+  const strongAgainstHeroes = hero.counters
+    ?.map((key: string) => allHeroes.find(h => h.key === key))
     .filter(Boolean) || []
 
-  const weakAgainstHeroes = counterInfo?.weakAgainst
-    ?.map(id => allHeroes.find(h => h.id === id))
+  const weakAgainstHeroes = hero.counteredBy
+    ?.map((key: string) => allHeroes.find(h => h.key === key))
     .filter(Boolean) || []
 
-  const counterItems = counterInfo?.counterItems
-    ?.map(id => itemsData.items.find(i => i.id === id))
+  const counterItems = hero.counterItems
+    ?.map((key: string) => itemsData.items.find(i => i.key === key))
     .filter(Boolean) || []
 
   const getAttributeColor = (attr) => {
@@ -147,6 +145,18 @@ function HeroDetail() {
           </div>
         </motion.div>
 
+        {/* Hero Bio */}
+        {hero.hype && (
+          <motion.section
+            className="hero-bio-section"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15 }}
+          >
+            <p className="hero-hype">{hero.hype}</p>
+          </motion.section>
+        )}
+
         {/* Abilities Section */}
         <motion.section
           className="abilities-section"
@@ -159,7 +169,7 @@ function HeroDetail() {
             {hero.abilities.map((ability, index) => (
               <motion.div
                 key={ability.name}
-                className="ability-card"
+                className={`ability-card ${ability.type === 'ultimate' ? 'ultimate' : ''}`}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 + index * 0.1 }}
@@ -168,13 +178,79 @@ function HeroDetail() {
                   <h4>{ability.name}</h4>
                   <span className={`ability-type ${ability.type}`}>
                     {ability.type}
+                    {ability.isPassive && ' / passive'}
                   </span>
                 </div>
                 <p>{ability.description}</p>
+
+                {/* Cooldown & Mana */}
+                <div className="ability-stats">
+                  {ability.cooldown?.length > 0 && (
+                    <span className="ability-stat cooldown">🕐 {ability.cooldown.join(' / ')}</span>
+                  )}
+                  {ability.manaCost?.length > 0 && (
+                    <span className="ability-stat mana">💧 {ability.manaCost.join(' / ')}</span>
+                  )}
+                </div>
+
+                {/* Scepter / Shard */}
+                {ability.hasScepter && ability.scepterDesc && (
+                  <div className="upgrade-tag scepter">
+                    <span className="upgrade-icon">🔷</span>
+                    <span>Aghanim's Scepter: {ability.scepterDesc.replace(/%[^%]+%/g, '').replace(/%%/g, '%')}</span>
+                  </div>
+                )}
+                {ability.hasShard && ability.shardDesc && (
+                  <div className="upgrade-tag shard">
+                    <span className="upgrade-icon">🔶</span>
+                    <span>Aghanim's Shard: {ability.shardDesc.replace(/%[^%]+%/g, '').replace(/%%/g, '%')}</span>
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>
         </motion.section>
+
+        {/* Talents */}
+        {hero.talents?.length > 0 && (
+          <motion.section
+            className="talents-section"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.35 }}
+          >
+            <h2>🌟 Talents</h2>
+            <div className="talent-tree">
+              {[...hero.talents].reverse().map((tier) => (
+                <div key={tier.level} className="talent-row">
+                  <span className="talent-choice left">{tier.left}</span>
+                  <span className="talent-level">{tier.level}</span>
+                  <span className="talent-choice right">{tier.right}</span>
+                </div>
+              ))}
+            </div>
+          </motion.section>
+        )}
+
+        {/* Facets */}
+        {hero.facets?.length > 0 && (
+          <motion.section
+            className="facets-section"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+          >
+            <h2>💎 Facets</h2>
+            <div className="facets-grid">
+              {hero.facets.map((facet) => (
+                <div key={facet.name} className="facet-card">
+                  <h4>{facet.name}</h4>
+                  <p>{facet.description}</p>
+                </div>
+              ))}
+            </div>
+          </motion.section>
+        )}
 
         {/* Counter Information */}
         <div className="counter-sections">
@@ -187,14 +263,14 @@ function HeroDetail() {
               transition={{ delay: 0.4 }}
             >
               <h2>💪 Strong Against</h2>
-              {counterInfo?.reason?.strongAgainst && (
-                <p className="counter-reason">{counterInfo.reason.strongAgainst}</p>
+              {hero.counterReason?.strongAgainst && (
+                <p className="counter-reason">{hero.counterReason.strongAgainst}</p>
               )}
               <div className="counter-heroes-grid">
                 {strongAgainstHeroes.map(h => (
                   <Link
-                    key={h.id}
-                    to={`/heroes/${h.internalName}`}
+                    key={h.key}
+                    to={`/heroes/${h.key}`}
                     className="mini-hero-card"
                   >
                     <img src={h.image} alt={h.name} />
@@ -214,14 +290,14 @@ function HeroDetail() {
               transition={{ delay: 0.5 }}
             >
               <h2>💀 Weak Against</h2>
-              {counterInfo?.reason?.weakAgainst && (
-                <p className="counter-reason">{counterInfo.reason.weakAgainst}</p>
+              {hero.counterReason?.weakAgainst && (
+                <p className="counter-reason">{hero.counterReason.weakAgainst}</p>
               )}
               <div className="counter-heroes-grid">
                 {weakAgainstHeroes.map(h => (
                   <Link
-                    key={h.id}
-                    to={`/heroes/${h.internalName}`}
+                    key={h.key}
+                    to={`/heroes/${h.key}`}
                     className="mini-hero-card"
                   >
                     <img src={h.image} alt={h.name} />
@@ -241,12 +317,12 @@ function HeroDetail() {
               transition={{ delay: 0.6 }}
             >
               <h2>🎒 Items to Counter</h2>
-              {counterInfo?.reason?.itemCounters && (
-                <p className="counter-reason">{counterInfo.reason.itemCounters}</p>
+              {hero.counterReason?.itemCounters && (
+                <p className="counter-reason">{hero.counterReason.itemCounters}</p>
               )}
               <div className="counter-items-grid">
                 {counterItems.map(item => (
-                  <div key={item.id} className="mini-item-card">
+                  <div key={item.key} className="mini-item-card">
                     <img src={item.image} alt={item.name} />
                     <div className="item-info">
                       <span className="item-name">{item.name}</span>
@@ -615,6 +691,159 @@ function HeroDetail() {
           background: var(--gradient-card);
           border: var(--border-accent);
           border-radius: var(--radius-xl);
+        }
+
+        /* Hero Bio */
+        .hero-bio-section {
+          margin-bottom: 32px;
+        }
+
+        .hero-hype {
+          font-size: 1.05rem;
+          color: var(--text-secondary);
+          line-height: 1.7;
+          font-style: italic;
+          padding: 20px 24px;
+          background: var(--gradient-card);
+          border-left: 3px solid var(--color-accent-gold);
+          border-radius: var(--radius-md);
+        }
+
+        /* Ability Stats */
+        .ability-stats {
+          display: flex;
+          gap: 16px;
+          margin-top: 10px;
+          flex-wrap: wrap;
+        }
+
+        .ability-stat {
+          font-size: 0.78rem;
+          color: var(--text-muted);
+        }
+
+        .ability-stat.cooldown { color: #8ec8e8; }
+        .ability-stat.mana { color: #6b9bff; }
+
+        .ability-card.ultimate {
+          border-left: 3px solid var(--color-accent-gold);
+        }
+
+        /* Scepter / Shard tags */
+        .upgrade-tag {
+          margin-top: 8px;
+          padding: 8px 10px;
+          border-radius: var(--radius-sm);
+          font-size: 0.75rem;
+          line-height: 1.5;
+          color: var(--text-secondary);
+          display: flex;
+          gap: 6px;
+          align-items: flex-start;
+        }
+
+        .upgrade-tag.scepter {
+          background: rgba(30, 90, 180, 0.15);
+          border: 1px solid rgba(30, 90, 180, 0.3);
+        }
+
+        .upgrade-tag.shard {
+          background: rgba(180, 120, 30, 0.15);
+          border: 1px solid rgba(180, 120, 30, 0.3);
+        }
+
+        .upgrade-icon { flex-shrink: 0; }
+
+        /* Talent Tree */
+        .talents-section {
+          margin-bottom: 32px;
+        }
+
+        .talents-section h2 {
+          margin-bottom: 16px;
+        }
+
+        .talent-tree {
+          background: var(--gradient-card);
+          border: var(--border-subtle);
+          border-radius: var(--radius-lg);
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+        }
+
+        .talent-row {
+          display: grid;
+          grid-template-columns: 1fr auto 1fr;
+          gap: 12px;
+          align-items: center;
+          padding: 12px 0;
+          border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .talent-row:last-child { border-bottom: none; }
+
+        .talent-choice {
+          font-size: 0.82rem;
+          color: var(--text-secondary);
+          padding: 8px 14px;
+          background: var(--color-bg-secondary);
+          border-radius: var(--radius-sm);
+          border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .talent-choice.left { text-align: right; }
+        .talent-choice.right { text-align: left; }
+
+        .talent-level {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--color-accent-gold);
+          color: #000;
+          font-weight: 700;
+          font-size: 0.85rem;
+          border-radius: var(--radius-round);
+          flex-shrink: 0;
+        }
+
+        /* Facets */
+        .facets-section {
+          margin-bottom: 32px;
+        }
+
+        .facets-section h2 {
+          margin-bottom: 16px;
+        }
+
+        .facets-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 16px;
+        }
+
+        .facet-card {
+          padding: 16px;
+          background: var(--gradient-card);
+          border: var(--border-subtle);
+          border-radius: var(--radius-md);
+          border-left: 3px solid var(--color-accent-purple);
+        }
+
+        .facet-card h4 {
+          color: var(--color-accent-purple);
+          font-family: var(--font-body);
+          font-size: 0.95rem;
+          margin-bottom: 8px;
+        }
+
+        .facet-card p {
+          font-size: 0.82rem;
+          color: var(--text-secondary);
+          line-height: 1.6;
         }
 
         .not-found {
