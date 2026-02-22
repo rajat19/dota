@@ -23,10 +23,10 @@ export const allHeroes = heroesListData.heroes.map(hero => {
     const counter = counterMap[hero.key] ?? {}
     return {
         ...hero,
-        counters: counter.strongAgainst ?? hero.counters ?? [],
-        counteredBy: counter.weakAgainst ?? hero.counteredBy ?? [],
-        counterItems: counter.counterItems ?? hero.counterItems ?? [],
-        counterReason: counter.reason ?? hero.counterReason ?? null,
+        counters: counter.strongAgainst ?? [],
+        counteredBy: counter.weakAgainst ?? [],
+        counterItems: counter.counterItems ?? [],
+        counterReason: counter.reason ?? null,
     }
 })
 
