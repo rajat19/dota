@@ -28,7 +28,7 @@ export const allHeroes = heroesListData.heroes.map(hero => {
         counterItems: counter.counterItems ?? [],
         counterReason: counter.reason ?? null,
     }
-})
+}).sort((a, b) => b.name.localeCompare(a.name))
 
 // Lookups
 export const getHeroByKey = (key: string) => allHeroes.find(h => h.key === key)

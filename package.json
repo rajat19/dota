@@ -11,7 +11,8 @@
     "server": "node server/index.js",
     "fetch-heroes": "npx -y tsx scripts/fetchHeroes.ts",
     "fetch-counters": "npx -y tsx scripts/fetchCounters.ts",
-    "fetch-all": "npx -y tsx scripts/fetchCounters.ts && npx -y tsx scripts/fetchHeroes.ts"
+    "fetch-meta": "npx -y tsx scripts/fetchMeta.ts",
+    "fetch-all": "npx -y tsx scripts/fetchCounters.ts && npx -y tsx scripts/fetchMeta.ts && npx -y tsx scripts/fetchHeroes.ts"
   },
   "dependencies": {
     "framer-motion": "^10.16.5",

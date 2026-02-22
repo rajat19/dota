@@ -1,0 +1,95 @@
+{
+  "lastUpdated": "2026-02-22T12:35:19.608Z",
+  "topHeroes": [
+    {
+      "key": "pudge",
+      "name": "Pudge",
+      "totalPicks": 751286,
+      "winrate": 51.6
+    },
+    {
+      "key": "lion",
+      "name": "Lion",
+      "totalPicks": 724348,
+      "winrate": 49.5
+    },
+    {
+      "key": "sniper",
+      "name": "Sniper",
+      "totalPicks": 568538,
+      "winrate": 47.6
+    },
+    {
+      "key": "invoker",
+      "name": "Invoker",
+      "totalPicks": 565308,
+      "winrate": 51.2
+    },
+    {
+      "key": "shadow_fiend",
+      "name": "Shadow Fiend",
+      "totalPicks": 552547,
+      "winrate": 50.4
+    },
+    {
+      "key": "witch_doctor",
+      "name": "Witch Doctor",
+      "totalPicks": 531446,
+      "winrate": 52.2
+    },
+    {
+      "key": "windranger",
+      "name": "Windranger",
+      "totalPicks": 530784,
+      "winrate": 48.6
+    },
+    {
+      "key": "axe",
+      "name": "Axe",
+      "totalPicks": 512428,
+      "winrate": 51
+    },
+    {
+      "key": "rubick",
+      "name": "Rubick",
+      "totalPicks": 499450,
+      "winrate": 48.2
+    },
+    {
+      "key": "ogre_magi",
+      "name": "Ogre Magi",
+      "totalPicks": 482618,
+      "winrate": 51
+    },
+    {
+      "key": "razor",
+      "name": "Razor",
+      "totalPicks": 461509,
+      "winrate": 54
+    },
+    {
+      "key": "shadow_shaman",
+      "name": "Shadow Shaman",
+      "totalPicks": 458781,
+      "winrate": 51.8
+    },
+    {
+      "key": "legion_commander",
+      "name": "Legion Commander",
+      "totalPicks": 448180,
+      "winrate": 52.8
+    },
+    {
+      "key": "juggernaut",
+      "name": "Juggernaut",
+      "totalPicks": 434903,
+      "winrate": 50.6
+    },
+    {
+      "key": "slark",
+      "name": "Slark",
+      "totalPicks": 419462,
+      "winrate": 50.9
+    }
+  ]
+}

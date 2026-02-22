@@ -4,6 +4,9 @@
       "key": "anti_mage",
       "id": 1,
       "name": "Anti-Mage",
+      "totalPicks": 397830,
+      "totalWins": 202300,
+      "winrate": 50.9,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -274,6 +277,9 @@
       "key": "axe",
       "id": 2,
       "name": "Axe",
+      "totalPicks": 512428,
+      "totalWins": 261231,
+      "winrate": 51,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -612,6 +618,9 @@
       "key": "bane",
       "id": 3,
       "name": "Bane",
+      "totalPicks": 57303,
+      "totalWins": 28421,
+      "winrate": 49.6,
       "primaryAttr": "all",
       "attackType": "Ranged",
       "roles": [
@@ -911,6 +920,9 @@
       "key": "bloodseeker",
       "id": 4,
       "name": "Bloodseeker",
+      "totalPicks": 113246,
+      "totalWins": 58098,
+      "winrate": 51.3,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -1237,6 +1249,9 @@
       "key": "crystal_maiden",
       "id": 5,
       "name": "Crystal Maiden",
+      "totalPicks": 293261,
+      "totalWins": 146499,
+      "winrate": 50,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -1679,6 +1694,9 @@
       "key": "drow_ranger",
       "id": 6,
       "name": "Drow Ranger",
+      "totalPicks": 412038,
+      "totalWins": 214522,
+      "winrate": 52.1,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -2067,6 +2085,9 @@
       "key": "earthshaker",
       "id": 7,
       "name": "Earthshaker",
+      "totalPicks": 331032,
+      "totalWins": 157252,
+      "winrate": 47.5,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -2382,6 +2403,9 @@
       "key": "juggernaut",
       "id": 8,
       "name": "Juggernaut",
+      "totalPicks": 434903,
+      "totalWins": 220128,
+      "winrate": 50.6,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -2689,6 +2713,9 @@
       "key": "mirana",
       "id": 9,
       "name": "Mirana",
+      "totalPicks": 194833,
+      "totalWins": 99496,
+      "winrate": 51.1,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -3020,6 +3047,9 @@
       "key": "morphling",
       "id": 10,
       "name": "Morphling",
+      "totalPicks": 166354,
+      "totalWins": 78895,
+      "winrate": 47.4,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -3350,6 +3380,9 @@
       "key": "shadow_fiend",
       "id": 11,
       "name": "Shadow Fiend",
+      "totalPicks": 552547,
+      "totalWins": 278239,
+      "winrate": 50.4,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -3676,6 +3709,9 @@
       "key": "phantom_lancer",
       "id": 12,
       "name": "Phantom Lancer",
+      "totalPicks": 211268,
+      "totalWins": 109862,
+      "winrate": 52,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -4032,6 +4068,9 @@
       "key": "puck",
       "id": 13,
       "name": "Puck",
+      "totalPicks": 174346,
+      "totalWins": 84205,
+      "winrate": 48.3,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -4367,6 +4406,9 @@
       "key": "pudge",
       "id": 14,
       "name": "Pudge",
+      "totalPicks": 751286,
+      "totalWins": 387701,
+      "winrate": 51.6,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -4692,6 +4734,9 @@
       "key": "razor",
       "id": 15,
       "name": "Razor",
+      "totalPicks": 461509,
+      "totalWins": 249072,
+      "winrate": 54,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -5039,6 +5084,9 @@
       "key": "sand_king",
       "id": 16,
       "name": "Sand King",
+      "totalPicks": 142668,
+      "totalWins": 72877,
+      "winrate": 51.1,
       "primaryAttr": "all",
       "attackType": "Melee",
       "roles": [
@@ -5406,6 +5454,9 @@
       "key": "storm_spirit",
       "id": 17,
       "name": "Storm Spirit",
+      "totalPicks": 226000,
+      "totalWins": 109759,
+      "winrate": 48.6,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -5730,6 +5781,9 @@
       "key": "sven",
       "id": 18,
       "name": "Sven",
+      "totalPicks": 156846,
+      "totalWins": 76616,
+      "winrate": 48.8,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -6045,6 +6099,9 @@
       "key": "tiny",
       "id": 19,
       "name": "Tiny",
+      "totalPicks": 241639,
+      "totalWins": 113217,
+      "winrate": 46.9,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -6501,6 +6558,9 @@
       "key": "vengeful_spirit",
       "id": 20,
       "name": "Vengeful Spirit",
+      "totalPicks": 189914,
+      "totalWins": 99927,
+      "winrate": 52.6,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -6792,6 +6852,9 @@
       "key": "windranger",
       "id": 21,
       "name": "Windranger",
+      "totalPicks": 530784,
+      "totalWins": 258013,
+      "winrate": 48.6,
       "primaryAttr": "all",
       "attackType": "Ranged",
       "roles": [
@@ -7186,6 +7249,9 @@
       "key": "zeus",
       "id": 22,
       "name": "Zeus",
+      "totalPicks": 363261,
+      "totalWins": 179513,
+      "winrate": 49.4,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -7626,6 +7692,9 @@
       "key": "kunkka",
       "id": 23,
       "name": "Kunkka",
+      "totalPicks": 143333,
+      "totalWins": 71498,
+      "winrate": 49.9,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -8047,6 +8116,9 @@
       "key": "lina",
       "id": 25,
       "name": "Lina",
+      "totalPicks": 337880,
+      "totalWins": 165731,
+      "winrate": 49.1,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -8379,6 +8451,9 @@
       "key": "lion",
       "id": 26,
       "name": "Lion",
+      "totalPicks": 724348,
+      "totalWins": 358625,
+      "winrate": 49.5,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -8696,6 +8771,9 @@
       "key": "shadow_shaman",
       "id": 27,
       "name": "Shadow Shaman",
+      "totalPicks": 458781,
+      "totalWins": 237614,
+      "winrate": 51.8,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -8981,6 +9059,9 @@
       "key": "slardar",
       "id": 28,
       "name": "Slardar",
+      "totalPicks": 247889,
+      "totalWins": 125491,
+      "winrate": 50.6,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -9310,6 +9391,9 @@
       "key": "tidehunter",
       "id": 29,
       "name": "Tidehunter",
+      "totalPicks": 206105,
+      "totalWins": 101889,
+      "winrate": 49.4,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -9679,6 +9763,9 @@
       "key": "witch_doctor",
       "id": 30,
       "name": "Witch Doctor",
+      "totalPicks": 531446,
+      "totalWins": 277643,
+      "winrate": 52.2,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -10028,6 +10115,9 @@
       "key": "lich",
       "id": 31,
       "name": "Lich",
+      "totalPicks": 366775,
+      "totalWins": 194404,
+      "winrate": 53,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -10484,6 +10574,9 @@
       "key": "riki",
       "id": 32,
       "name": "Riki",
+      "totalPicks": 154509,
+      "totalWins": 79957,
+      "winrate": 51.7,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -10762,6 +10855,9 @@
       "key": "enigma",
       "id": 33,
       "name": "Enigma",
+      "totalPicks": 92272,
+      "totalWins": 47250,
+      "winrate": 51.2,
       "primaryAttr": "all",
       "attackType": "Ranged",
       "roles": [
@@ -11109,6 +11205,9 @@
       "key": "tinker",
       "id": 34,
       "name": "Tinker",
+      "totalPicks": 170870,
+      "totalWins": 83724,
+      "winrate": 49,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -11455,6 +11554,9 @@
       "key": "sniper",
       "id": 35,
       "name": "Sniper",
+      "totalPicks": 568538,
+      "totalWins": 270851,
+      "winrate": 47.6,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -11832,6 +11934,9 @@
       "key": "necrophos",
       "id": 36,
       "name": "Necrophos",
+      "totalPicks": 377536,
+      "totalWins": 192948,
+      "winrate": 51.1,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -12149,6 +12254,9 @@
       "key": "warlock",
       "id": 37,
       "name": "Warlock",
+      "totalPicks": 262420,
+      "totalWins": 131752,
+      "winrate": 50.2,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -12530,6 +12638,9 @@
       "key": "beastmaster",
       "id": 38,
       "name": "Beastmaster",
+      "totalPicks": 145883,
+      "totalWins": 68632,
+      "winrate": 47,
       "primaryAttr": "all",
       "attackType": "Melee",
       "roles": [
@@ -13029,6 +13140,9 @@
       "key": "queen_of_pain",
       "id": 39,
       "name": "Queen of Pain",
+      "totalPicks": 408280,
+      "totalWins": 199217,
+      "winrate": 48.8,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -13299,6 +13413,9 @@
       "key": "venomancer",
       "id": 40,
       "name": "Venomancer",
+      "totalPicks": 327729,
+      "totalWins": 167459,
+      "winrate": 51.1,
       "primaryAttr": "all",
       "attackType": "Ranged",
       "roles": [
@@ -13629,6 +13746,9 @@
       "key": "faceless_void",
       "id": 41,
       "name": "Faceless Void",
+      "totalPicks": 274641,
+      "totalWins": 135502,
+      "winrate": 49.3,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -13894,6 +14014,9 @@
       "key": "wraith_king",
       "id": 42,
       "name": "Wraith King",
+      "totalPicks": 286736,
+      "totalWins": 152728,
+      "winrate": 53.3,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -14141,6 +14264,9 @@
       "key": "death_prophet",
       "id": 43,
       "name": "Death Prophet",
+      "totalPicks": 105759,
+      "totalWins": 51481,
+      "winrate": 48.7,
       "primaryAttr": "all",
       "attackType": "Ranged",
       "roles": [
@@ -14442,6 +14568,9 @@
       "key": "phantom_assassin",
       "id": 44,
       "name": "Phantom Assassin",
+      "totalPicks": 368705,
+      "totalWins": 178490,
+      "winrate": 48.4,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -14759,6 +14888,9 @@
       "key": "pugna",
       "id": 45,
       "name": "Pugna",
+      "totalPicks": 117133,
+      "totalWins": 56946,
+      "winrate": 48.6,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -15087,6 +15219,9 @@
       "key": "templar_assassin",
       "id": 46,
       "name": "Templar Assassin",
+      "totalPicks": 173430,
+      "totalWins": 83835,
+      "winrate": 48.3,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -15431,6 +15566,9 @@
       "key": "viper",
       "id": 47,
       "name": "Viper",
+      "totalPicks": 281017,
+      "totalWins": 136518,
+      "winrate": 48.6,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -15847,6 +15985,9 @@
       "key": "luna",
       "id": 48,
       "name": "Luna",
+      "totalPicks": 202260,
+      "totalWins": 101648,
+      "winrate": 50.3,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -16162,6 +16303,9 @@
       "key": "dragon_knight",
       "id": 49,
       "name": "Dragon Knight",
+      "totalPicks": 199309,
+      "totalWins": 93938,
+      "winrate": 47.1,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -16601,6 +16745,9 @@
       "key": "dazzle",
       "id": 50,
       "name": "Dazzle",
+      "totalPicks": 170154,
+      "totalWins": 89748,
+      "winrate": 52.7,
       "primaryAttr": "all",
       "attackType": "Ranged",
       "roles": [
@@ -16959,6 +17106,9 @@
       "key": "clockwerk",
       "id": 51,
       "name": "Clockwerk",
+      "totalPicks": 159268,
+      "totalWins": 81607,
+      "winrate": 51.2,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -17414,6 +17564,9 @@
       "key": "leshrac",
       "id": 52,
       "name": "Leshrac",
+      "totalPicks": 89989,
+      "totalWins": 45757,
+      "winrate": 50.8,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -17790,6 +17943,9 @@
       "key": "natures_prophet",
       "id": 53,
       "name": "Nature's Prophet",
+      "totalPicks": 253032,
+      "totalWins": 110318,
+      "winrate": 43.6,
       "primaryAttr": "all",
       "attackType": "Ranged",
       "roles": [
@@ -18149,6 +18305,9 @@
       "key": "lifestealer",
       "id": 54,
       "name": "Lifestealer",
+      "totalPicks": 190618,
+      "totalWins": 96897,
+      "winrate": 50.8,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -18476,6 +18635,9 @@
       "key": "dark_seer",
       "id": 55,
       "name": "Dark Seer",
+      "totalPicks": 60888,
+      "totalWins": 30345,
+      "winrate": 49.8,
       "primaryAttr": "int",
       "attackType": "Melee",
       "roles": [
@@ -18824,6 +18986,9 @@
       "key": "clinkz",
       "id": 56,
       "name": "Clinkz",
+      "totalPicks": 285271,
+      "totalWins": 146389,
+      "winrate": 51.3,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -19219,6 +19384,9 @@
       "key": "omniknight",
       "id": 57,
       "name": "Omniknight",
+      "totalPicks": 144856,
+      "totalWins": 76162,
+      "winrate": 52.6,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -19535,6 +19703,9 @@
       "key": "enchantress",
       "id": 58,
       "name": "Enchantress",
+      "totalPicks": 68138,
+      "totalWins": 33604,
+      "winrate": 49.3,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -19944,6 +20115,9 @@
       "key": "huskar",
       "id": 59,
       "name": "Huskar",
+      "totalPicks": 183453,
+      "totalWins": 88135,
+      "winrate": 48,
       "primaryAttr": "str",
       "attackType": "Ranged",
       "roles": [
@@ -20351,6 +20525,9 @@
       "key": "night_stalker",
       "id": 60,
       "name": "Night Stalker",
+      "totalPicks": 116056,
+      "totalWins": 58653,
+      "winrate": 50.5,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -20695,6 +20872,9 @@
       "key": "broodmother",
       "id": 61,
       "name": "Broodmother",
+      "totalPicks": 113157,
+      "totalWins": 60134,
+      "winrate": 53.1,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -21068,6 +21248,9 @@
       "key": "bounty_hunter",
       "id": 62,
       "name": "Bounty Hunter",
+      "totalPicks": 159702,
+      "totalWins": 81300,
+      "winrate": 50.9,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -21388,6 +21571,9 @@
       "key": "weaver",
       "id": 63,
       "name": "Weaver",
+      "totalPicks": 362353,
+      "totalWins": 181393,
+      "winrate": 50.1,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -21701,6 +21887,9 @@
       "key": "jakiro",
       "id": 64,
       "name": "Jakiro",
+      "totalPicks": 419182,
+      "totalWins": 200377,
+      "winrate": 47.8,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -22123,6 +22312,9 @@
       "key": "batrider",
       "id": 65,
       "name": "Batrider",
+      "totalPicks": 80214,
+      "totalWins": 37122,
+      "winrate": 46.3,
       "primaryAttr": "all",
       "attackType": "Ranged",
       "roles": [
@@ -22497,6 +22689,9 @@
       "key": "chen",
       "id": 66,
       "name": "Chen",
+      "totalPicks": 23398,
+      "totalWins": 10877,
+      "winrate": 46.5,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -22872,6 +23067,9 @@
       "key": "spectre",
       "id": 67,
       "name": "Spectre",
+      "totalPicks": 212303,
+      "totalWins": 114227,
+      "winrate": 53.8,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -23148,6 +23346,9 @@
       "key": "ancient_apparition",
       "id": 68,
       "name": "Ancient Apparition",
+      "totalPicks": 226984,
+      "totalWins": 116122,
+      "winrate": 51.2,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -23483,6 +23684,9 @@
       "key": "doom",
       "id": 69,
       "name": "Doom",
+      "totalPicks": 72964,
+      "totalWins": 32639,
+      "winrate": 44.7,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -23797,6 +24001,9 @@
       "key": "ursa",
       "id": 70,
       "name": "Ursa",
+      "totalPicks": 263528,
+      "totalWins": 127348,
+      "winrate": 48.3,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -24094,6 +24301,9 @@
       "key": "spirit_breaker",
       "id": 71,
       "name": "Spirit Breaker",
+      "totalPicks": 341113,
+      "totalWins": 174701,
+      "winrate": 51.2,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -24442,6 +24652,9 @@
       "key": "gyrocopter",
       "id": 72,
       "name": "Gyrocopter",
+      "totalPicks": 148694,
+      "totalWins": 68818,
+      "winrate": 46.3,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -24781,6 +24994,9 @@
       "key": "alchemist",
       "id": 73,
       "name": "Alchemist",
+      "totalPicks": 153265,
+      "totalWins": 77696,
+      "winrate": 50.7,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -25158,6 +25374,9 @@
       "key": "invoker",
       "id": 74,
       "name": "Invoker",
+      "totalPicks": 565308,
+      "totalWins": 289495,
+      "winrate": 51.2,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -26292,6 +26511,9 @@
       "key": "silencer",
       "id": 75,
       "name": "Silencer",
+      "totalPicks": 296838,
+      "totalWins": 143610,
+      "winrate": 48.4,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -26642,6 +26864,9 @@
       "key": "outworld_devourer",
       "id": 76,
       "name": "Outworld Devourer",
+      "totalPicks": 169560,
+      "totalWins": 87711,
+      "winrate": 51.7,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -26958,6 +27183,9 @@
       "key": "lycan",
       "id": 77,
       "name": "Lycan",
+      "totalPicks": 43938,
+      "totalWins": 21750,
+      "winrate": 49.5,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -27335,6 +27563,9 @@
       "key": "brewmaster",
       "id": 78,
       "name": "Brewmaster",
+      "totalPicks": 42654,
+      "totalWins": 21533,
+      "winrate": 50.5,
       "primaryAttr": "all",
       "attackType": "Melee",
       "roles": [
@@ -27742,6 +27973,9 @@
       "key": "shadow_demon",
       "id": 79,
       "name": "Shadow Demon",
+      "totalPicks": 89616,
+      "totalWins": 42861,
+      "winrate": 47.8,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -28094,6 +28328,9 @@
       "key": "lone_druid",
       "id": 80,
       "name": "Lone Druid",
+      "totalPicks": 40425,
+      "totalWins": 20177,
+      "winrate": 49.9,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -28415,6 +28652,9 @@
       "key": "chaos_knight",
       "id": 81,
       "name": "Chaos Knight",
+      "totalPicks": 176935,
+      "totalWins": 92388,
+      "winrate": 52.2,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -28737,6 +28977,9 @@
       "key": "meepo",
       "id": 82,
       "name": "Meepo",
+      "totalPicks": 59447,
+      "totalWins": 31282,
+      "winrate": 52.6,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -29093,6 +29336,9 @@
       "key": "treant_protector",
       "id": 83,
       "name": "Treant Protector",
+      "totalPicks": 135140,
+      "totalWins": 67720,
+      "winrate": 50.1,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -29427,6 +29673,9 @@
       "key": "ogre_magi",
       "id": 84,
       "name": "Ogre Magi",
+      "totalPicks": 482618,
+      "totalWins": 245965,
+      "winrate": 51,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -29799,6 +30048,9 @@
       "key": "undying",
       "id": 85,
       "name": "Undying",
+      "totalPicks": 253234,
+      "totalWins": 130243,
+      "winrate": 51.4,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -30168,6 +30420,9 @@
       "key": "rubick",
       "id": 86,
       "name": "Rubick",
+      "totalPicks": 499450,
+      "totalWins": 240792,
+      "winrate": 48.2,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -30496,6 +30751,9 @@
       "key": "disruptor",
       "id": 87,
       "name": "Disruptor",
+      "totalPicks": 215790,
+      "totalWins": 107591,
+      "winrate": 49.9,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -30816,6 +31074,9 @@
       "key": "nyx_assassin",
       "id": 88,
       "name": "Nyx Assassin",
+      "totalPicks": 189813,
+      "totalWins": 99323,
+      "winrate": 52.3,
       "primaryAttr": "all",
       "attackType": "Melee",
       "roles": [
@@ -31173,6 +31434,9 @@
       "key": "naga_siren",
       "id": 89,
       "name": "Naga Siren",
+      "totalPicks": 47739,
+      "totalWins": 23824,
+      "winrate": 49.9,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -31417,6 +31681,9 @@
       "key": "keeper_of_the_light",
       "id": 90,
       "name": "Keeper of the Light",
+      "totalPicks": 84453,
+      "totalWins": 41575,
+      "winrate": 49.2,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -31774,6 +32041,9 @@
       "key": "io",
       "id": 91,
       "name": "Io",
+      "totalPicks": 94406,
+      "totalWins": 47464,
+      "winrate": 50.3,
       "primaryAttr": "all",
       "attackType": "Ranged",
       "roles": [
@@ -32165,6 +32435,9 @@
       "key": "visage",
       "id": 92,
       "name": "Visage",
+      "totalPicks": 56145,
+      "totalWins": 29415,
+      "winrate": 52.4,
       "primaryAttr": "all",
       "attackType": "Ranged",
       "roles": [
@@ -32592,6 +32865,9 @@
       "key": "slark",
       "id": 93,
       "name": "Slark",
+      "totalPicks": 419462,
+      "totalWins": 213553,
+      "winrate": 50.9,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -32949,6 +33225,9 @@
       "key": "medusa",
       "id": 94,
       "name": "Medusa",
+      "totalPicks": 137089,
+      "totalWins": 68591,
+      "winrate": 50,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -33308,6 +33587,9 @@
       "key": "troll_warlord",
       "id": 95,
       "name": "Troll Warlord",
+      "totalPicks": 86086,
+      "totalWins": 43121,
+      "winrate": 50.1,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -33738,6 +34020,9 @@
       "key": "centaur_warrunner",
       "id": 96,
       "name": "Centaur Warrunner",
+      "totalPicks": 199558,
+      "totalWins": 101330,
+      "winrate": 50.8,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -34079,6 +34364,9 @@
       "key": "magnus",
       "id": 97,
       "name": "Magnus",
+      "totalPicks": 307343,
+      "totalWins": 151895,
+      "winrate": 49.4,
       "primaryAttr": "all",
       "attackType": "Melee",
       "roles": [
@@ -34474,6 +34762,9 @@
       "key": "timbersaw",
       "id": 98,
       "name": "Timbersaw",
+      "totalPicks": 139055,
+      "totalWins": 63753,
+      "winrate": 45.8,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -34903,6 +35194,9 @@
       "key": "bristleback",
       "id": 99,
       "name": "Bristleback",
+      "totalPicks": 187338,
+      "totalWins": 89312,
+      "winrate": 47.7,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -35299,6 +35593,9 @@
       "key": "tusk",
       "id": 100,
       "name": "Tusk",
+      "totalPicks": 181428,
+      "totalWins": 88155,
+      "winrate": 48.6,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -35646,6 +35943,9 @@
       "key": "skywrath_mage",
       "id": 101,
       "name": "Skywrath Mage",
+      "totalPicks": 417956,
+      "totalWins": 213806,
+      "winrate": 51.2,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -35937,6 +36237,9 @@
       "key": "abaddon",
       "id": 102,
       "name": "Abaddon",
+      "totalPicks": 111534,
+      "totalWins": 55886,
+      "winrate": 50.1,
       "primaryAttr": "all",
       "attackType": "Melee",
       "roles": [
@@ -36230,6 +36533,9 @@
       "key": "elder_titan",
       "id": 103,
       "name": "Elder Titan",
+      "totalPicks": 28170,
+      "totalWins": 14527,
+      "winrate": 51.6,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -36621,6 +36927,9 @@
       "key": "legion_commander",
       "id": 104,
       "name": "Legion Commander",
+      "totalPicks": 448180,
+      "totalWins": 236611,
+      "winrate": 52.8,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -36950,6 +37259,9 @@
       "key": "techies",
       "id": 105,
       "name": "Techies",
+      "totalPicks": 316807,
+      "totalWins": 153108,
+      "winrate": 48.3,
       "primaryAttr": "all",
       "attackType": "Ranged",
       "roles": [
@@ -37322,6 +37634,9 @@
       "key": "ember_spirit",
       "id": 106,
       "name": "Ember Spirit",
+      "totalPicks": 194611,
+      "totalWins": 91859,
+      "winrate": 47.2,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -37688,6 +38003,9 @@
       "key": "earth_spirit",
       "id": 107,
       "name": "Earth Spirit",
+      "totalPicks": 89729,
+      "totalWins": 44130,
+      "winrate": 49.2,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -38113,6 +38431,9 @@
       "key": "underlord",
       "id": 108,
       "name": "Underlord",
+      "totalPicks": 231277,
+      "totalWins": 117301,
+      "winrate": 50.7,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -38482,6 +38803,9 @@
       "key": "terrorblade",
       "id": 109,
       "name": "Terrorblade",
+      "totalPicks": 68757,
+      "totalWins": 31107,
+      "winrate": 45.2,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -38910,6 +39234,9 @@
       "key": "phoenix",
       "id": 110,
       "name": "Phoenix",
+      "totalPicks": 135168,
+      "totalWins": 69172,
+      "winrate": 51.2,
       "primaryAttr": "str",
       "attackType": "Ranged",
       "roles": [
@@ -39294,6 +39621,9 @@
       "key": "oracle",
       "id": 111,
       "name": "Oracle",
+      "totalPicks": 90018,
+      "totalWins": 44496,
+      "winrate": 49.4,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -39635,6 +39965,9 @@
       "key": "winter_wyvern",
       "id": 112,
       "name": "Winter Wyvern",
+      "totalPicks": 113700,
+      "totalWins": 59462,
+      "winrate": 52.3,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -40013,6 +40346,9 @@
       "key": "arc_warden",
       "id": 113,
       "name": "Arc Warden",
+      "totalPicks": 99099,
+      "totalWins": 51022,
+      "winrate": 51.5,
       "primaryAttr": "all",
       "attackType": "Ranged",
       "roles": [
@@ -40371,6 +40707,9 @@
       "key": "monkey_king",
       "id": 114,
       "name": "Monkey King",
+      "totalPicks": 144036,
+      "totalWins": 64485,
+      "winrate": 44.8,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -40679,6 +41018,9 @@
       "key": "dark_willow",
       "id": 119,
       "name": "Dark Willow",
+      "totalPicks": 155395,
+      "totalWins": 76729,
+      "winrate": 49.4,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -41018,6 +41360,9 @@
       "key": "pangolier",
       "id": 120,
       "name": "Pangolier",
+      "totalPicks": 36693,
+      "totalWins": 17316,
+      "winrate": 47.2,
       "primaryAttr": "all",
       "attackType": "Melee",
       "roles": [
@@ -41437,6 +41782,9 @@
       "key": "grimstroke",
       "id": 121,
       "name": "Grimstroke",
+      "totalPicks": 114869,
+      "totalWins": 56839,
+      "winrate": 49.5,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -41850,6 +42198,9 @@
       "key": "hoodwink",
       "id": 123,
       "name": "Hoodwink",
+      "totalPicks": 235302,
+      "totalWins": 114528,
+      "winrate": 48.7,
       "primaryAttr": "agi",
       "attackType": "Ranged",
       "roles": [
@@ -42316,6 +42667,9 @@
       "key": "void_spirit",
       "id": 126,
       "name": "Void Spirit",
+      "totalPicks": 153419,
+      "totalWins": 78529,
+      "winrate": 51.2,
       "primaryAttr": "all",
       "attackType": "Melee",
       "roles": [
@@ -42647,6 +43001,9 @@
       "key": "snapfire",
       "id": 128,
       "name": "Snapfire",
+      "totalPicks": 193468,
+      "totalWins": 93016,
+      "winrate": 48.1,
       "primaryAttr": "all",
       "attackType": "Ranged",
       "roles": [
@@ -43068,6 +43425,9 @@
       "key": "mars",
       "id": 129,
       "name": "Mars",
+      "totalPicks": 245027,
+      "totalWins": 114991,
+      "winrate": 46.9,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -43444,6 +43804,9 @@
       "key": "ring_master",
       "id": 131,
       "name": "Ring Master",
+      "totalPicks": 105986,
+      "totalWins": 50706,
+      "winrate": 47.8,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -43862,6 +44225,9 @@
       "key": "dawnbreaker",
       "id": 135,
       "name": "Dawnbreaker",
+      "totalPicks": 133704,
+      "totalWins": 66295,
+      "winrate": 49.6,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -44253,6 +44619,9 @@
       "key": "marci",
       "id": 136,
       "name": "Marci",
+      "totalPicks": 144248,
+      "totalWins": 71556,
+      "winrate": 49.6,
       "primaryAttr": "all",
       "attackType": "Melee",
       "roles": [
@@ -44582,6 +44951,9 @@
       "key": "primal_beast",
       "id": 137,
       "name": "Primal Beast",
+      "totalPicks": 117484,
+      "totalWins": 56942,
+      "winrate": 48.5,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [
@@ -45018,6 +45390,9 @@
       "key": "muerta",
       "id": 138,
       "name": "Muerta",
+      "totalPicks": 143645,
+      "totalWins": 69322,
+      "winrate": 48.3,
       "primaryAttr": "int",
       "attackType": "Ranged",
       "roles": [
@@ -45301,6 +45676,9 @@
       "key": "kez",
       "id": 145,
       "name": "Kez",
+      "totalPicks": 146578,
+      "totalWins": 69084,
+      "winrate": 47.1,
       "primaryAttr": "agi",
       "attackType": "Melee",
       "roles": [
@@ -45910,6 +46288,9 @@
       "key": "largo",
       "id": 155,
       "name": "Largo",
+      "totalPicks": 165525,
+      "totalWins": 85120,
+      "winrate": 51.4,
       "primaryAttr": "str",
       "attackType": "Melee",
       "roles": [

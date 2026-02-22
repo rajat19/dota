@@ -32,6 +32,7 @@ interface OpenDotaHero {
     attack_range: number;
     attack_rate: number;
     projectile_speed: number;
+    [key: string]: any;
 }
 
 // ─── Helpers ────────────────────────────────────────────
@@ -78,10 +79,22 @@ async function run(): Promise<void> {
     const heroList: Record<string, unknown>[] = [];
     for (const stats of opendotaStats) {
         const key = toSlug(stats.localized_name);
+
+        let totalPicks = stats.pro_pick || 0;
+        let totalWins = stats.pro_win || 0;
+        for (let i = 1; i <= 8; i++) {
+            totalPicks += stats[`${i}_pick`] || 0;
+            totalWins += stats[`${i}_win`] || 0;
+        }
+        const winrate = totalPicks > 0 ? Number(((totalWins / totalPicks) * 100).toFixed(1)) : 0;
+
         heroList.push({
             key,
             id: stats.id,
             name: stats.localized_name,
+            totalPicks,
+            totalWins,
+            winrate,
             primaryAttr: stats.primary_attr,
             attackType: stats.attack_type,
             roles: stats.roles,

@@ -1,11 +1,19 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import AttrIcon from '../components/AttrIcon'
 import { allHeroes } from '../data/heroData'
+import metaHeroesData from '../data/metaHeroes.json'
 
 function Home() {
-  const featuredHeroes = [...allHeroes]
-    .sort((a, b) => a.name.localeCompare(b.name))
-    .slice(0, 8)
+  // Map meta hero slugs back to full hero objects and combine with meta stats
+  const featuredHeroes = metaHeroesData.topHeroes
+    .map(meta => {
+      const hero = allHeroes.find(h => h.key === meta.key)
+      if (!hero) return null
+      return { ...hero, metaStats: meta }
+    })
+    .filter((h): h is NonNullable<typeof h> => h !== null)
+    .slice(0, 15)
 
   return (
     <div className="home-page">
@@ -107,7 +115,10 @@ function Home() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            <h2>Popular Heroes</h2>
+            <div>
+              <h2>Current Meta Heroes</h2>
+              <p style={{ color: 'var(--text-secondary)', marginTop: '8px' }}>Most played heroes in Divine/Immortal & Pro brackets</p>
+            </div>
             <Link to="/heroes" className="view-all-link">View All Heroes →</Link>
           </motion.div>
 
@@ -119,18 +130,34 @@ function Home() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.9 + index * 0.1 }}
               >
-                <Link to={`/heroes/${hero.key}`} className="hero-card">
-                  <img
-                    src={hero.image}
-                    alt={hero.name}
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = `https://via.placeholder.com/200x200/1a1a2e/ffffff?text=${hero.name}`
-                    }}
-                  />
-                  <span className={`attribute-badge ${hero.primaryAttr}`}>
-                    {hero.primaryAttr[0].toUpperCase()}
-                  </span>
-                  <span className="hero-name">{hero.name}</span>
+                <Link to={`/heroes/${hero.key}`} className="meta-card-container">
+                  <div className="meta-image-box">
+                    <div className="meta-rank">#{index + 1}</div>
+                    <img
+                      src={hero.image}
+                      alt={hero.name}
+                      loading="lazy"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = `https://via.placeholder.com/200x200/1a1a2e/ffffff?text=${hero.name}`
+                      }}
+                    />
+                    <span className={`attribute-badge ${hero.primaryAttr}`}>
+                      <AttrIcon attr={hero.primaryAttr} size={14} />
+                    </span>
+                    <span className="hero-name">{hero.name}</span>
+                  </div>
+                  <div className="meta-stats-panel">
+                    <div className="meta-stat">
+                      <span className="meta-label">Win Rate</span>
+                      <span className={`meta-value ${hero.metaStats.winrate >= 50 ? 'positive' : 'negative'}`}>
+                        {hero.metaStats.winrate}%
+                      </span>
+                    </div>
+                    <div className="meta-stat">
+                      <span className="meta-label">Total Picks</span>
+                      <span className="meta-value">{(hero.metaStats.totalPicks / 1000).toFixed(1)}k</span>
+                    </div>
+                  </div>
                 </Link>
               </motion.div>
             ))}
@@ -275,6 +302,121 @@ function Home() {
           justify-content: space-between;
           align-items: center;
           text-align: left;
+        }
+
+        .meta-card-container {
+          display: flex;
+          flex-direction: column;
+          background: var(--color-bg-card);
+          border-radius: var(--radius-md);
+          overflow: hidden;
+          transition: var(--transition-normal);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          text-decoration: none;
+        }
+        .meta-card-container:hover {
+          transform: translateY(-4px);
+          box-shadow: var(--shadow-glow);
+          border-color: var(--color-accent-blue);
+        }
+        .meta-image-box {
+          position: relative;
+          aspect-ratio: 16 / 9;
+          overflow: hidden;
+        }
+        .meta-image-box::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 60%);
+          z-index: 1;
+        }
+        .meta-image-box img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center 20%;
+          transition: var(--transition-normal);
+        }
+        .meta-card-container:hover .meta-image-box img {
+          transform: scale(1.1);
+        }
+        .meta-rank {
+          position: absolute;
+          top: 8px;
+          left: 8px;
+          background: rgba(0, 0, 0, 0.75);
+          backdrop-filter: blur(4px);
+          color: white;
+          font-weight: 800;
+          font-size: 0.9rem;
+          padding: 4px 8px;
+          border-radius: var(--radius-sm);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          z-index: 10;
+        }
+        .meta-image-box .hero-name {
+          position: absolute;
+          bottom: var(--spacing-sm);
+          left: var(--spacing-sm);
+          right: var(--spacing-sm);
+          z-index: 2;
+          font-size: 0.75rem;
+          font-weight: 600;
+          color: var(--text-primary);
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .meta-image-box .attribute-badge {
+          position: absolute;
+          top: 8px;
+          right: 8px;
+          z-index: 10;
+          width: 26px;
+          height: 26px;
+          border-radius: var(--radius-round);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          pointer-events: none;
+        }
+        .meta-stats-panel {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 14px;
+          background: rgba(0, 0, 0, 0.4);
+          border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        .meta-stat {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+        }
+
+        .meta-stat:last-child {
+          text-align: right;
+        }
+
+        .meta-label {
+          font-size: 0.65rem;
+          color: var(--text-secondary);
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+
+        .meta-value {
+          font-size: 0.85rem;
+          font-weight: 700;
+          color: white;
+        }
+
+        .meta-value.positive {
+          color: var(--color-accent-green);
+        }
+
+        .meta-value.negative {
+          color: var(--color-accent-red);
         }
 
         .cta-section {
