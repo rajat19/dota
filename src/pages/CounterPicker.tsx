@@ -1,9 +1,11 @@
 import { useState, useMemo, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 import { allHeroes } from '../data/heroData'
 import itemsData from '../data/items.json'
 
 function CounterPicker() {
+  const navigate = useNavigate()
   const [selectedHeroes, setSelectedHeroes] = useState([])
   const [searchQuery, setSearchQuery] = useState('')
   const [showResults, setShowResults] = useState(false)
@@ -168,11 +170,19 @@ function CounterPicker() {
                   >
                     {hero ? (
                       <>
-                        <img src={hero.image} alt={hero.name} />
+                        <img
+                          src={hero.image}
+                          alt={hero.name}
+                          onClick={() => navigate(`/heroes/${hero.key}`)}
+                          style={{ cursor: 'pointer' }}
+                        />
                         <span className="hero-slot-name">{hero.name}</span>
                         <button
                           className="remove-hero-btn"
-                          onClick={() => removeHero(hero.key)}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            removeHero(hero.key);
+                          }}
                         >
                           ✕
                         </button>
@@ -212,6 +222,17 @@ function CounterPicker() {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
+                      <div className="hero-card-actions">
+                        <button
+                          className="info-btn"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            navigate(`/heroes/${hero.key}`);
+                          }}
+                        >
+                          ℹ️
+                        </button>
+                      </div>
                       <img src={hero.image} alt={hero.name} />
                       <span className="hero-label">{hero.name}</span>
                     </motion.button>
@@ -262,6 +283,8 @@ function CounterPicker() {
                           initial={{ opacity: 0, x: 20 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: index * 0.05 }}
+                          onClick={() => navigate(`/heroes/${hero.key}`)}
+                          style={{ cursor: 'pointer' }}
                         >
                           <div className="rank-badge">#{index + 1}</div>
                           <img src={hero.image} alt={hero.name} />
@@ -322,7 +345,12 @@ function CounterPicker() {
                     </h3>
                     <div className="weakness-list">
                       {teamWeaknesses.map((hero) => (
-                        <div key={hero.key} className="weakness-hero">
+                        <div
+                          key={hero.key}
+                          className="weakness-hero"
+                          onClick={() => navigate(`/heroes/${hero.key}`)}
+                          style={{ cursor: 'pointer' }}
+                        >
                           <img src={hero.image} alt={hero.name} />
                           <span>{hero.name}</span>
                         </div>
@@ -401,7 +429,17 @@ function CounterPicker() {
         }
 
         .hero-slot {
-          aspect-ratio: 3/4;
+          aspect-ratio: 16/9;
+          background: var(--color-bg-secondary);
+          border: 2px dashed rgba(255, 255, 255, 0.2);
+          border-radius: var(--radius-md);
+          position: relative;
+          overflow: hidden;
+          transition: var(--transition-normal);
+        }
+
+        .search-result {
+          aspect-ratio: 16/9;
           background: var(--color-bg-secondary);
           border: 2px dashed rgba(255, 255, 255, 0.2);
           border-radius: var(--radius-md);
@@ -419,6 +457,14 @@ function CounterPicker() {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          object-position: center 20%;
+        }
+
+        .search-result img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center 20%;
         }
 
         .hero-slot-name {
@@ -509,6 +555,39 @@ function CounterPicker() {
         .available-hero:hover:not(:disabled) {
           border-color: var(--color-accent-blue);
           box-shadow: var(--shadow-glow);
+        }
+
+        .hero-card-actions {
+          position: absolute;
+          top: 4px;
+          right: 4px;
+          z-index: 2;
+          opacity: 0;
+          transition: var(--transition-fast);
+        }
+
+        .available-hero:hover .hero-card-actions {
+          opacity: 1;
+        }
+
+        .info-btn {
+          background: rgba(0, 0, 0, 0.7);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          border-radius: 50%;
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          font-size: 0.7rem;
+          color: white;
+          padding: 0;
+        }
+
+        .info-btn:hover {
+          background: var(--color-accent-blue);
+          transform: scale(1.1);
         }
 
         .available-hero:disabled {

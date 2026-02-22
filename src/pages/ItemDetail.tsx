@@ -7,10 +7,8 @@ function ItemDetail() {
   const { itemName } = useParams()
   const navigate = useNavigate()
 
-  // Find item by slug (generated from name)
-  const item = itemsData.items.find(i =>
-    i.name.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9-]/g, '') === itemName
-  )
+  // Find item by key (now naturally dashing)
+  const item = itemsData.items.find(i => i.key === itemName)
 
   if (!item) {
     return (

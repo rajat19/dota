@@ -2,6 +2,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { allHeroes } from '../data/heroData'
 import itemsData from '../data/items.json'
+import { getHeroRenderPng, getAttributeIcon, getAbilityIcon, getFacetIcon } from '../utils/steamAssets'
 
 function HeroDetail() {
   const { heroName } = useParams()
@@ -73,17 +74,20 @@ function HeroDetail() {
         >
           <div className="hero-image-container">
             <img
-              src={hero.image}
+              src={getHeroRenderPng(hero.key)}
               alt={hero.name}
               className="hero-main-image"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = `https://via.placeholder.com/256x144/1a1a2e/ffffff?text=${encodeURIComponent(hero.name)}`
+                // Fallback to existing small image if CDN fails
+                (e.target as HTMLImageElement).src = hero.image
               }}
             />
-            <div
-              className="attribute-indicator"
-              style={{ background: getAttributeColor(hero.primaryAttr) }}
-            >
+            <div className="attribute-indicator" style={{ background: getAttributeColor(hero.primaryAttr) }}>
+              <img
+                src={getAttributeIcon(hero.primaryAttr)}
+                alt={getAttributeName(hero.primaryAttr)}
+                className="attribute-icon"
+              />
               {getAttributeName(hero.primaryAttr)}
             </div>
           </div>
@@ -175,13 +179,22 @@ function HeroDetail() {
                 transition={{ delay: 0.3 + index * 0.1 }}
               >
                 <div className="ability-header">
-                  <h4>{ability.name}</h4>
+                  <div className="ability-title-row">
+                    <img
+                      src={getAbilityIcon(ability.internalName)}
+                      alt={ability.name}
+                      className="ability-icon"
+                      onError={(e) => e.currentTarget.style.display = 'none'}
+                    />
+                    <h4>{ability.name}</h4>
+                  </div>
                   <span className={`ability-type ${ability.type}`}>
                     {ability.type}
                     {ability.isPassive && ' / passive'}
                   </span>
                 </div>
                 <p>{ability.description}</p>
+                {ability.lore && <p className="ability-lore">"{ability.lore}"</p>}
 
                 {/* Cooldown & Mana */}
                 <div className="ability-stats">
@@ -244,7 +257,15 @@ function HeroDetail() {
             <div className="facets-grid">
               {hero.facets.map((facet) => (
                 <div key={facet.name} className="facet-card">
-                  <h4>{facet.name}</h4>
+                  <div className="facet-header">
+                    <img
+                      src={getFacetIcon(facet.icon)}
+                      alt={facet.name}
+                      className="facet-icon"
+                      onError={(e) => e.currentTarget.style.display = 'none'}
+                    />
+                    <h4>{facet.name}</h4>
+                  </div>
                   <p>{facet.description}</p>
                 </div>
               ))}
@@ -322,13 +343,17 @@ function HeroDetail() {
               )}
               <div className="counter-items-grid">
                 {counterItems.map(item => (
-                  <div key={item.key} className="mini-item-card">
+                  <Link
+                    key={item.key}
+                    to={`/items/${item.key}`}
+                    className="mini-item-card"
+                  >
                     <img src={item.image} alt={item.name} />
                     <div className="item-info">
                       <span className="item-name">{item.name}</span>
                       <span className="item-cost">💰 {item.cost}</span>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </motion.section>
@@ -378,6 +403,7 @@ function HeroDetail() {
           border: var(--border-subtle);
           border-radius: var(--radius-xl);
           padding: 32px;
+          align-items: center;
         }
 
         @media (max-width: 768px) {
@@ -400,15 +426,28 @@ function HeroDetail() {
 
         .attribute-indicator {
           position: absolute;
-          bottom: -12px;
+          bottom: -16px;
           left: 50%;
           transform: translateX(-50%);
-          padding: 6px 16px;
-          border-radius: var(--radius-md);
-          font-size: 0.75rem;
+          padding: 8px 20px;
+          border-radius: 30px;
+          font-size: 0.85rem;
           font-weight: 700;
           text-transform: uppercase;
-          color: var(--color-bg-dark);
+          color: white;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+          border: 1px solid rgba(255,255,255,0.2);
+          white-space: nowrap;
+          width: max-content;
+        }
+
+        .attribute-icon {
+          width: 24px;
+          height: 24px;
+          filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
         }
 
         .hero-main-info h1 {
@@ -541,13 +580,27 @@ function HeroDetail() {
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
-          margin-bottom: 12px;
+          margin-bottom: 16px;
+        }
+
+        .ability-title-row {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+
+        .ability-icon {
+          width: 48px;
+          height: 48px;
+          border-radius: var(--radius-sm);
+          box-shadow: 0 2px 8px rgba(0,0,0,0.4);
         }
 
         .ability-header h4 {
           color: var(--color-accent-gold);
           font-family: var(--font-body);
-          font-size: 1rem;
+          font-size: 1.1rem;
+          margin: 0;
         }
 
         .ability-type {
@@ -571,8 +624,17 @@ function HeroDetail() {
 
         .ability-card p {
           color: var(--text-secondary);
-          font-size: 0.85rem;
+          font-size: 0.9rem;
           line-height: 1.6;
+          margin-bottom: 12px;
+        }
+        
+        .ability-lore {
+          font-style: italic;
+          color: var(--text-muted) !important;
+          font-size: 0.8rem !important;
+          border-left: 2px solid rgba(255,255,255,0.1);
+          padding-left: 12px;
         }
 
         .counter-sections {
@@ -833,11 +895,25 @@ function HeroDetail() {
           border-left: 3px solid var(--color-accent-purple);
         }
 
+        .facet-header {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin-bottom: 8px;
+        }
+
+        .facet-icon {
+          width: 32px;
+          height: 32px;
+          object-fit: contain;
+          filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+        }
+
         .facet-card h4 {
           color: var(--color-accent-purple);
           font-family: var(--font-body);
           font-size: 0.95rem;
-          margin-bottom: 8px;
+          margin: 0;
         }
 
         .facet-card p {

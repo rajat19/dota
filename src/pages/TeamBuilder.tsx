@@ -268,10 +268,10 @@ function TeamBuilder() {
         .team-header h2 { font-size: 1.25rem; }
         .team-count { color: var(--text-muted); font-size: 0.9rem; }
         .team-slots { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 16px; }
-        .team-slot { aspect-ratio: 3/4; background: var(--color-bg-secondary); border: 2px dashed rgba(255,255,255,0.2); border-radius: var(--radius-md); display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; position: relative; transition: var(--transition-normal); overflow: hidden; }
+        .team-slot { aspect-ratio: 16/9; background: var(--color-bg-secondary); border: 2px dashed rgba(255,255,255,0.2); border-radius: var(--radius-md); display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; position: relative; transition: var(--transition-normal); overflow: hidden; }
         .team-slot.selected { border-color: var(--color-accent-gold); border-style: solid; box-shadow: var(--shadow-glow-gold); }
         .team-slot.filled { border-style: solid; border-color: rgba(255,255,255,0.3); }
-        .team-slot img { width: 100%; height: 100%; object-fit: cover; }
+        .team-slot img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
         .team-slot .slot-name { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.9)); padding: 16px 4px 4px; font-size: 0.6rem; text-align: center; }
         .team-slot .slot-empty { font-size: 2rem; color: var(--text-muted); }
         .team-slot .remove-btn { position: absolute; top: 4px; right: 4px; width: 20px; height: 20px; background: var(--color-accent-red); border: none; border-radius: 50%; color: white; font-size: 0.6rem; opacity: 0; transition: var(--transition-fast); display: flex; align-items: center; justify-content: center; }
@@ -295,10 +295,10 @@ function TeamBuilder() {
         .picker-panel .search-input { width: 100%; margin-bottom: 12px; }
         .picker-panel .filter-buttons { margin-bottom: 16px; }
         .hero-picker-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-        .picker-hero { aspect-ratio: 1; background: var(--color-bg-secondary); border: var(--border-subtle); border-radius: var(--radius-md); padding: 0; overflow: hidden; cursor: pointer; position: relative; }
+        .picker-hero { aspect-ratio: 16/9; background: var(--color-bg-secondary); border: var(--border-subtle); border-radius: var(--radius-md); padding: 0; overflow: hidden; cursor: pointer; position: relative; }
         .picker-hero:disabled { opacity: 0.4; cursor: not-allowed; }
         .picker-hero:hover:not(:disabled) { border-color: var(--color-accent-blue); }
-        .picker-hero img { width: 100%; height: 100%; object-fit: cover; }
+        .picker-hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
         .picker-hero span { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.9)); padding: 8px 2px 2px; font-size: 0.5rem; text-align: center; }
         .builder-actions { margin-top: 32px; text-align: center; }
       `}</style>

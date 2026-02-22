@@ -82,7 +82,6 @@ function Items() {
         <div className="items-grid">
           <AnimatePresence mode="popLayout">
             {filteredItems.map((item, index) => {
-              const itemSlug = item.name.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9-]/g, '')
               return (
                 <motion.div
                   key={item.key}
@@ -95,7 +94,7 @@ function Items() {
                   onMouseEnter={() => setHoveredItem(item)}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
-                  <Link to={`/items/${itemSlug}`} className="item-card-link">
+                  <Link to={`/items/${item.key}`} className="item-card-link">
                     <div className="item-card-large">
                       <img
                         src={item.image}
